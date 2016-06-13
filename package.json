@@ -1,0 +1,24 @@
+{
+  "name": "simple-react",
+  "version": "1.0.17",
+  "description": "tool to setup a simple react workspace",
+  "directories": {
+    "lib": "lib"
+  },
+  "main": "index.js",
+  "bin": {
+    "simple-react": "./cli.js"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "keywords": [
+    "react",
+    "react-native"
+  ],
+  "author": "joezhang",
+  "license": "ISC",
+  "dependencies": {
+    "prompt": "^1.0.0"
+  }
+}
