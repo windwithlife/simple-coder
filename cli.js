@@ -152,26 +152,19 @@ function generator(cmdOptions, verbose) {
 
     //生成代码
     verboseCommand =  verbose ? ' --verbose':'';
-    var install = spawn(NPM, ['install', '--verbose', '--save','simple-coder'], {stdio: 'inherit'});
-    install.on('close', function (code) {
-        if (code !== 0) {
-            console.error('`npm install --save react-native` failed');
-            console.error(code)
-            return;
+    //生成ReactNative
+    exec('node node_modules/simple-coder/coder.js -g '+cmdOptions + verboseCommand, function(e, stdout, stderr){
+        if (e) {
+            console.error('generate code failed');
+            console.error(e)
+            process.exit(1);
         }
-
-        //生成ReactNative
-        exec('node node_modules/simple-coder/coder.js -g '+cmdOptions + verboseCommand, function(e, stdout, stderr){
-            if (e) {
-                console.error('generate code failed');
-                console.error(e)
-                process.exit(1);
-            }
-            stderr && console.warn(stderr);
+        stderr && console.warn(stderr);
 
 
-        });
     });
+
+   
 }
 
 console.log("hello,simple-coder.....!");

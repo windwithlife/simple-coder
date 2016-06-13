@@ -2,15 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9adebc7d-ca00-41eb-b023-9777ae19e972" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/Product.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/User.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/code_tools.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/coder.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/main.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/server_creator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/extjs/controller/AccordionMainMenu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/extjs/view/AccordionMainMenu.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/extjs/controller/Controller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/extjs/view/Form.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/extjs/view/Header.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/extjs/view/MainView.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/extjs/store/MenuStore.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/extjs/model/Model.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/extjs/view/South.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/extjs/store/Store.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/extjs/view/TabPanel.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/extjs/view/Viewport.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/simple/layout/accordion-menu-outlook.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/simple/layout/accordion-menu.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/simple/view/add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/simple/controller/add.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/nodejs/router/api.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/extjs/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/simple/layout/breadcrumb.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/nodejs/mysql/dao.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/simple/view/edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/simple/controller/edit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/extjs/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/simple/controller/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/simple/view/mainview.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/nodejs/mongodb/model.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/simple/model/model.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/simple/layout/navbar.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/simple/config/require_config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/simple/router/router.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/nodejs/router/soa_router.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/nodejs/router/web_router.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cli.js" afterPath="$PROJECT_DIR$/cli.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/server_creator.js" afterPath="$PROJECT_DIR$/lib/server_creator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SimpleCoder.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,7 +62,7 @@
         <entry file="file://$PROJECT_DIR$/cli.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="161" column="0" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
+              <caret line="166" column="3" selection-start-line="166" selection-start-column="3" selection-end-line="166" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -61,6 +88,16 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="Form.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/extjs/view/Form.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -81,11 +118,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+      <file leaf-file-name="npm-debug.log" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/npm-debug.log">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.285715">
-              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.037401576">
+              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -110,11 +157,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="server_creator.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="server_creator.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/server_creator.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7290553">
-              <caret line="89" column="38" selection-start-line="89" selection-start-column="38" selection-end-line="89" selection-end-column="38" />
+            <state vertical-scroll-proportion="-8.133333">
+              <caret line="191" column="32" selection-start-line="191" selection-start-column="32" selection-end-line="191" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -129,11 +176,11 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/cli.js" />
         <option value="$PROJECT_DIR$/lib/server-creator.js" />
         <option value="$PROJECT_DIR$/coder.js" />
-        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/cli.js" />
         <option value="$PROJECT_DIR$/lib/server_creator.js" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -199,6 +246,38 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleCoder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleCoder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nodejs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleCoder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleCoder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -212,12 +291,13 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../react/SimpleReact" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\program\h5\framework\SimpleCoder\templates" />
       <recent name="D:\program\h5\framework\SimpleCoder" />
       <recent name="D:\program\h5\framework\SimpleCoder\lib" />
     </key>
@@ -280,7 +360,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32954547" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3572241" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -325,30 +405,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cli.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="161" column="0" selection-start-line="161" selection-start-column="0" selection-end-line="161" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/coder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.285715">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -365,10 +421,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/coder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cli.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="166" column="3" selection-start-line="166" selection-start-column="3" selection-end-line="166" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/extjs/view/Form.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/server_creator.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7290553">
-          <caret line="89" column="38" selection-start-line="89" selection-start-column="38" selection-end-line="89" selection-end-column="38" />
+        <state vertical-scroll-proportion="-8.133333">
+          <caret line="191" column="32" selection-start-line="191" selection-start-column="32" selection-end-line="191" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/npm-debug.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.037401576">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
           <folding />
         </state>
       </provider>
