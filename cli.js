@@ -31,6 +31,21 @@ switch (commands[0]) {
             init(commands[1], argv.indexOf('--verbose')>-1);
         }
         break;
+    case '-g':
+        if (!commands[1]) {
+            console.error(
+                'Usage: simple-coder -g [options] [--verbose] \n'+
+                    '[options]: \n'+
+                "server-nodejs: create nodejs server code \n"+
+                "server-java: create nodejs server code \n"+
+                "js-web: create nodejs server code \n" +
+                "js-react: create nodejs server code \n"
+            );
+            process.exit(1);
+        } else {
+            generator(commands[1], argv.indexOf('--verbose')>-1);
+        }
+        break;
     case 'clean':
         //cleanBoilerplate();
         break;
@@ -50,6 +65,7 @@ function init(name, verbose) {
         createProject(name, verbose);
     }
 }
+
 
 function createAfterConfirmation(name, verbose) {
     prompt.start();
@@ -111,7 +127,7 @@ function run(root, projectName, verbose) {
 
     //安装react-native
     verboseCommand =  verbose ? ' --verbose':'';
-    var install = spawn(NPM, ['install', '--verbose', '--save','react-native'], {stdio: 'inherit'});
+    var install = spawn(NPM, ['install', '--verbose', '--save','simple-coder'], {stdio: 'inherit'});
     install.on('close', function (code) {
         if (code !== 0) {
             console.error('`npm install --save react-native` failed');
@@ -120,7 +136,7 @@ function run(root, projectName, verbose) {
         }
 
         //生成ReactNative
-        exec('node node_modules/react-native/cli.js init '+projectName+verboseCommand, function(e, stdout, stderr){
+        exec('node node_modules/simple-coder/coder.js init '+projectName + verboseCommand, function(e, stdout, stderr){
             if (e) {
                 console.error('generate react-native project failed');
                 console.error(e)
@@ -129,41 +145,33 @@ function run(root, projectName, verbose) {
             stderr && console.warn(stderr);
 
 
-            //生成moles-web项目
-            exec('npm install moles-web --save'+verboseCommand, function(e, stdout, stderr){
-                if (e) {
-                    console.error('`npm install moles-web --save`  failed');
-                    console.error(e)
-                    process.exit(1);
-                }
-                //生成web文件夹
-                exec('node '+path.join(process.cwd(),'node_modules/moles-web/local-cli/cli.js')+' init '+projectName, function(e, stdout, stderr){
+        });
+    });
+}
+function generator(cmdOptions, verbose) {
 
-                    if(e){
-                        console.error(e);
-                        process.exit();
-                    }
-                    stderr && console.warn(stderr);
-                    console.error('begin to compile react-native....');
-                        //编译react-native
-                        var cliPath = CLI_MODULE_PATH();
-                        require(cliPath).init(process.cwd(), projectName);
+    //生成代码
+    verboseCommand =  verbose ? ' --verbose':'';
+    var install = spawn(NPM, ['install', '--verbose', '--save','simple-coder'], {stdio: 'inherit'});
+    install.on('close', function (code) {
+        if (code !== 0) {
+            console.error('`npm install --save react-native` failed');
+            console.error(code)
+            return;
+        }
+
+        //生成ReactNative
+        exec('node node_modules/simple-coder/coder.js -g '+cmdOptions + verboseCommand, function(e, stdout, stderr){
+            if (e) {
+                console.error('generate code failed');
+                console.error(e)
+                process.exit(1);
+            }
+            stderr && console.warn(stderr);
 
 
-                });
-
-
-            })
         });
     });
 }
 
-var CLI_MODULE_PATH = function() {
-    return path.resolve(
-        process.cwd(),
-        'node_modules',
-        'react-native',
-        'cli.js'
-    );
-};
-console.log("hello,simple-react");
+console.log("hello,simple-coder.....!");

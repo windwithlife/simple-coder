@@ -1,24 +1,25 @@
 {
-  "name": "simple-react",
-  "version": "1.0.17",
-  "description": "tool to setup a simple react workspace",
+  "name": "simple-coder",
+  "version": "0.0.1",
+  "description": "tool to generate code and framework",
   "directories": {
     "lib": "lib"
   },
   "main": "index.js",
   "bin": {
-    "simple-react": "./cli.js"
+    "simple-coder": "./cli.js"
   },
   "scripts": {
     "test": "test"
   },
   "keywords": [
-    "react",
-    "react-native"
+    "coder",
+    "code tools"
   ],
   "author": "joezhang",
   "license": "ISC",
   "dependencies": {
+    "ejs": "^2.4.2",
     "prompt": "^1.0.0"
   }
 }

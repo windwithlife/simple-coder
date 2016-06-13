@@ -1,9 +1,4 @@
-/**
- * Copyright (c) 2016-present, Ctrip
- * All rights reserved.
 
- * @providesModule MolesWeb
- */
 'use strict';
 
 
