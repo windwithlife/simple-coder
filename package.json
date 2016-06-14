@@ -1,6 +1,6 @@
 {
   "name": "simple-coder",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "tool to generate code and framework",
   "directories": {
     "lib": "lib"
@@ -20,6 +20,8 @@
   "license": "ISC",
   "dependencies": {
     "ejs": "^2.4.2",
+    "lodash": "^4.13.1",
+    "lowdb": "^0.13.1",
     "prompt": "^1.0.0"
   }
 }

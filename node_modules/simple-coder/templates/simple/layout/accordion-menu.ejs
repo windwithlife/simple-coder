@@ -1,0 +1,51 @@
+<style>
+
+    .panel-group{min-height:500px;overflow: auto;}
+    .leftMenu{margin-left:0px;margin-top:5px;}
+    .leftMenu .panel-heading{font-size:14px;padding-left:20px;height:36px;line-height:36px;color:white;position:relative;cursor:pointer;}/*转成手形图标*/
+    .leftMenu .panel-heading span{position:absolute;right:10px;top:12px;}
+    .leftMenu .menu-item-left{padding: 2px; background: transparent; border:1px solid transparent;border-radius: 6px;}
+    .leftMenu .menu-item-left:hover{background:#C4E3F3;border:1px solid #1E90FF;}
+</style>
+
+    <div class=" panel panel-default">
+        <div class="panel-group table-responsive" role="tablist">
+
+            <!-- 利用data-target指定要折叠的分组列表 -->
+            <%
+                var index = 0;
+            data.menus.forEach(function (menuItem) {
+                var subMenus = menuItem.children;
+                    index++;
+            %>
+
+            <div class="panel panel-primary leftMenu">
+
+                <div class="panel-heading" id="collapseListGroupHeading1" data-toggle="collapse" data-target="#collapseListGroup<%=index%>" role="tab" >
+                    <h4 class="panel-title">
+                        <%=menuItem.name%>
+                        <span class="glyphicon glyphicon-chevron-up right"></span>
+                    </h4>
+                </div>
+                <!-- .panel-collapse和.collapse标明折叠元素 .in表示要显示出来 -->
+                <div id="collapseListGroup<%=index%>" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="collapseListGroupHeading1">
+                    <ul class="list-group">
+                        <% subMenus.forEach(function (subMenu) {%>
+                        <li class="list-group-item">
+                            <!-- 利用data-target指定URL -->
+                            <button class="menu-item-left" data-target="test2.html">
+                                <span class="glyphicon glyphicon-triangle-right"></span> <%=subMenu.name%>
+                            </button>
+                        </li>
+                       <%});%>
+
+
+
+                    </ul>
+                </div>
+            </div><!--panel end-->
+            <%})%>
+        </div>
+    </div>
+
+
