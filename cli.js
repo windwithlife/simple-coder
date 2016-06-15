@@ -39,7 +39,7 @@ switch (commands[0]) {
                 "server-nodejs: create nodejs server code \n"+
                 "server-java: create nodejs server code \n"+
                 "js-web: create nodejs server code \n" +
-                "js-react: create nodejs server code \n"
+                "react-web: create react web code \n"
             );
             process.exit(1);
         } else {
@@ -106,7 +106,7 @@ function createProject(name, verbose) {
         version: '0.0.1',
         private: true,
         scripts: {
-            "start": "node node_modules/react-native/local-cli/cli.js start",
+            "start": "node node_modules/simple-coder/coder.js start",
             "ios": "node node_modules/react-native/local-cli/cli.js run-ios",
             "android": "node node_modules/react-native/local-cli/cli.js run-android",
             "web": "node node_modules/moles-web/local-cli/cli.js start web/webpack.config.js",
@@ -125,7 +125,7 @@ function createProject(name, verbose) {
 
 function run(root, projectName, verbose) {
 
-    //安装react-native
+    //安装simple-coder组件及其依赖库
     verboseCommand =  verbose ? ' --verbose':'';
     var install = spawn(NPM, ['install', '--verbose', '--save','simple-coder'], {stdio: 'inherit'});
     install.on('close', function (code) {
@@ -135,7 +135,7 @@ function run(root, projectName, verbose) {
             return;
         }
 
-        //生成ReactNative
+        //生成初始化
         exec('node node_modules/simple-coder/coder.js init '+projectName + verboseCommand, function(e, stdout, stderr){
             if (e) {
                 console.error('generate react-native project failed');
@@ -143,7 +143,7 @@ function run(root, projectName, verbose) {
                 process.exit(1);
             }
             stderr && console.warn(stderr);
-
+            console.log("hello,simple-coder.....!");
 
         });
     });
@@ -152,7 +152,7 @@ function generator(cmdOptions, verbose) {
 
     //生成代码
     verboseCommand =  verbose ? ' --verbose':'';
-    //生成ReactNative
+    console.log("begin to create code....");
     exec('node node_modules/simple-coder/coder.js -g '+cmdOptions + verboseCommand, function(e, stdout, stderr){
         if (e) {
             console.error('generate code failed');
@@ -160,11 +160,10 @@ function generator(cmdOptions, verbose) {
             process.exit(1);
         }
         stderr && console.warn(stderr);
-
+        console.log("successful to create code !");
 
     });
 
    
 }
 
-console.log("hello,simple-coder.....!");

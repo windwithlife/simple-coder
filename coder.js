@@ -43,7 +43,7 @@ switch (commands[0]) {
             );
             process.exit(1);
         } else {
-            generator(commands[1], argv.indexOf('--verbose')>-1);
+            generator(commands[1], commands[2],argv.indexOf('--verbose')>-1);
         }
         break;
     case 'clean':
@@ -63,13 +63,13 @@ function init(name, verbose) {
 }
 
 
-function generator(cmdOptions, verbose) {
+function generator(cmdOptions,config, verbose) {
 
     //生成代码
     verboseCommand =  verbose ? ' --verbose':'';
     switch (cmdOptions) {
         case 'server-nodejs':
-            xcoder.generateServer();
+            xcoder.generateServer(config);
             break;
 
         case 'clean':
