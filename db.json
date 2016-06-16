@@ -1,1 +1,28 @@
-{}
+{
+  "appName": "test",
+  "channels":
+  [{
+    "name": "产品管理系统",
+    "children": [{"name": "产品管理查询首面", "module": "product"}, {"name": "产品管理发布", "module": "product"}]
+  },
+    {
+      "name": "用户管理系统",
+      "children": [{"name": "用户管理查询首面", "module": "user"}]
+    }],
+
+  "Definedmodules":
+  [{"name":"product",
+    "fields" :{
+    "_id":{"type":"string", "dName":"编号"},
+    "name":{"type":"string","dName":"名称"},
+    "sex" :{"type":"int","dName":"性别","combo":true, "enum":[{"index":1,"item":"男"},{"index":2,"item":"女"}]},
+    "age" :{"type":"int","dName":"年龄"}
+
+  }},
+    {"name":"user",
+      "fields":{
+      "_id": {"type": "string", "dName": "编号"},
+      "name":{"type": "string","dName": "名称"},
+      "age":{"type":"int", "dName":"年龄"}
+    }}]
+}

@@ -3,6 +3,8 @@ var router            = express.Router();
 
 
 
+  var faq  = require('./faq');
+ 
   var product  = require('./product');
  
   var user  = require('./user');
@@ -33,6 +35,21 @@ var router            = express.Router();
 
  
   router.post('/product/remove',product.remove);
+
+ 
+   router.post('/faq/createNew',faq.createNew);
+
+ 
+   router.post('/faq/update', faq.update);
+
+ 
+   router.get('/faq/query',faq.query);
+
+ 
+   router.get('/faq/queryById',faq.queryOne);
+
+ 
+   router.post('/faq/remove',faq.remove);
 
  
 

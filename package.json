@@ -1,14 +1,11 @@
 {
   "name": "simple-coder",
-  "version": "0.0.10",
+  "version": "0.0.27",
   "description": "tool to generate code and framework",
   "directories": {
     "lib": "lib"
   },
   "main": "index.js",
-  "bin": {
-    "simple-coder": "./cli.js"
-  },
   "scripts": {
     "test": "test"
   },

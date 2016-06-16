@@ -1,29 +1,108 @@
 {
   "appName": "test",
-  "modules": ["product", "user"],
-  "channels":
-  [{
-    "name": "产品管理系统",
-    "children": [{"name": "产品管理查询首面", "module": "product"}, {"name": "产品管理发布", "module": "product"}]
-  },
+  "modules": [
+    "faq",
+    "product",
+    "user"
+  ],
+  "channels": [
     {
-      "name": "用户管理系统",
-      "children": [{"name": "用户管理查询首面", "module": "user"}]
-    }],
-
-  "Definedmodules":
-  [{"name":"product",
-    "fields" :{
-    "_id":{"type":"string", "dName":"编号"},
-    "name":{"type":"string","dName":"名称"},
-    "sex" :{"type":"int","dName":"性别","combo":true, "enum":[{"index":1,"item":"男"},{"index":2,"item":"女"}]},
-    "age" :{"type":"int","dName":"年龄"}
-
-  }},
-    {"name":"user",
-      "fields":{
-      "_id": {"type": "string", "dName": "编号"},
-      "name":{"type": "string","dName": "名称"},
-      "age":{"type":"int", "dName":"年龄"}
-    }}]
+      "name": "常见问题与解答",
+      "children": [
+        {
+          "name": "faq",
+          "module": "faq"
+        }
+      ]
+    },
+    {
+      "name": "产品",
+      "children": [
+        {
+          "name": "product",
+          "module": "product"
+        }
+      ]
+    },
+    {
+      "name": "用户",
+      "children": [
+        {
+          "name": "user",
+          "module": "user"
+        }
+      ]
+    }
+  ],
+  "Definedmodules": [
+    {
+      "name": "faq",
+      "channel": "常见问题与解答",
+      "fields": {
+        "_id": {
+          "type": "string",
+          "dName": "编号"
+        },
+        "name": {
+          "type": "string",
+          "dName": "名称"
+        },
+        "age": {
+          "type": "int",
+          "dName": "年龄"
+        }
+      }
+    },
+    {
+      "name": "product",
+      "channel": "产品",
+      "fields": {
+        "_id": {
+          "type": "string",
+          "dName": "编号"
+        },
+        "name": {
+          "type": "string",
+          "dName": "名称"
+        },
+        "sex": {
+          "type": "int",
+          "dName": "性别",
+          "combo": true,
+          "enum": [
+            {
+              "index": 1,
+              "item": "男"
+            },
+            {
+              "index": 2,
+              "item": "女"
+            }
+          ]
+        },
+        "age": {
+          "type": "int",
+          "dName": "年龄"
+        }
+      }
+    },
+    {
+      "name": "user",
+      "channel": "用户",
+      "fields": {
+        "_id": {
+          "type": "string",
+          "dName": "编号"
+        },
+        "name": {
+          "type": "string",
+          "dName": "名称"
+        },
+        "age": {
+          "type": "int",
+          "dName": "年龄"
+        }
+      }
+    }
+  ]
 }

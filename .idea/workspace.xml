@@ -2,18 +2,145 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9adebc7d-ca00-41eb-b023-9777ae19e972" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\program\h5\framework\SimpleCoder\modules\main.js" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/application/accordion-menu-outlook.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/components/accordion-menu-outlook.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/layout/accordion-menu-outlook.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/components/accordion-menu.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/application/accordion-menu.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/components/accordion-menu.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/bin/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/nodejs/frameworkfiles/bin/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/bin/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/nodejs/frameworkfiles/bin/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/application/breadcrumb.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/components/breadcrumb.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/layout/breadcrumb.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/code.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/lib/code.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/lib/code_tools.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/lib/common_creator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/error.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/error.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/themes/bluesea/mobile/layout/footer-simple.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/themes/bluesea/pc/layout/footer-simple.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/themes/default/mobile/layout/footer-simple.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/themes/default/pc/layout/footer-simple.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/themes/bluesea/mobile/layout/footer-simple.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/themes/bluesea/pc/layout/footer-simple.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/themes/default/mobile/layout/footer-simple.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/themes/default/pc/layout/footer-simple.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/themes/default/mobile/layout/header-auto.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/themes/default/pc/layout/header-auto.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/themes/default/mobile/layout/header-auto.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/themes/default/pc/layout/header-auto.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/themes/default/mobile/layout/header-rn.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/themes/default/pc/layout/header-rn.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/themes/default/mobile/layout/header-rn.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/themes/default/pc/layout/header-rn.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/themes/bluesea/mobile/layout/header-work.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/themes/bluesea/pc/layout/header-work.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/themes/default/mobile/layout/header-work.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/themes/default/pc/layout/header-work.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/themes/bluesea/mobile/layout/header-work.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/themes/bluesea/pc/layout/header-work.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/themes/default/mobile/layout/header-work.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/themes/default/pc/layout/header-work.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/themes/bluesea/mobile/layout/header.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/themes/bluesea/pc/layout/header.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/themes/default/mobile/layout/header.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/themes/default/pc/layout/header.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/themes/bluesea/mobile/layout/header.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/themes/bluesea/pc/layout/header.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/themes/default/mobile/layout/header.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/themes/default/pc/layout/header.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/index.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/index.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/lib/json_db.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/themes/bluesea/mobile/layout/layout-iot.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/themes/bluesea/pc/layout/layout-iot.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/themes/default/mobile/layout/layout-iot.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/themes/default/pc/layout/layout-iot.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/themes/bluesea/mobile/layout/layout-iot.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/themes/bluesea/pc/layout/layout-iot.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/themes/default/mobile/layout/layout-iot.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/themes/default/pc/layout/layout-iot.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/themes/bluesea/mobile/layout/layout.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/themes/bluesea/pc/layout/layout.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/themes/default/mobile/layout/layout.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/themes/default/pc/layout/layout.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/themes/bluesea/mobile/layout/layout.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/themes/bluesea/pc/layout/layout.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/themes/default/mobile/layout/layout.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/themes/default/pc/layout/layout.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/components/mainview.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/components/mainview.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/components/navbar.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/application/navbar.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/components/navbar.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/generators/server_creator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/lib/generators/server_creator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/components/sidebar.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/components/sidebar.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/components/slider.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/components/slider.ejs" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/generators/web_creator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/lib/generators/web_creator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/router/web_router.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/router/web_router.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/bin/www.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/nodejs/frameworkfiles/bin/www.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/bin/www.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/nodejs/frameworkfiles/bin/www.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/xtools.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/node_modules/simple-coder/lib/xtools.js" />
+      <change type="DELETED" beforePath="D:\program\h5\framework\SimpleCoder\node_modules\simple-coder\modules\Product.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\h5\framework\SimpleCoder\node_modules\simple-coder\modules\User.js" afterPath="" />
       <change type="DELETED" beforePath="D:\program\h5\framework\SimpleCoder\node_modules\simple-coder\modules\db.json" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\h5\framework\SimpleCoder\node_modules\simple-coder\modules\faq.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\h5\framework\SimpleCoder\node_modules\simple-coder\modules\main.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\h5\framework\SimpleCoder\server\model\Product.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\h5\framework\SimpleCoder\server\model\User.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\h5\framework\SimpleCoder\server\routes\Product.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\h5\framework\SimpleCoder\server\routes\User.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\h5\framework\SimpleCoder\server\routes\soa_router.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/Product.js" afterPath="$PROJECT_DIR$/modules/Product.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/User.js" afterPath="$PROJECT_DIR$/modules/User.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cli.js" afterPath="$PROJECT_DIR$/cli.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/coder.js" afterPath="$PROJECT_DIR$/coder.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/db.json" afterPath="$PROJECT_DIR$/modules/db.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.js" afterPath="$PROJECT_DIR$/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/faq.js" afterPath="$PROJECT_DIR$/modules/faq.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/json_db.js" afterPath="$PROJECT_DIR$/lib/json_db.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/server_creator.js" afterPath="$PROJECT_DIR$/lib/server_creator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/simple-coder/templates/nodejs/router/soa_router_module.js" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/nodejs/router/soa_router_module.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\db.json" afterPath="$PROJECT_DIR$/modules/db.json" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\lib\server_creator.js" afterPath="$PROJECT_DIR$/lib/common_creator.js" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\modules\db.json" afterPath="$PROJECT_DIR$/db.json" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\node_modules\simple-coder\templates\simple\config\require_config.js" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/config/require_config.js" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\node_modules\simple-coder\templates\simple\controller\add.js" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/controller/add.js" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\node_modules\simple-coder\templates\simple\controller\edit.js" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/controller/edit.js" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\node_modules\simple-coder\templates\simple\controller\main.js" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/controller/main.js" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\node_modules\simple-coder\templates\simple\layout\accordion-menu-outlook.ejs" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/components/accordion-menu-outlook.ejs" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\node_modules\simple-coder\templates\simple\layout\accordion-menu.ejs" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/layout/accordion-menu.ejs" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\node_modules\simple-coder\templates\simple\layout\breadcrumb.ejs" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/frameworkfiles/views/common/components/breadcrumb.ejs" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\node_modules\simple-coder\templates\simple\layout\navbar.ejs" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/layout/navbar.ejs" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\node_modules\simple-coder\templates\simple\model\model.js" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/model/model.js" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\node_modules\simple-coder\templates\simple\router\router.js" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/router/router.js" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\node_modules\simple-coder\templates\simple\view\add.html" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/view/add.html" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\node_modules\simple-coder\templates\simple\view\edit.html" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/view/edit.html" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\node_modules\simple-coder\templates\simple\view\mainview.html" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/view/mainview.html" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\templates\simple\config\require_config.js" afterPath="$PROJECT_DIR$/templates/h5/simple/config/require_config.js" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\templates\simple\controller\add.js" afterPath="$PROJECT_DIR$/templates/h5/simple/controller/add.js" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\templates\simple\controller\edit.js" afterPath="$PROJECT_DIR$/templates/h5/simple/controller/edit.js" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\templates\simple\controller\main.js" afterPath="$PROJECT_DIR$/templates/h5/simple/controller/main.js" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\templates\simple\layout\accordion-menu-outlook.ejs" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/layout/accordion-menu-outlook.ejs" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\templates\simple\layout\accordion-menu.ejs" afterPath="$PROJECT_DIR$/templates/h5/simple/layout/accordion-menu.ejs" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\templates\simple\layout\breadcrumb.ejs" afterPath="$PROJECT_DIR$/node_modules/simple-coder/templates/h5/simple/layout/breadcrumb.ejs" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\templates\simple\layout\navbar.ejs" afterPath="$PROJECT_DIR$/templates/h5/simple/layout/navbar.ejs" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\templates\simple\model\model.js" afterPath="$PROJECT_DIR$/templates/h5/simple/model/model.js" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\templates\simple\router\router.js" afterPath="$PROJECT_DIR$/templates/h5/simple/router/router.js" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\templates\simple\view\add.html" afterPath="$PROJECT_DIR$/templates/h5/simple/view/add.html" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\templates\simple\view\edit.html" afterPath="$PROJECT_DIR$/templates/h5/simple/view/edit.html" />
+      <change type="MOVED" beforePath="D:\program\h5\framework\SimpleCoder\templates\simple\view\mainview.html" afterPath="$PROJECT_DIR$/templates/h5/simple/view/mainview.html" />
     </list>
     <ignored path="SimpleCoder.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,7 +165,7 @@
         <entry file="file://$PROJECT_DIR$/cli.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+              <caret line="143" column="20" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -48,57 +175,17 @@
         <entry file="file://$PROJECT_DIR$/coder.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <caret line="70" column="4" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="db.json" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/db.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.785714">
-              <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.js">
+      <file leaf-file-name="common_creator.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/common_creator.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="json_db.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/json_db.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Product.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/Product.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/modules/User.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <caret line="105" column="12" selection-start-line="105" selection-start-column="12" selection-end-line="105" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -107,18 +194,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0959596">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="server_creator.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/server_creator.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="188" column="0" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.24728851">
+              <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -128,7 +205,27 @@
         <entry file="file://$PROJECT_DIR$/server/routes/soa_router.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="server_creator.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/generators/server_creator.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="68" column="2" selection-start-line="68" selection-start-column="2" selection-end-line="68" selection-end-column="2" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web_creator.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/generators/web_creator.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-24.7">
+              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -148,17 +245,29 @@
         <option value="$PROJECT_DIR$/modules/main.js" />
         <option value="$PROJECT_DIR$/lib/db.json" />
         <option value="$PROJECT_DIR$/templates/nodejs/router/soa_router_module.js" />
-        <option value="module.js" />
         <option value="$PROJECT_DIR$/node_modules/simple-coder/templates/nodejs/router/soa_router_module.js" />
         <option value="$PROJECT_DIR$/server/routes/soa_router.js" />
-        <option value="$PROJECT_DIR$/lib/json_db.js" />
-        <option value="$PROJECT_DIR$/modules/Product.js" />
-        <option value="$PROJECT_DIR$/modules/User.js" />
         <option value="$PROJECT_DIR$/index.js" />
+        <option value="$PROJECT_DIR$/node_modules/simple-coder/modules/Product.js" />
+        <option value="$PROJECT_DIR$/node_modules/simple-coder/modules/faq.js" />
+        <option value="$PROJECT_DIR$/modules/faq.js" />
+        <option value="$PROJECT_DIR$/modules/User.js" />
+        <option value="$PROJECT_DIR$/modules/Product.js" />
+        <option value="$PROJECT_DIR$/testa/modules/db.json" />
+        <option value="$PROJECT_DIR$/cli.js" />
+        <option value="$PROJECT_DIR$/lib/web_creator.js" />
+        <option value="$PROJECT_DIR$/testa/server/routes/soa_router.js" />
+        <option value="$PROJECT_DIR$/lib/server_creator.js" />
+        <option value="$PROJECT_DIR$/lib/xtools.js" />
+        <option value="module.js" />
+        <option value="$PROJECT_DIR$/web/bin/www.js" />
+        <option value="$PROJECT_DIR$/web/bin/app.js" />
+        <option value="$PROJECT_DIR$/lib/json_db.js" />
         <option value="$PROJECT_DIR$/modules/db.json" />
         <option value="$PROJECT_DIR$/coder.js" />
-        <option value="$PROJECT_DIR$/lib/server_creator.js" />
-        <option value="$PROJECT_DIR$/cli.js" />
+        <option value="$PROJECT_DIR$/lib/generators/server_creator.js" />
+        <option value="$PROJECT_DIR$/lib/common_creator.js" />
+        <option value="$PROJECT_DIR$/lib/generators/web_creator.js" />
         <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
@@ -197,6 +306,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -226,7 +336,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -240,33 +350,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
+              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="nodejs" />
+              <option name="myItemId" value="resource" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="router" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="nodejs" />
+              <option name="myItemId" value="user" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -280,25 +372,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
+              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="routes" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
+              <option name="myItemId" value="resource" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
+              <option name="myItemId" value="product" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -312,33 +394,26 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
+              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
+              <option name="myItemId" value="resource" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="faq" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../react/SimpleReact" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SimpleCoderCli" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="recentsLimit" value="5" />
@@ -347,14 +422,21 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\program\h5\framework\SimpleCoder\node_modules\simple-coder\templates\nodejs\router" />
-      <recent name="D:\program\h5\framework\SimpleCoder\templates\nodejs\router" />
-      <recent name="D:\program\h5\framework\SimpleCoder\modules" />
-      <recent name="D:\program\h5\framework\SimpleCoder\node_modules\simple-coder\modules" />
+      <recent name="D:\program\h5\framework\SimpleCoder\node_modules\simple-coder\lib\generators" />
       <recent name="D:\program\h5\framework\SimpleCoder\node_modules\simple-coder" />
+      <recent name="D:\program\h5\framework\SimpleCoder" />
+      <recent name="D:\program\h5\framework\SimpleCoder\node_modules\simple-coder\templates\nodejs" />
+      <recent name="D:\program\h5\framework\SimpleCoder\node_modules\simple-coder\templates\h5\simple\router" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\program\h5\framework\SimpleCoder\lib" />
+      <recent name="D:\program\h5\framework\SimpleCoder\lib\generators" />
+      <recent name="D:\program\h5\framework\SimpleCoder" />
+      <recent name="D:\program\h5\framework\SimpleCoder\templates\h5\simple\webFramework" />
+      <recent name="D:\program\h5\framework\SimpleCoder\templates\h5" />
     </key>
   </component>
-  <component name="RunManager" selected="Node.js.coder test">
+  <component name="RunManager" selected="Node.js.coder generateLocalTest">
     <configuration default="false" name="coder.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="D:/install/nodejs4/node" path-to-js-file="coder.js" application-parameters="-g server-nodejs" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
@@ -402,14 +484,18 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="coder test" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="D:/install/nodejs4/node" path-to-js-file="coder.js" application-parameters="-g server-nodejs file" working-dir="$PROJECT_DIR$">
+    <configuration default="false" name="coder generateByDB" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="D:/install/nodejs4/node" path-to-js-file="coder.js" application-parameters="-g server-nodejs db  --verbose" working-dir="$PROJECT_DIR$">
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="Node.js.coder test" />
-      <item index="1" class="java.lang.String" itemvalue="Node.js.coder.js" />
-      <item index="2" class="java.lang.String" itemvalue="Node.js.json_db.js" />
-      <item index="3" class="java.lang.String" itemvalue="Node.js.index.js" />
+    <configuration default="false" name="coder generateLocalTest" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="D:/install/nodejs4/node" path-to-js-file="coder.js" application-parameters="-g  web" working-dir="$PROJECT_DIR$/">
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.coder generateByDB" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.coder generateLocalTest" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.coder.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.json_db.js" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.index.js" />
     </list>
     <recent_temporary>
       <list size="3">
@@ -445,22 +531,22 @@
     <frame x="0" y="0" width="1680" height="1010" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2496955" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32954547" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19610232" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287827" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.325" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43003413" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4852273" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.41069397" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46136364" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5255973" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -471,99 +557,80 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/lib/server_creator.js</url>
-          <line>110</line>
-          <option name="timeStamp" value="11" />
+          <url>file://$PROJECT_DIR$/cli.js</url>
+          <line>164</line>
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/lib/server_creator.js</url>
-          <line>81</line>
-          <option name="timeStamp" value="12" />
+          <url>file://$PROJECT_DIR$/cli.js</url>
+          <line>157</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/lib/generators/server_creator.js</url>
+          <line>152</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/lib/common_creator.js</url>
+          <line>105</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/lib/common_creator.js</url>
+          <line>108</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/lib/generators/web_creator.js</url>
+          <line>233</line>
+          <option name="timeStamp" value="59" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/lib/generators/web_creator.js</url>
+          <line>220</line>
+          <option name="timeStamp" value="60" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/lib/common_creator.js</url>
+          <line>110</line>
+          <option name="timeStamp" value="61" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/lib/generators/web_creator.js</url>
+          <line>180</line>
+          <option name="timeStamp" value="63" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/lib/generators/web_creator.js</url>
+          <line>222</line>
+          <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/coder.js</url>
+          <line>70</line>
+          <option name="timeStamp" value="67" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/lib/generators/web_creator.js</url>
+          <line>98</line>
+          <option name="timeStamp" value="68" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/lib/generators/web_creator.js</url>
+          <line>99</line>
+          <option name="timeStamp" value="69" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="16" />
+      <option name="time" value="70" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/simple-coder/templates/nodejs/router/soa_router_module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes/User.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/simple-coder/templates/nodejs/router/soa_router_module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="44" selection-start-line="14" selection-start-column="44" selection-end-line="14" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/simple-coder/templates/nodejs/router/soa_router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/server_creator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="129" column="4" selection-start-line="129" selection-start-column="4" selection-end-line="129" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/nodejs/router/soa_router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/simple-coder/templates/nodejs/router/web_router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cli.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="166" column="3" selection-start-line="166" selection-start-column="3" selection-end-line="166" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/code_tools.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/coder.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/extjs/view/Form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -586,19 +653,19 @@
       <provider editor-type-id="MultiMarkdownFxHtmlEditor">
         <state />
       </provider>
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
         </state>
       </provider>
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/server_creator.js">
+    <entry file="file://$PROJECT_DIR$/lib/generators/server_creator.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="191" column="32" selection-start-line="191" selection-start-column="32" selection-end-line="191" selection-end-column="32" />
@@ -610,44 +677,16 @@
       <provider editor-type-id="MultiMarkdownFxHtmlEditor">
         <state />
       </provider>
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
         </state>
       </provider>
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/extjs/view/Form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/nodejs/router/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/simple-coder/templates/extjs/view/Form.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/extjs/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.178572">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="30" selection-end-column="0" />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/lowdb/package.json">
@@ -657,91 +696,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/simple-coder/modules/main.js">
+    <entry file="file://$PROJECT_DIR$/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
+          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/faq.js">
+    <entry file="file://$PROJECT_DIR$/modules/User.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <caret line="7" column="15" selection-start-line="7" selection-start-column="15" selection-end-line="7" selection-end-column="15" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/simple-coder/modules/faq.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/model/Product.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/model/User.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="29" selection-start-line="9" selection-start-column="29" selection-end-line="9" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/code_tools.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="48" selection-start-line="17" selection-start-column="3" selection-end-line="17" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/nodejs/router/soa_router_module.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/nodejs/router/soa_router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="61" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/simple-coder/templates/nodejs/router/soa_router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/simple-coder/templates/nodejs/router/web_router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/simple-coder/templates/simple/view/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/simple-coder/templates/simple/view/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/simple-coder/templates/simple/view/mainview.html">
+    <entry file="file://$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/application/accordion-menu.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -749,7 +720,113 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node_modules/simple-coder/templates/simple/model/model.js">
+    <entry file="file://$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/application/accordion-menu-outlook.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/application/breadcrumb.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/h5/simple/frameworkfiles/views/common/application/navbar.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#nav#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.142858">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/model/faq.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/model/user.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/model/product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/faq.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/routes/product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="52" selection-start-line="19" selection-start-column="52" selection-end-line="19" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/Product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/faq.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="13" column="1" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/code_tools.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/xtools.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/simple-coder/templates/nodejs/router/soa_router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -760,55 +837,25 @@
     <entry file="file://$PROJECT_DIR$/node_modules/simple-coder/templates/nodejs/router/soa_router_module.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes/Product.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes/User.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/routes/soa_router.js">
+    <entry file="file://$PROJECT_DIR$/node_modules/simple-coder/templates/nodejs/router/web_router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/User.js">
+    <entry file="file://$PROJECT_DIR$/modules/db.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/Product.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+        <state vertical-scroll-proportion="-3.392857">
+          <caret line="107" column="1" selection-start-line="107" selection-start-column="1" selection-end-line="107" selection-end-column="1" />
           <folding />
         </state>
       </provider>
@@ -816,31 +863,23 @@
     <entry file="file://$PROJECT_DIR$/lib/json_db.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+          <caret line="19" column="25" selection-start-line="19" selection-start-column="25" selection-end-line="19" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/db.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.785714">
-          <caret line="10" column="58" selection-start-line="10" selection-start-column="58" selection-end-line="10" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/server_creator.js">
+    <entry file="file://$PROJECT_DIR$/lib/code.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="188" column="0" selection-start-line="188" selection-start-column="0" selection-end-line="188" selection-end-column="0" />
+          <caret line="447" column="1" selection-start-line="439" selection-start-column="0" selection-end-line="447" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/coder.js">
+    <entry file="file://$PROJECT_DIR$/server/routes/soa_router.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <caret line="9" column="32" selection-start-line="9" selection-start-column="32" selection-end-line="9" selection-end-column="32" />
           <folding />
         </state>
       </provider>
@@ -848,15 +887,47 @@
     <entry file="file://$PROJECT_DIR$/cli.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="165" column="0" selection-start-line="165" selection-start-column="0" selection-end-line="165" selection-end-column="0" />
+          <caret line="143" column="20" selection-start-line="143" selection-start-column="20" selection-end-line="143" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/server_creator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="68" column="2" selection-start-line="68" selection-start-column="2" selection-end-line="68" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/coder.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="4" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/common_creator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="105" column="12" selection-start-line="105" selection-start-column="12" selection-end-line="105" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/web_creator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.7">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0959596">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.24728851">
+          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
           <folding />
         </state>
       </provider>

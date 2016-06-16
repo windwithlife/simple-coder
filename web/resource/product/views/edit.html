@@ -1,0 +1,53 @@
+<script id ='MainTemplate' type="text/simple-template">
+
+        <div class="panel panel-default">
+            <div class="box-header with-border">
+                <h3 class="box-title">product</h3>
+            </div><!-- /.box-header -->
+            <!-- form start -->
+            <div role="form">
+                <div class="box-body">
+
+                    
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">编号</label>
+                        <input type="text" value ="<%=data._id%>" class="form-control" id="edit-_id" placeholder="Enter email">
+                    </div>
+                    
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">名称</label>
+                        <input type="text" value ="<%=data.name%>" class="form-control" id="edit-name" placeholder="Enter email">
+                    </div>
+                    
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">性别</label>
+                        <input type="text" value ="<%=data.sex%>" class="form-control" id="edit-sex" placeholder="Enter email">
+                    </div>
+                    
+
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">年龄</label>
+                        <input type="text" value ="<%=data.age%>" class="form-control" id="edit-age" placeholder="Enter email">
+                    </div>
+                    
+
+
+
+                    <div class="form-group">
+                        <label for="exampleInputFile">File input</label>
+                        <input type="file" id="exampleInputFile">
+                        <p class="help-block">Example block-level help text here.</p>
+                    </div>
+
+                </div><!-- /.box-body -->
+
+                <div class="box-footer">
+                    <button class="btn btn-primary btn-saveUpdate">保存修改</button>
+                </div>
+            </div>
+        </div><!-- /.box -->
+
+</script>

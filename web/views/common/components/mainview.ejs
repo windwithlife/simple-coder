@@ -1,0 +1,92 @@
+<div class="panel panel-default ">
+    <div class="panel panel-default">
+        <div class="panel-heading clearfix">
+            <div class="pull-right">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-default dropdown-toggle active" data-toggle="dropdown">
+                        Filter By Disabled <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Filter by Account Status</a></li>
+                        <li><a href="#">Filter by Department</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Reset</a></li>
+                    </ul>
+                </div>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                        Sort By FirstName <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu pull-right" role="menu">
+                        <li><a href="#">Sort by FirstName</a></li>
+                        <li><a href="#">Sort by Email</a></li>
+                        <li class="divider"></li>
+                        <li><a href="#">Reset</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pull-left">
+                <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#newPopUp" data-backdrop="static">AddNew
+                </button>
+                <button class="btn btn-sm btn-warning" data-toggle="infomodal" data-target="#DisabledPopup"
+                        data-backdrop="static">Edit
+                </button>
+                <button class="btn btn-sm btn-danger">Delete</button>
+            </div>
+        </div>
+        <!--the end of panel-heading-->
+
+
+        <table id="List" class="table table-bordered table-hover cc">
+            <thead>
+            <tr class="">
+                <td class="text-center">
+                    <input type="checkbox"/></td>
+                <td class="text-center">ID</td>
+                <td>Name</td>
+                <td>Birthday</td>
+                <td>Email</td>
+                <td>Phone Number</td>
+                <td class="col-lg-3">Action</td>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td class="text-center">
+                    <input type="checkbox"/></td>
+                <td class="text-center">1</td>
+                <td>Tom Xu</td>
+                <td>1982-11-11</td>
+                <td>tomxu@outlook.com</td>
+                <td>135816xx8888</td>
+                <td>
+                    <button class="btn  btn-xs btn-info" data-toggle="modal" data-target="#rolePopUp"><span
+                                class="glyphicon glyphicon-list"></span>Info
+                    </button>
+                    <button class="btn  btn-xs btn-success"><span class="glyphicon glyphicon-user"></span>Role</button>
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-xs btn-primary dropdown-toggle" data-toggle="dropdown">
+                            More <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+                    </div>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <ul class="pager">
+
+        <li><a href="#">上一页</a></li>
+        <li><a href="#">下一页</a></li>
+
+    </ul>
+
+</div>

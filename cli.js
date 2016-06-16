@@ -5,6 +5,7 @@ var path = require('path');
 var exec = require('child_process').exec;
 var spawn = require('child_process').spawn;
 var prompt = require('prompt');
+var xtools = require('./lib/xtools');
 var NPM = (process.platform === 'win32') ? 'npm.cmd' : 'npm';
 
 
@@ -43,7 +44,7 @@ switch (commands[0]) {
             );
             process.exit(1);
         } else {
-            generator(commands[1], argv.indexOf('--verbose')>-1);
+            generator(commands[1], commands[2],argv.indexOf('--verbose')>-1);
         }
         break;
     case 'clean':
@@ -93,8 +94,7 @@ function createProject(name, verbose) {
     var projectName = path.basename(root);
 
     console.log(
-        'in progress to setup package.json ....',
-        root
+        'in progress to setup package.json ....' + "root:" + root +"projectName:" + projectName
     );
 
     if (!fs.existsSync(root)) {
@@ -125,6 +125,8 @@ function createProject(name, verbose) {
 
 function run(root, projectName, verbose) {
 
+    console.log('run env is-----' + "[root]:" + root +" [projectName]:" + projectName);
+
     //安装simple-coder组件及其依赖库
     verboseCommand =  verbose ? ' --verbose':'';
     var install = spawn(NPM, ['install', '--verbose', '--save','simple-coder'], {stdio: 'inherit'});
@@ -135,25 +137,32 @@ function run(root, projectName, verbose) {
             return;
         }
 
+        xtools.copyDir('./node_modules/simple-coder/modules/','./modules/');
+        console.log("hello,simple-coder.....!");
         //生成初始化
-        exec('node node_modules/simple-coder/coder.js init '+projectName + verboseCommand, function(e, stdout, stderr){
+        exec('node node_modules/simple-coder/coder.js init ' + projectName + verboseCommand, function(e, stdout, stderr){
             if (e) {
-                console.error('generate react-native project failed');
                 console.error(e)
                 process.exit(1);
             }
             stderr && console.warn(stderr);
             console.log("hello,simple-coder.....!");
 
+
         });
+
     });
 }
-function generator(cmdOptions, verbose) {
+//生成代码
+function generator(projectType, config, verbose) {
+     if ((!config)||(config=="--verbose")){config = "db"};
 
-    //生成代码
     verboseCommand =  verbose ? ' --verbose':'';
+    var cmdString ='node node_modules/simple-coder/coder.js -g '+ projectType + " "+ config + verboseCommand;
+    console.log("command String:---" +cmdString);
     console.log("begin to create code....");
-    exec('node node_modules/simple-coder/coder.js -g '+cmdOptions + verboseCommand, function(e, stdout, stderr){
+
+    exec(cmdString, function(e, stdout, stderr){
         if (e) {
             console.error('generate code failed');
             console.error(e)

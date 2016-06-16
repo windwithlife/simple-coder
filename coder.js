@@ -4,9 +4,15 @@ var fs = require('fs');
 var path = require('path');
 var exec = require('child_process').exec;
 var spawn = require('child_process').spawn;
-var xcoder = require('./lib/server_creator');
+var mainGenerator = require('./lib/common_creator');
 
-
+var promptMessage =
+    'Usage: simple-coder -g [options] [--verbose] \n'+
+    '[options]: \n'+
+    "server-nodejs: create nodejs server code \n"+
+    "server-java: create nodejs server code \n"+
+    "js-web: create nodejs server code \n" +
+    "js-react: create nodejs server code \n";
 
 
 //程序启动代码
@@ -23,9 +29,7 @@ if (commands.length === 0) {
 switch (commands[0]) {
     case 'init':
         if (!commands[1]) {
-            console.error(
-                'Usage: simple-coder init <ProjectName> [--verbose]'
-            );
+            console.error('Usage: simple-coder init <ProjectName> [--verbose]');
             process.exit(1);
         } else {
             init(commands[1], argv.indexOf('--verbose')>-1);
@@ -33,14 +37,9 @@ switch (commands[0]) {
         break;
     case '-g':
         if (!commands[1]) {
-            console.error(
-                'Usage: simple-coder -g [options] [--verbose] \n'+
-                '[options]: \n'+
-                "server-nodejs: create nodejs server code \n"+
-                "server-java: create nodejs server code \n"+
-                "js-web: create nodejs server code \n" +
-                "js-react: create nodejs server code \n"
-            );
+            console.error(promptMessage);
+            //console.error(mainGenerator.generatorPromptMsg());
+
             process.exit(1);
         } else {
             generator(commands[1], commands[2],argv.indexOf('--verbose')>-1);
@@ -59,19 +58,29 @@ switch (commands[0]) {
 }
 
 function init(name, verbose) {
+    generator("server-nodejs","all");
    console.log('initialize the project env!');
 }
 
-
 function generator(cmdOptions,config, verbose) {
+    //生成代码
+    verboseCommand = verbose ? ' --verbose' : '';
+    if ((!config)||(config.indexOf('--verbose')>-1)){
+        config = "all";
+    }
+    mainGenerator.generateCode(cmdOptions, config, verboseCommand);
+}
+/*function generator(cmdOptions,config, verbose) {
 
     //生成代码
     verboseCommand =  verbose ? ' --verbose':'';
     switch (cmdOptions) {
         case 'server-nodejs':
-            xcoder.generateServer(config);
+            serverCoder.generateServer(config);
             break;
-
+        case 'web-nodejs':
+            webCoder.generateServer(config);
+            break;
         case 'clean':
             //cleanBoilerplate();
             break;
@@ -83,4 +92,4 @@ function generator(cmdOptions,config, verbose) {
             process.exit(1);
             break;
     }
-}
+}*/
