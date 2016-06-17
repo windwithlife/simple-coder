@@ -133,7 +133,7 @@ function run(root, projectName, verbose) {
     install.on('close', function (code) {
         if (code !== 0) {
             console.error('`npm install --save react-native` failed');
-            console.error(code)
+            console.error(code);
             return;
         }
 
