@@ -9,7 +9,7 @@ npm config set registry http://npm.dev.sh.ctripcorp.com:8001/
 npm config set registry http://registry.npmjs.org/
 ```
 3.全局安装simple-react
-```
+
 npm install -g simple-react
 ```
 4.在根目录运行

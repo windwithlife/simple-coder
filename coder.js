@@ -4,6 +4,7 @@ var fs = require('fs');
 var path = require('path');
 var exec = require('child_process').exec;
 var spawn = require('child_process').spawn;
+var NPM = (process.platform === 'win32') ? 'npm.cmd' : 'npm';
 var mainGenerator = require('./lib/common_creator');
 
 var promptMessage =
@@ -38,8 +39,6 @@ switch (commands[0]) {
     case '-g':
         if (!commands[1]) {
             console.error(promptMessage);
-            //console.error(mainGenerator.generatorPromptMsg());
-
             process.exit(1);
         } else {
             generator(commands[1], commands[2],argv.indexOf('--verbose')>-1);
@@ -59,7 +58,8 @@ switch (commands[0]) {
 
 function init(name, verbose) {
     generator("server-nodejs","all");
-   console.log('initialize the project env!');
+    //createProject("client",verbose);
+    console.log('initialize the project env!');
 }
 
 function generator(cmdOptions,config, verbose) {
@@ -70,26 +70,3 @@ function generator(cmdOptions,config, verbose) {
     }
     mainGenerator.generateCode(cmdOptions, config, verboseCommand);
 }
-/*function generator(cmdOptions,config, verbose) {
-
-    //生成代码
-    verboseCommand =  verbose ? ' --verbose':'';
-    switch (cmdOptions) {
-        case 'server-nodejs':
-            serverCoder.generateServer(config);
-            break;
-        case 'web-nodejs':
-            webCoder.generateServer(config);
-            break;
-        case 'clean':
-            //cleanBoilerplate();
-            break;
-        default:
-            console.error(
-                'Command `%s` unrecognized. ' +
-                'Please visit Readme.md file'
-            );
-            process.exit(1);
-            break;
-    }
-}*/
