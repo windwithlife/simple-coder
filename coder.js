@@ -57,8 +57,11 @@ switch (commands[0]) {
 }
 
 function init(name, verbose) {
+    mainGenerator.initProject(name);
+
     generator("server-nodejs","all");
     generator("web","all");
+    generator("react","all");
     //createProject("client",verbose);
     //xtools.copyDir('./node_modules/simple-coder/modules/','./modules/');
     console.log('initialize the project env!');
