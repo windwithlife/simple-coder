@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+encoding//src/main/java=UTF-8
+encoding//src/main/java/com/simple/base/components/nio/framework/NettyServer.java=UTF-8
+encoding//src/main/java/com/simple/base/utils/FileUtils.java=UTF-8
+encoding//src/main/resources=UTF-8
+encoding//src/main/resources/public/admin/iot/deviceType/templates/add.html=UTF-8
+encoding//src/main/resources/public/admin/iot/deviceType/templates/edit2.html=UTF-8
+encoding//src/main/resources/public/admin/iot/deviceType/templates/info.html=UTF-8
+encoding//src/main/resources/public/admin/iot/deviceType/templates/mainview.html=UTF-8
+encoding//src/main/resources/public/admin/iot/templates/test.html=UTF-8
+encoding//src/main/resources/public/admin/user/role/templates/home.html=UTF-8
+encoding//src/main/resources/public/admin/user/user/templates/home.html=UTF-8
+encoding//src/main/resources/templates/layout/footer-charisma.html=UTF-8
+encoding//src/main/resources/templates/layout/layout-ch.html=UTF-8
+encoding//src/test/java=UTF-8
+encoding/<project>=UTF-8

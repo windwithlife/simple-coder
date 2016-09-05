@@ -1,0 +1,113 @@
+<script id ='MainTemplate' type="text/simple-template">
+<div class="panel panel-default ">
+    <div class="panel panel-default">
+        <div class="panel-heading clearfix">
+            <div class="pull-right">
+                    <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
+                        按属性排序 <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu pull-right" role="menu">
+                        <li><a href="#">按名称</a></li>
+                        <li><a href="#">按描述</a></li>
+                        <li><a href="#">恢复缺省排序</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="pull-left">
+                <a href="#add">
+                <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#newPopUp" data-backdrop="static">
+                    <span class="glyphicon glyphicon-plus"></span>新增
+                </button>
+                    </a>
+                <button class="btn btn-sm btn-danger btn-rows-remove"><span class="glyphicon glyphicon-remove"></span>删除</button>
+            </div>
+        </div>
+        <!--the end of panel-heading-->
+
+
+        <table id="List" class="table table-bordered table-hover cc">
+            <thead>
+            <tr class="">
+                <td class="text-center">
+                    <input type="checkbox" class ="checked-all-unchecked"/></td>
+
+                
+                <td>设备名称</td>
+                <td>设备型号</td>
+               
+                <td>设备描述</td>
+               
+                <td>设备图片路径</td>
+                <td>设备图片预览</td>
+               
+
+                <td class="col-lg-3">操作</td>
+            </tr>
+            </thead>
+            <tbody>
+<%_.each(data,function(v,k){
+
+            %>
+
+
+            <tr>
+                <td class="text-center">
+                    <input type="checkbox" name="checkbox" value="<%=v.id%>"/></td>
+
+                
+                <td><%-v.name%></td>
+                <td><%-v.model%></td>
+                
+                <td><%-v.des%></td>
+                
+                <td><%-v.pic%></td>
+                <td><img src="<%-v.pic%>" style="heigth:50px;width:50px" /></td>
+                
+                <td>
+
+
+                    <a  href="#info?id=<%=v.id%>" class="btn  btn-xs btn-info">
+                        <span class="glyphicon glyphicon-list"></span>详情
+                    </a>
+                    <a  href="#edit?id=<%=v.id%>" class="btn  btn-xs btn-primary">
+                        <span class="glyphicon glyphicon-pencil"></span>编辑
+                    </a>
+                    <a  href="#" class="btn  btn-xs btn-warning btn-row-remove" data-id="<%=v.id%>" >
+                        <span class="glyphicon glyphicon-remove"></span>删除
+                    </a>
+                    <a  href="#add" class="btn  btn-xs btn-primary">
+                        <span class="glyphicon glyphicon-plus"></span>新增
+                    </a>
+
+
+                </td>
+            </tr>
+            <%});%>
+            </tbody>
+        </table>
+    </div>
+    <ul class="pager">
+
+        <li><a href="#">上一页</a></li>
+        <li><a href="#">下一页</a></li>
+
+    </ul>
+
+</div>
+
+<div class="modal small hide fade" id="remvoePopUp" role="dialog">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">脳</button>
+        <h3 id="myModalLabel">Delete Confirmation</h3>
+    </div>
+    <div class="modal-body">
+        <p class="error-text"><i class="icon-warning-sign modal-icon"></i>Are you sure you want to delete the data?</p>
+    </div>
+    <div class="modal-footer">
+        <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+        <button class="btn btn-danger" data-dismiss="modal">Delete</button>
+    </div>
+</div>
+    </script>
+
