@@ -7,6 +7,7 @@ var spawn = require('child_process').spawn;
 var NPM = (process.platform === 'win32') ? 'npm.cmd' : 'npm';
 var mainGenerator = require('./lib/common_creator');
 
+/*
 var promptMessage =
     'Usage: simple-coder -g [options] [--verbose] \n'+
     '[options]: \n'+
@@ -14,8 +15,9 @@ var promptMessage =
     "server-java: create nodejs server code \n"+
     "js-web: create nodejs server code \n" +
     "js-react: create nodejs server code \n";
+*/
 
-
+/*
 //程序启动代码
 var argv = process.argv;
 var commands = argv.slice(2);
@@ -55,15 +57,13 @@ switch (commands[0]) {
         process.exit(1);
         break;
 }
-
+*/
 function init(name, verbose) {
     mainGenerator.initProject(name);
 
-    generator("server-nodejs","all");
-    generator("web","all");
-    generator("react","all");
-    //createProject("client",verbose);
-    //xtools.copyDir('./node_modules/simple-coder/modules/','./modules/');
+    //generator("server-nodejs","all");
+    //generator("web","all");
+    //generator("react","all");
     console.log('initialize the project env!');
 }
 
@@ -75,3 +75,7 @@ function generator(cmdOptions,config, verbose) {
     }
     mainGenerator.generateCode(cmdOptions, config, verboseCommand);
 }
+
+module.exports.init = init;
+module.exports.generate = generator;
+module.exports.usage = mainGenerator.generatorPromptMsg();

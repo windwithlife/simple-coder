@@ -2,25 +2,26 @@
  * Created by zhangyq on 2016/4/12.
  */
 define(['model'],function(model){
-    var rootPath = '/autoapi/';
-
+    var myModel =  model.extend(model, {
+        url: "/api/v1/pages/getPageHomeInfo"
+    });
     var query = function(cb){
-        model.get(rootPath + "<%=data.moduleName%>s/",{},cb);
+        model.get("/api/v1/<%=data.moduleName%>/query",{},cb);
     };
     var queryByParams = function(params, cb){
-        model.get(rootPath + "<%=data.moduleName%>/query",params,cb);
+        model.get("/api/v1/<%=data.moduleName%>/query",params,cb);
     };
     var queryById  = function(params,cb){
-        model.get(rootPath +  "<%=data.moduleName%>/queryById",params, cb);
+        model.get("/api/v1/<%=data.moduleName%>/queryById",params, cb);
     };
     var update = function(params,cb){
-        model.post(rootPath + "<%=data.moduleName%>/update",params,cb);
+        model.post("/api/v1/<%=data.moduleName%>/update",params,cb);
     };
     var remove = function(params,cb){
-        model.post( rootPath +  "<%=data.moduleName%>/remove",params,cb);
+        model.post("/api/v1/<%=data.moduleName%>/remove",params,cb);
     };
     var add = function(params,cb){
-        model.post(rootPath + "<%=data.moduleName%>/createNew",params,cb);
+        model.post("/api/v1/<%=data.moduleName%>/createNew",params,cb);
     };
     return{
         query:query,

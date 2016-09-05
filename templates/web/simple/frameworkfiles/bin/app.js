@@ -1,36 +1,36 @@
 var express = require('express');
-//var session = require('express-session');
+var session = require('express-session');
 var path = require('path');
 var favicon = require('serve-favicon');
 var logger = require('morgan');
-//var compression = require("compression");
+var compression = require("compression");
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-//var cors = require('cors');
-//var webRouter = require('./routes/pages/web_router');
-//var apiRouter = require('./routes/api/api_router_v1');
-//var soaRouter = require('./routes/api/soa_router');
+var cors = require('cors');
+var webRouter = require('./routes/pages/web_router');
+var apiRouter = require('./routes/api/api_router_v1');
+var soaRouter = require('./routes/api/soa_router');
 var webRouterAuto = require('./routes/pages/auto_web_router');
-//var users = require('./routes/pages/users');
+var users = require('./routes/pages/users');
 //var test = require('./routes/pages/test');
 
-//var dbManager = require("./models/database/db-manager");
+var dbManager = require("./models/database/db-manager");
 
 var app = express();
 //init database
-//dbManager.initDB();
+dbManager.initDB();
 
-/*/config the session
+//config the session
 var sOption = {
     secret: '12345',
     name: 'testapp',   //这里的name值得是cookie的name，默认cookie的name是：connect.sid
     cookie: {maxAge: 80000},  //设置maxAge是80000ms，即80s后session和相应的cookie失效过期
     resave: false,
     saveUninitialized: true,
-};*/
+};
 
 
-//app.use(session(sOption));
+app.use(session(sOption));
 //app.use(express.session({secret: "test"}));
 
 // view engine setup
@@ -56,12 +56,12 @@ app.use(express.static(path.join(__dirname, 'web')));
 
 //app.use("/work",test);
 //app.use(users.authUserPower);
-//app.use('/api/v1',  apiRouter); //支持跨域访问CORS.
-//app.use('/api/v1',  soaRouter); //支持跨域访问CORS.
+app.use('/api/v1',  apiRouter); //支持跨域访问CORS.
+app.use('/api/v1',  soaRouter); //支持跨域访问CORS.
 
 //app.use('/api/v1', apiRouter);
 app.use('/', webRouterAuto);
-//app.use('/', webRouter);
+app.use('/', webRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
