@@ -1,6 +1,6 @@
 {
   "name": "simple-coder",
-  "version": "0.2.15",
+  "version": "0.2.17",
   "description": "tool to generate code and framework",
   "directories": {
     "lib": "lib"
