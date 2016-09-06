@@ -1,4 +1,4 @@
-package com.simple.base.bz.iot.controller;
+package <%=data.packageName%>.controller;
 
 import java.util.List;
 
@@ -12,8 +12,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.simple.base.bz.entity.*;
-import com.simple.base.bz.service.*;
+import <%=data.packageName%>.entity.*;
+import <%=data.packageName%>.service.*;
 
 
 import io.swagger.annotations.ApiImplicitParam;
@@ -25,7 +25,6 @@ public class <%=data.moduleName%>Controller {
 	@Autowired
 	<%=data.moduleName%>Service service;
 
-	@ApiOperation(value = "设备列表", notes = "获取所有设备类型列表")
 
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	@ResponseBody

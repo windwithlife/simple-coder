@@ -1,4 +1,4 @@
-package com.simple.base.bz.entity;
+package <%=data.packageName%>.entity;
 
 import java.io.Serializable;
 

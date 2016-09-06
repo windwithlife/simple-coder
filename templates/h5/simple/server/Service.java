@@ -1,11 +1,11 @@
-package com.simple.base.bz.service;
+package <%=data.packageName%>.service;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import com.simple.base.bz.dao.*;
-import com.simple.base.bz.entity.*;
+import <%=data.packageName%>.dao.*;
+import <%=data.packageName%>.entity.*;
 
 
 @Service
