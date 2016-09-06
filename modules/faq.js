@@ -7,8 +7,8 @@ module.exports  =
     name: "faq",
     channel:"常见问题与解答",
     fields: {
-        _id: {type: 'string', dName: "编号"},
-        name: {type: 'string', dName: "名称"},
+        id: {type: 'String', dName: "编号"},
+        name: {type: 'String', dName: "名称"},
         age: {type: 'int', dName: "年龄"}
     }
 }
