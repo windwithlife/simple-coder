@@ -13,7 +13,7 @@ public class <%=data.moduleName%>Service {
 	@Autowired
 	<%=data.moduleName%>Repository dao;
 	public List<<%=data.moduleName%>> findAll(){
-		return  deviceItemDao.findAll();
+		return  dao.findAll();
 		//return items;
 	}
 	public <%=data.moduleName%> findById(Long id){

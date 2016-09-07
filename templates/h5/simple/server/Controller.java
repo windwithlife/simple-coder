@@ -42,7 +42,7 @@ public class <%=data.moduleName%>Controller {
 	}
     @ResponseBody
 	@RequestMapping(value = "/save", method = RequestMethod.POST)
-	public <%=data.moduleName%> save(@RequestBody <%=data.moduleName%> item) {
+	public <%=data.moduleName%> save2(@RequestBody <%=data.moduleName%> item) {
 		System.out.println("input device params:" + item.toString());
 		<%=data.moduleName%> result = service.save(item);
 		System.out.println("output device result data:" + result.toString());
@@ -52,7 +52,7 @@ public class <%=data.moduleName%>Controller {
 
     @ResponseBody
  	@RequestMapping(value = "/{id}", method = RequestMethod.PUT)
- 	public <%=data.moduleName%> save(@PathVariable Long id, @RequestBody <%=data.moduleName%> item) {
+ 	public <%=data.moduleName%> update(@PathVariable Long id, @RequestBody <%=data.moduleName%> item) {
  		System.out.println("input device params:" + item.toString());
  		<%=data.moduleName%> result = service.save(item);
  		System.out.println("output device result data:" + result.toString());
@@ -60,27 +60,23 @@ public class <%=data.moduleName%>Controller {
  	}
  	@ResponseBody
    	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
-     	public <%=data.moduleName%> save(@PathVariable Long id) {
-     		System.out.println("input device params:" + item.toString());
-     		<%=data.moduleName%> result = service.findById(id);
-
-     		return result;
-     	}
+    public <%=data.moduleName%> findById(@PathVariable Long id) {
+    	System.out.println("input param Id:" + id);
+    	<%=data.moduleName%> result = service.findById(id);
+   		return result;
+   	}
 
     @ResponseBody
    	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)
-     	public <%=data.moduleName%> save(@PathVariable Long id) {
-			service.remove(id);
-
-     }
-     @ResponseBody
-        	@RequestMapping(value = "/remove/{id}", method = RequestMethod.POST)
-          	public <%=data.moduleName%> save(@PathVariable Long id) {
-     			service.remove(id);
-
-          }
-
-
-
+   	public Long remove(@PathVariable Long id) {
+		service.remove(id);
+        return id;
+    }
+    @ResponseBody
+    @RequestMapping(value = "/remove/{id}", method = RequestMethod.POST)
+    public Long removeById(@PathVariable Long id) {
+    	service.remove(id);
+    	return id;
+    }
 
 }

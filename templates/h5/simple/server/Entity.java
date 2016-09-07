@@ -47,10 +47,10 @@ public class <%=data.moduleName%> implements Serializable {
      %>
      //<%-displayName%>
      public <%=type%> get<%=keyName%>(){
-         return this.<%=keyName%>;
+         return this.<%=field%>;
      };
-     public void set<%=keyName%>(<%=type%> input){
-         this.this.<%=keyName%> = input;
+     public void set<%=keyName%>(<%=type%> <%=field%>){
+         this.<%=field%> = <%=field%>;
      }
      <%}%>
 
