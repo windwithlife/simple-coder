@@ -1,0 +1,102 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.7.3
+3 info using node@v4.1.1
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/ctrip/program/RXSimple/SimpleCoder',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/ctrip/.npm/simple-coder/0.3.8/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/ctrip/.npm correctMkdir not in flight; initializing
+10 info lifecycle simple-coder@0.3.8~prepublish: simple-coder@0.3.8
+11 silly lifecycle simple-coder@0.3.8~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/ctrip/.npm/simple-coder/0.3.8/package.tgz',
+12 verbose tar pack   '/Users/ctrip/program/RXSimple/SimpleCoder' ]
+13 verbose tarball /Users/ctrip/.npm/simple-coder/0.3.8/package.tgz
+14 verbose folder /Users/ctrip/program/RXSimple/SimpleCoder
+15 verbose addLocalTarball adding from inside cache /Users/ctrip/.npm/simple-coder/0.3.8/package.tgz
+16 verbose correctMkdir /Users/ctrip/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd simple-coder@0.3.8
+18 verbose afterAdd /Users/ctrip/.npm/simple-coder/0.3.8/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/ctrip/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/ctrip/.npm/simple-coder/0.3.8/package/package.json written
+21 silly publish { name: 'simple-coder',
+21 silly publish   version: '0.3.8',
+21 silly publish   description: 'tool to generate code and framework',
+21 silly publish   directories: { lib: 'lib' },
+21 silly publish   main: 'index.js',
+21 silly publish   scripts: { test: 'test' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://git.oschina.net/windwithlife/SimpleCoder.git' },
+21 silly publish   keywords: [ 'code generator', 'code tools' ],
+21 silly publish   author: { name: 'joezhang' },
+21 silly publish   license: 'MIT',
+21 silly publish   dependencies:
+21 silly publish    { ejs: '^2.4.2',
+21 silly publish      lodash: '^4.13.1',
+21 silly publish      lowdb: '^0.13.1',
+21 silly publish      prompt: '^1.0.0' },
+21 silly publish   readme: '\r\n\r\n### 环境配置\r\n1. 安装node，npm版本3以上。\r\n2. 把npm指向公司地址，命令行\r\n2.1\r\nnpm config set registry http://npm.dev.sh.ctripcorp.com:8001/\r\n2.2这个是组件原始上传npm库\r\nnpm config set registry http://registry.npmjs.org/\r\n```\r\n3.全局安装simple-react\r\n\r\nnpm install -g simple-react\r\n```\r\n4.在根目录运行\r\n```\r\nnpm install\r\n```\r\n\r\n\r\n### 项目结构\r\n- android,ios,web下分别时项目运行在安卓、苹果、网页平台下的配置文件。\r\n- src下时业务代码\r\n\r\n### 项目打包\r\n- 以下是react native的打包方法，\r\n- [ios打包安装参考](https://segmentfault.com/a/1190000004189538)\r\n- 根文件命令行运行：react-native bundle --entry-file ./index.ios.js --platform ios --bundle-output ./ios/bundle/index.ios.jsbundle --assets-dest ./ios/bundle --dev false\r\n\r\n## 样例：\r\n- 在examples目录下有例子程序，有写好的基本框架，可以参考。\r\n\r\n### FAQ\r\n- Q:当发现以下几种情况时，应该是babel组件问题：\r\n- 1。出现莫名其妙的，图片无法加载，比如require(\'../xxx/yyy.png\'),报错为Unable resolve module "../xxx/yyy.png"...\r\n- 2. 出现常见组件无法找到。 Unable resolve module "react"\r\n  A: 这是因为设置babel处理js时缺省配置有问题。删掉react-deep-force-update组件中的.babelrc就好了。\r\n',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: '6c9a66d5289d61642198892c72784b92c6141236',
+21 silly publish   _id: 'simple-coder@0.3.8',
+21 silly publish   _shasum: 'ddc939fd67f7140227e7c7403af8db8da0cb7bf7',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name simple-coder
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry http://registry.npmjs.org/
+26 silly mapToRegistry uri http://registry.npmjs.org/simple-coder
+27 verbose publish registryBase http://registry.npmjs.org/
+28 silly publish uploading /Users/ctrip/.npm/simple-coder/0.3.8/package.tgz
+29 verbose request uri http://registry.npmjs.org/simple-coder
+30 verbose request sending authorization for write operation
+31 info attempt registry request try #1 at 6:42:29 AM
+32 verbose request using bearer token for auth
+33 verbose request id c0f45f2633a3ae07
+34 http request PUT http://registry.npmjs.org/simple-coder
+35 http 403 http://registry.npmjs.org/simple-coder
+36 verbose headers { 'content-type': 'application/json',
+36 verbose headers   'cache-control': 'max-age=300',
+36 verbose headers   'content-length': '95',
+36 verbose headers   'accept-ranges': 'bytes',
+36 verbose headers   date: 'Tue, 06 Sep 2016 22:42:14 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-lcy1124-LCY',
+36 verbose headers   'x-cache': 'MISS',
+36 verbose headers   'x-cache-hits': '0',
+36 verbose headers   'x-timer': 'S1473201732.162707,VS0,VE2581',
+36 verbose headers   vary: 'Accept-Encoding' }
+37 verbose request invalidating /Users/ctrip/.npm/registry.npmjs.org/simple-coder on PUT
+38 error publish Failed PUT 403
+39 verbose stack Error: "You cannot publish over the previously published version 0.3.8." : simple-coder
+39 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+39 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+39 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+39 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:199:22)
+39 verbose stack     at emitTwo (events.js:87:13)
+39 verbose stack     at Request.emit (events.js:172:7)
+39 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1036:10)
+39 verbose stack     at emitOne (events.js:82:20)
+39 verbose stack     at Request.emit (events.js:169:7)
+39 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:963:12)
+40 verbose statusCode 403
+41 verbose pkgid simple-coder
+42 verbose cwd /Users/ctrip/program/RXSimple/SimpleCoder
+43 error Darwin 14.5.0
+44 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+45 error node v4.1.1
+46 error npm  v3.7.3
+47 error code E403
+48 error "You cannot publish over the previously published version 0.3.8." : simple-coder
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]
