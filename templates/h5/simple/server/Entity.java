@@ -18,9 +18,7 @@ import org.hibernate.annotations.NotFoundAction;
 @Entity
 public class <%=data.moduleName%> implements Serializable {
 	private static final long serialVersionUID = 1L;
-	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	private Long id;
+
     <%
     var  columns = [];
     for (var field in data.moduleDefine){
@@ -28,18 +26,22 @@ public class <%=data.moduleName%> implements Serializable {
            var keyName     = field;
            var displayName = fieldDef.dName;
            var type        = fieldDef.type;
+           if ((field =='id')||(field=='_id')){%>
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    private <%=type%> <%=keyName%>;
+          <% }else{
+
      %>
      //<%-displayName%>
      private <%=type%> <%=keyName%>;
-      <%}%>
-      public <%=data.moduleName%>() {
-
+      <%}}%>
+     public <%=data.moduleName%>() {
 	 }
-
      <%
        for (var field in data.moduleDefine){
            var fieldDef = data.moduleDefine[field];
-           var keyName     = field;
+           var keyName     = data.firstUpper(field);
            var displayName = fieldDef.dName;
            var type        = fieldDef.type;
      %>
