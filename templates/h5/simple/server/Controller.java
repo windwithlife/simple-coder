@@ -26,12 +26,23 @@ public class <%=data.moduleName%>Controller {
 	<%=data.moduleName%>Service service;
 
 
-	@RequestMapping(value = "/", method = RequestMethod.GET)
+
+	@RequestMapping(value= "/", method=RequestMethod.GET)
+    public String rootpage(){
+    	       return "index";
+    }
+	@RequestMapping(value = "/queryAll", method = RequestMethod.GET)
 	@ResponseBody
-	public List<<%=data.moduleName%>> <%=data.moduleName%>s() {
+	public List<<%=data.moduleName%>> findAll() {
 		return service.findAll();
 	}
-
+	@ResponseBody
+    @RequestMapping(value = "/query/{id}", method = RequestMethod.GET)
+    public <%=data.moduleName%> findById(@PathVariable Long id) {
+       	System.out.println("input param Id:" + id);
+       	<%=data.moduleName%> result = service.findById(id);
+    	return result;
+    }
     @ResponseBody
 	@RequestMapping(value = "/", method = RequestMethod.POST)
 	public <%=data.moduleName%> save(@RequestBody <%=data.moduleName%> item) {
@@ -58,13 +69,23 @@ public class <%=data.moduleName%>Controller {
  		System.out.println("output device result data:" + result.toString());
  		return result;
  	}
+
+ 	@ResponseBody
+     	@RequestMapping(value = "/update/{id}", method = RequestMethod.POST)
+     	public <%=data.moduleName%> updateSave(@PathVariable Long id, @RequestBody <%=data.moduleName%> item) {
+     		System.out.println("input device params:" + item.toString());
+     		<%=data.moduleName%> result = service.save(item);
+     		System.out.println("output device result data:" + result.toString());
+     		return result;
+     	}
  	@ResponseBody
    	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public <%=data.moduleName%> findById(@PathVariable Long id) {
+    public <%=data.moduleName%> findOne(@PathVariable Long id) {
     	System.out.println("input param Id:" + id);
     	<%=data.moduleName%> result = service.findById(id);
    		return result;
    	}
+
 
     @ResponseBody
    	@RequestMapping(value = "/{id}", method = RequestMethod.DELETE)

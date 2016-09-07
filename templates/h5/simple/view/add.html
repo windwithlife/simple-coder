@@ -1,9 +1,8 @@
-<script id ='MainTemplate' type="text/simple-template">
-
+<script id='MainTemplate' type="text/simple-template">
+        <div class="panel panel-header">
+            <h3 class="box-title"><?=data.moduleName?></h3>
+        </div>
         <div class="panel panel-default">
-            <div class="box-header with-border">
-                <h3 class="box-title"><?=data.moduleName?></h3>
-            </div><!-- /.box-header -->
             <!-- form start -->
             <div role="form">
                 <div class="box-body">
@@ -25,11 +24,26 @@
 
 
 
+
                     <div class="form-group">
-                        <label for="exampleInputFile">File input</label>
-                        <input type="file" id="exampleInputFile">
-                        <p class="help-block">Example block-level help text here.</p>
+						 <label for="exampleInputEmail1">图片</label>
+                      	 <input type="text" value ="test.png" class="form-control" id="add-pic" placeholder="Enter Image" />
+	                     <img style='display:none' name="pic" id="pic" alt="No Image!" src="" />
                     </div>
+                    <div class="form-group">
+                      	 <input type="hidden" value ="-1" class="form-control" id="add-pic-id" placeholder="Enter Image" />
+                    </div>
+         <!-- /file upload begin -->        
+
+		<form method="POST" enctype="multipart/form-data" action="/files/upload" target="hidden_frame">
+
+			<input id="file" type="file" name="file" onchange="changePicUrl()" />
+    	    <input type="submit" value="上传" />
+		
+		</form>
+ 
+         <iframe name='hidden_frame' id="hidden_frame" style='display:none'></iframe>
+         <!-- /file upload end -->
 
                 </div><!-- /.box-body -->
 
@@ -38,5 +52,26 @@
                 </div>
             </div>
         </div><!-- /.box -->
+
+
+
+<script type="text/javascript">
+  	function changePicUrl(){
+		var dFile = document.getElementById('file');
+	}
+  	function uploadSucced(msg,id,path){
+
+        document.getElementById('pic').src=path;
+        $("#pic").show();
+        document.getElementById("add-pic").value = path;
+        document.getElementById("add-pic-id").value = id;
+        alert("Successful to upload file:" + path);
+
+	}
+	//表单提交修改失败后，传回提示信息
+	function uploadFailed(msg){
+		alert("Failed to upload file INFO:" + msg);
+	}
+  </script>
 
 </script>

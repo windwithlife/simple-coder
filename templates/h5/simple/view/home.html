@@ -3,36 +3,24 @@
     <div class="panel panel-default">
         <div class="panel-heading clearfix">
             <div class="pull-right">
-                <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-default dropdown-toggle active" data-toggle="dropdown">
-                        Filter By Disabled <span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="#">Filter by Account Status</a></li>
-                        <li><a href="#">Filter by Department</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Reset</a></li>
-                    </ul>
-                </div>
-                <div class="btn-group">
+                    <div class="btn-group">
                     <button type="button" class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown">
-                        Sort By FirstName <span class="caret"></span>
+                        按属性排序 <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu pull-right" role="menu">
-                        <li><a href="#">Sort by FirstName</a></li>
-                        <li><a href="#">Sort by Email</a></li>
-                        <li class="divider"></li>
-                        <li><a href="#">Reset</a></li>
+                        <li><a href="#">按名称</a></li>
+                        <li><a href="#">按描述</a></li>
+                        <li><a href="#">恢复缺省排序</a></li>
                     </ul>
                 </div>
             </div>
             <div class="pull-left">
                 <a href="#add">
                 <button class="btn btn-sm btn-primary" data-toggle="modal" data-target="#newPopUp" data-backdrop="static">
-                    <span class="glyphicon glyphicon-plus"></span>AddNew
+                    <span class="glyphicon glyphicon-plus"></span>新增
                 </button>
                     </a>
-                <button class="btn btn-sm btn-danger btn-rows-remove"><span class="glyphicon glyphicon-remove"></span>Delete</button>
+                <button class="btn btn-sm btn-danger btn-rows-remove"><span class="glyphicon glyphicon-remove"></span>删除</button>
             </div>
         </div>
         <!--the end of panel-heading-->
@@ -44,6 +32,7 @@
                 <td class="text-center">
                     <input type="checkbox" class ="checked-all-unchecked"/></td>
 
+
                 <?
                 var  columns = [];
                 for (var field in data.moduleDefine){
@@ -53,38 +42,40 @@
                     columns.push(keyName);
                 ?>
                 <td><?=fieldName?></td>
-               <?}?>
-
-                <td class="col-lg-3">功能操作</td>
+                <?}?>
+                <td class="col-lg-3">操作</td>
             </tr>
             </thead>
             <tbody>
-            <%_.each(data,function(v,k){
+<%_.each(data,function(v,k){
 
             %>
 
 
             <tr>
                 <td class="text-center">
-                    <input type="checkbox" name="checkbox" value="<%=v._id%>"/></td>
+                    <input type="checkbox" name="checkbox" value="<%=v.id%>"/></td>
+
 
                 <? for (var i=0;i< columns.length;i++){ ?>
                 <td><%=v.<?=columns[i]?>%></td>
                 <?}?>
                 <td>
+                
+                <td>
 
 
-                    <a  href="#info?_id=<%=v._id%>" class="btn  btn-xs btn-info">
-                        <span class="glyphicon glyphicon-list"></span>Info
+                    <a  href="#info?id=<%=v.id%>" class="btn  btn-xs btn-info">
+                        <span class="glyphicon glyphicon-list"></span>详情
                     </a>
-                    <a  href="#edit?_id=<%=v._id%>" class="btn  btn-xs btn-primary">
-                        <span class="glyphicon glyphicon-pencil"></span>Edit
+                    <a  href="#edit?id=<%=v.id%>" class="btn  btn-xs btn-primary">
+                        <span class="glyphicon glyphicon-pencil"></span>编辑
                     </a>
-                    <a  href="#" class="btn  btn-xs btn-warning btn-row-remove" data-id="<%=v._id%>" >
-                        <span class="glyphicon glyphicon-remove"></span>Remove
+                    <a  href="#" class="btn  btn-xs btn-warning btn-row-remove" data-id="<%=v.id%>" >
+                        <span class="glyphicon glyphicon-remove"></span>删除
                     </a>
-                    <a  href="#add?_id=<%=v._id%>" class="btn  btn-xs btn-primary">
-                        <span class="glyphicon glyphicon-plus"></span>New
+                    <a  href="#add" class="btn  btn-xs btn-primary">
+                        <span class="glyphicon glyphicon-plus"></span>新增
                     </a>
 
 
@@ -105,7 +96,7 @@
 
 <div class="modal small hide fade" id="remvoePopUp" role="dialog">
     <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">脳</button>
         <h3 id="myModalLabel">Delete Confirmation</h3>
     </div>
     <div class="modal-body">

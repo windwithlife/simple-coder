@@ -28,27 +28,28 @@ define(['simple','text!./templates/add.html','router','homeModel'], function (Si
 
         },
         back:function(){
-            xNavigator.back();
             console.log('list back done');
         },
         saveUpdate: function(){
             //alert("saveUPdate!");
             var params = {};
-            <%
+            
+             <%
             var  columns = [];
             for (var field in data.moduleDefine){
                 var fieldName = data.moduleDefine[field].dName;
                 var keyName = field;
-                if (field == "_id"){
+                if (field == "id"){
                     continue;
                 }
             %>
                 params.<%=keyName%> = $("#add-<%=keyName%>").val();
             <%}%>
+            
             console.log("form data value:" +　JSON.stringify(params));
             homeModel.add(params,function(result){
                  console.log("AddNewSave result:" + JSON.stringify(result));
-                if(result.success){
+                if(result){
                     router.goto("");
                 }
             });
