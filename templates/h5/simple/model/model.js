@@ -5,7 +5,7 @@ define(['model'],function(model){
     var rootPath = '/autoapi/';
 
     var query = function(cb){
-        model.get(rootPath + "<%=data.moduleName%>s/",{},function(){
+        model.get(rootPath + "<%=data.moduleName%>s/",{},function(data){
             cb(data._embedded.<%=data.moduleName%>s);
         });
     };
