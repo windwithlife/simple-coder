@@ -20,7 +20,7 @@ import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 
 @Controller
-@RequestMapping("/<%=data.moduleName%>s")
+@RequestMapping("/<%=data.originModuleName%>")
 public class <%=data.moduleName%>Controller {
 	@Autowired
 	<%=data.moduleName%>Service service;
@@ -78,13 +78,7 @@ public class <%=data.moduleName%>Controller {
      		System.out.println("output device result data:" + result.toString());
      		return result;
      	}
- 	@ResponseBody
-   	@RequestMapping(value = "/{id}", method = RequestMethod.GET)
-    public <%=data.moduleName%> findOne(@PathVariable Long id) {
-    	System.out.println("input param Id:" + id);
-    	<%=data.moduleName%> result = service.findById(id);
-   		return result;
-   	}
+
 
 
     @ResponseBody

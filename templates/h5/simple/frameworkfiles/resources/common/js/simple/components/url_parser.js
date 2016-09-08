@@ -36,11 +36,17 @@ define(['jquery'], function ($) {
                 temp[item] = arr[i+1];
             });
 
-            var path =  "/" + temp.path.split("/")[1];
+            //var path =  "/" + temp.path.split("/")[1];
             console.log(JSON.stringify(temp));
+            var path;
+           
+            if (temp.path[temp.path.length-1] != '/'){
+            	path = temp.path + '/';
+            }else{
+            	path = temp.path;
+            }
             console.log('current path is：' + path);
-            //return path;
-            return temp.path;
+            return path;
         },
 
         parseSearch: function (search) {

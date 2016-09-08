@@ -40,6 +40,7 @@ define(['urlparser'], function (urlparser) {
     function jumpTo(path,params) {
 
         var item = getPageItem(path);
+        if (!item){return;}
         jumpToNewPageByController(item);
         pushPage(item);
 
@@ -62,7 +63,7 @@ define(['urlparser'], function (urlparser) {
     function jumpToNewPageByController(item) {
 
         var controller = item.controller;
-        var viewControllerPath = urlparser.getPath() + "/" + controller + ".js";
+        var viewControllerPath = Simple.resourceRootPath + urlparser.getPath() + "/" + controller + ".js";
         require([viewControllerPath], function (pageView) {
             data.currentPage = pageView;
             pageView.onLoad();

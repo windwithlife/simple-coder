@@ -14,7 +14,7 @@
             router: "simple/components/router",
             model: "simple/components/model",
             params: "simple/components/params",
-            simple: "simple/simple",
+            simple: "simple/components/simple",
 
         },
         shim: {

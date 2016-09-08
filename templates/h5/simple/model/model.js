@@ -5,22 +5,22 @@ define(['model'],function(model){
     var rootPath = '/autoapi/';
 
     var query = function(cb){
-        model.get(rootPath + "<%=data.moduleName%>s/queryAll",{},cb);
+        model.get(rootPath + "<%=data.moduleName%>s/",{},cb);
     };
     var queryByParams = function(params, cb){
-        model.get(rootPath + "<%=data.moduleName%>/query",params,cb);
+        model.get(rootPath + "<%=data.moduleName%>s/query",params,cb);
     };
     var queryById  = function(params,cb){
-        model.get(rootPath +  "<%=data.moduleName%>/query/"+params.id,params, cb);
+        model.get(rootPath +  "<%=data.moduleName%>s/query/"+params.id,params, cb);
     };
     var update = function(params,cb){
-        model.post(rootPath + "<%=data.moduleName%>/update/"+params.id,params,cb);
+        model.post(rootPath + "<%=data.moduleName%>/save/"+params.id,params,cb);
     };
     var remove = function(params,cb){
         model.post( rootPath +  "<%=data.moduleName%>/remove/"+params.id,params,cb);
     };
     var add = function(params,cb){
-        model.post(rootPath + "<%=data.moduleName%>/params",params,cb);
+        model.post(rootPath + "<%=data.moduleName%>s/",params,cb);
     };
     return{
         query:query,

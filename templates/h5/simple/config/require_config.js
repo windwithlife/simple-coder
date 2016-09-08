@@ -1,12 +1,11 @@
 /**
  * Created by zhangyq on 2015/12/15.
  */
+define(function(){
 
-(function(){
-    require.config({
-        paths: {
-            "homeModel": "/<%=data.moduleName%>/models/model"
-        },
-    });
+    var paths = {
+        "homeModel": "models/model",
+    };
+    return paths;
 
-})();
+});
