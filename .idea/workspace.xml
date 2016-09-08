@@ -2,27 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9adebc7d-ca00-41eb-b023-9777ae19e972" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/resources/common/themes/fonts/glyphicons-halflings-regular.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/resources/common/themes/fonts/glyphicons-halflings-regular.woff2" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/resources/common/themes/fonts/glyphicons-halflings-regular.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/resources/common/themes/bluesea/_theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/resources/common/themes/default/_theme.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/resources/common/themes/default/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/resources/common/themes/fonts/glyphicons-halflings-regular.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/resources/common/themes/fonts/glyphicons-halflings-regular.ttf" />
-      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\common\themes\bluesea\bootstrap-lumen.min.css" afterPath="" />
-      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\common\themes\default\bootstrap-simplex.min.css" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/h5/simple/server/Controller.java" afterPath="$PROJECT_DIR$/templates/h5/simple/server/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/resources/common/js/simple/global_require_config.js" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/resources/common/js/simple/global_require_config.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/h5_creator.js" afterPath="$PROJECT_DIR$/lib/generators/h5_creator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/resources/common/js/simple/main.js" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/resources/common/js/simple/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/h5/simple/model/model.js" afterPath="$PROJECT_DIR$/templates/h5/simple/model/model.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/resources/common/js/simple/components/page_navigator.js" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/resources/common/js/simple/components/page_navigator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/h5/simple/config/require_config.js" afterPath="$PROJECT_DIR$/templates/h5/simple/config/require_config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/resources/common/js/simple/components/url_parser.js" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/resources/common/js/simple/components/url_parser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\common\js\simple\simple.js" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/resources/common/js/simple/components/simple.js" />
     </list>
     <ignored path="SimpleCoder.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -77,7 +59,7 @@
         <entry file="file://$PROJECT_DIR$/lib/generators/h5_creator.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="44" column="92" selection-start-line="44" selection-start-column="92" selection-end-line="44" selection-end-column="92" />
+              <caret line="44" column="104" selection-start-line="44" selection-start-column="104" selection-end-line="44" selection-end-column="104" />
               <folding />
             </state>
           </provider>
@@ -107,7 +89,7 @@
         <entry file="file://$PROJECT_DIR$/templates/h5/simple/model/model.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="19" column="84" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="84" />
+              <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -116,8 +98,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0900474">
-              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.40521327">
+              <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -198,9 +180,9 @@
         <option value="$PROJECT_DIR$/templates/h5/simple/server/Controller.java" />
         <option value="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/resources/common/js/simple/components/url_parser.js" />
         <option value="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/resources/common/js/simple/main.js" />
-        <option value="$PROJECT_DIR$/templates/h5/simple/model/model.js" />
         <option value="$PROJECT_DIR$/templates/h5/simple/config/require_config.js" />
         <option value="$PROJECT_DIR$/lib/generators/h5_creator.js" />
+        <option value="$PROJECT_DIR$/templates/h5/simple/model/model.js" />
         <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
@@ -665,7 +647,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1517" height="1010" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22379987" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287827" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -674,7 +656,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5832402" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43003413" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45506257" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45506257" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46643913" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1139,14 +1121,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/h5/simple/model/model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="84" selection-start-line="19" selection-start-column="84" selection-end-line="19" selection-end-column="84" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/h5/simple/config/require_config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1190,15 +1164,23 @@
     <entry file="file://$PROJECT_DIR$/lib/generators/h5_creator.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="44" column="92" selection-start-line="44" selection-start-column="92" selection-end-line="44" selection-end-column="92" />
+          <caret line="44" column="104" selection-start-line="44" selection-start-column="104" selection-end-line="44" selection-end-column="104" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/h5/simple/model/model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="66" selection-start-line="24" selection-start-column="66" selection-end-line="24" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0900474">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+        <state vertical-scroll-proportion="0.40521327">
+          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
           <folding />
         </state>
       </provider>
