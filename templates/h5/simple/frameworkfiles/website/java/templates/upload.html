@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org"
+	xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+	xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	layout:decorator="pc/layout/layout-ch">
+<head>
+<title>Hello World!</title>
+
+</head>
+<body>
+	<script type="text/javascript">
+  	function changePicUrl(){
+		var dFile = document.getElementById('file');
+		var dImg = document.getElementById('pic');
+ 		if(dFile.files){
+  			dImg.src = dFile.files[0].name;
+ 		}else if(dFile.value.indexOf('\\') > -1 || dFile.value.indexOf('\/') > -1){
+  			dImg.src = dFile.value;
+ 		}
+	}
+  	function uploadSucced(msg,id,path){
+  		
+  		$("#picId").html(id);	
+  		$("#picPath").html(path);	
+  		
+		$("#firstUploadSucceedMsg").html(msg);
+		$("#firstUploadSucceed").show();
+		$("#firstUploadFailed").hide();
+		var dImg = document.getElementById('pic');
+  		dImg.src=path;
+	}
+	//表单提交修改失败后，传回提示信息
+	function uploadFailed(msg){
+		$("#firstUploadFailedMsg").html(msg);
+		$("#firstUploadFailed").show();
+		$("#firstUploadSucceed").hide();
+	}
+   </script>
+	<form method="POST" enctype="multipart/form-data" action="/files/upload" target="hidden_frame">
+
+		<img name="pic" id="pic" alt="" src="" />
+		<p> 文件：<input id="file" type="file" name="file" onchange="changePicUrl()" /> </p>
+           <p><input type="submit" value="上传" /> </p>
+		
+		
+		 <div id="firstUploadSucceed" style="display: none;">
+                <strong>新增成功！</strong><span id="firstUploadSucceedMsg"></span>
+            </div>
+            <div id="firstUploadFailed" style="display: none;">
+                <strong>对不起！新增失败</strong><span id="firstUploadFailedMsg"></span>
+            </div>
+	</form>
+   <div id ="picId" style='display:none' data-picId="0"> </div>
+   <div id ="picPath" style='display:none' data-picPath="0"> </div>
+   <iframe name='hidden_frame' id="hidden_frame" style='display:none'></iframe>
+
+</body>
+</html>

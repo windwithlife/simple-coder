@@ -2,6 +2,44 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9adebc7d-ca00-41eb-b023-9777ae19e972" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/403.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/mobile/403.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/pad/403.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/mobile/analyse.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/pad/analyse.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/error.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/mobile/error.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/pad/error.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/mobile/layout/footer-charisma.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/pad/layout/footer-charisma.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/pc/layout/footer-charisma.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/mobile/layout/footer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/pad/layout/footer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/pc/layout/footer.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/mobile/layout/header-charisma.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/pad/layout/header-charisma.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/pc/layout/header-charisma.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/mobile/layout/header.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/pad/layout/header.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/pc/layout/header.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/mobile/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/pad/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/mobile/layout/layout-ch.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/pad/layout/layout-ch.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/pc/layout/layout-ch.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/mobile/layout/layout-simple.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/pad/layout/layout-simple.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/pc/layout/layout-simple.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/mobile/layout/layout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/pad/layout/layout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/pc/layout/layout.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/mobile/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/pad/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/java/templates/upload.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/h5/simple/view/home.html" afterPath="$PROJECT_DIR$/templates/h5/simple/view/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="SimpleCoder.iws" />
@@ -66,8 +104,8 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/h5/simple/view/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.428572">
-              <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
+            <state vertical-scroll-proportion="-8.285714">
+              <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -106,8 +144,8 @@
       <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.08056872">
-              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+            <state vertical-scroll-proportion="0.0900474">
+              <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -164,7 +202,6 @@
         <option value="$PROJECT_DIR$/templates/h5/simple/server/Service.java" />
         <option value="$PROJECT_DIR$/templates/h5/simple/server/Entity.java" />
         <option value="$PROJECT_DIR$/modules/product.js" />
-        <option value="$PROJECT_DIR$/templates/h5/simple/view/home.html" />
         <option value="$PROJECT_DIR$/templates/h5/simple/view/addNew.html" />
         <option value="$PROJECT_DIR$/templates/h5/simple/controller/addNew.js" />
         <option value="$PROJECT_DIR$/templates/h5/simple/view/editNew.html" />
@@ -180,8 +217,9 @@
         <option value="$PROJECT_DIR$/templates/h5/simple/config/require_config.js" />
         <option value="$PROJECT_DIR$/templates/h5/simple/model/model.js" />
         <option value="$PROJECT_DIR$/modules/config.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/lib/generators/h5_creator.js" />
+        <option value="$PROJECT_DIR$/templates/h5/simple/view/home.html" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -426,6 +464,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="frameworkfiles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleCoder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleCoder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="h5" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simple" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -519,11 +587,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website" />
       <recent name="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources" />
       <recent name="D:\program\framework\SimpleCoder\templates\h5\simple\controller" />
       <recent name="D:\program\framework\SimpleCoder\templates\h5\simple\view" />
       <recent name="D:\program\framework\SimpleCoder\lib\generators" />
-      <recent name="D:\program\h5\framework\SimpleCoder\lib\generators" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\nodejs\webserver" />
@@ -645,7 +713,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1517" height="1010" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2265044" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287827" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -654,7 +722,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5832402" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43003413" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45506257" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.45506257" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46643913" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1119,14 +1187,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/h5/simple/view/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.428572">
-          <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/h5/simple/model/model.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1175,10 +1235,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/h5/simple/view/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.285714">
+          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.08056872">
-          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+        <state vertical-scroll-proportion="0.0900474">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
           <folding />
         </state>
       </provider>
