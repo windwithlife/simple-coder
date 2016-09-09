@@ -34,6 +34,7 @@ require(['global_require_config'], function (g) {
     	   console.log("begin to config");
     	   console.log("begin to config" + JSON.stringify(config));
     	   require.config({paths:config});
+    	   router.setResourceRootPath(resPath);
            router.startup();
        });
 

@@ -3,7 +3,7 @@
  */
 (function(){
     require.config({
-        baseUrl: "/common/js",
+        baseUrl: "/resources/framework/js",
         paths: {
             jquery: "3rd/jquery.min",
             underscore: "3rd/underscore-min",

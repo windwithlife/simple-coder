@@ -2,11 +2,19 @@ define(['backbone', 'jquery','pagenavigator'], function (Backbone, $,navigator) 
 
     var AppRouter = Backbone.Router.extend({
 
+    	resRootPath: "/resources/",
+    	setResourceRootPath: function(resPath){
+    		this.resRootPath = resPath;
+    		//navigator.setResourceRootPath(resPath);
+    	},
         startup:function(){
             Backbone.history.start();
         },
         addRouter: function (path, pageController) {
             console.log("---------register path----[" + path + "] Controller:[" + pageController +"]");
+            //var that = this;
+            //var controller = this.resRootPath +urlparser.getPath() + pageController;
+            //console.log("controller path is" + controller);
             navigator.registerRouter(path,pageController);
             this.route(path,"page",function(hashKeys){
                 console.log("---------haskKeys----" + hashKeys);
@@ -36,7 +44,7 @@ define(['backbone', 'jquery','pagenavigator'], function (Backbone, $,navigator) 
 
     var appRouter = new AppRouter();
     //appRouter.addRouter("","main");
-
+    
     return appRouter;
 
 });
