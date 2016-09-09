@@ -1,5 +1,5 @@
 module.exports  ={
     enables:["product"],
-    basePackage:"com.simple.base.bz",
+    basePackage:"com.simple.base.bz.auto",
 }
 
