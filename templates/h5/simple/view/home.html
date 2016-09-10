@@ -36,8 +36,22 @@
                 <?
                 var  columns = [];
                 for (var field in data.moduleDefine){
-                    var fieldName = data.moduleDefine[field].dName;
-                    var keyName = field;
+                    var fieldDef = data.moduleDefine[field];
+                    var keyName     = field;
+                    var displayName = fieldDef.dName;
+                    var fieldName   = fieldDef.dName;
+                    var type        = fieldDef.type;
+                    var refer       = fieldDef.refer;
+                    if (refer){
+                        if (refer.map=="ManyToMany"){
+                        }else{
+                            if (refer.mapField){
+                                 keyName = field + "." + refer.mapField;
+                            }else{
+                                 keyName = field + ".name";
+                            }
+                        }
+                    }
 
                     columns.push(keyName);
                 ?>
@@ -58,7 +72,10 @@
 
 
                 <? for (var i=0;i< columns.length;i++){ ?>
+                <%if (!v.<?=columns[i]?>){
+                %>
                 <td><%=v.<?=columns[i]?>%></td>
+                <%}%>
                 <?}?>
 
                 
