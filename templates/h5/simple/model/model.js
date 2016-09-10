@@ -13,16 +13,16 @@ define(['model'],function(model){
         model.get(rootPath + "<%=data.moduleName%>s/query",params,cb);
     };
     var queryById  = function(params,cb){
-        model.get(rootPath +  "<%=data.moduleName%>s/query/"+params.id,params, cb);
+        model.get(rootPath +  "<%=data.moduleName%>s/"+params.id,params, cb);
     };
     var update = function(params,cb){
-        model.post(rootPath + "<%=data.moduleName%>/save/"+params.id,params,cb);
+        model.post("/<%=data.moduleName%>/update/"+params.id,params,cb);
     };
     var remove = function(params,cb){
-        model.post( rootPath +  "<%=data.moduleName%>/remove/"+params.id,params,cb);
+        model.post("/<%=data.moduleName%>/remove/"+params.id,params,cb);
     };
     var add = function(params,cb){
-        model.post(rootPath + "<%=data.moduleName%>s/",params,cb);
+        model.post(rootPath + "/<%=data.moduleName%>s/",params,cb);
     };
     return{
         query:query,
