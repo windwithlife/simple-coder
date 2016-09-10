@@ -50,10 +50,13 @@
                             }else{
                                  keyName = field + ".name";
                             }
+                             columns.push(keyName);
                         }
+                    }else{
+                          columns.push(keyName);
                     }
 
-                    columns.push(keyName);
+
                 ?>
                 <td><?=fieldName?></td>
                 <?}?>
