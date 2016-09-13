@@ -56,6 +56,13 @@ public class <%=data.moduleName%>Controller {
        	<%=data.moduleName%> result = service.findById(id);
     	return result;
     }
+    @ResponseBody
+    @RequestMapping(value = "/queryLikeName/", method = RequestMethod.GET)
+    public List<<%=data.moduleName%>> findLikeName(@RequestParam("name") String name ) {
+           	System.out.println("input param Name:" + name);
+            return service.findAllByLikeName(name);
+
+    }
 
     @ResponseBody
 	@RequestMapping(value = "/", method = RequestMethod.POST)
@@ -147,6 +154,8 @@ public class <%=data.moduleName%>Controller {
     	service.remove(id);
     	return id;
     }
+
+
 
 
     <%if (data.moduleName=='Dictionary'){%>

@@ -19,6 +19,10 @@ public class <%=data.moduleName%>Service {
 	public  List<<%=data.moduleName%>> findByName(String name){
 		return dao.findByName(name);
 	}
+	public  List<<%=data.moduleName%>> findAllByLikeName(String name){
+    		return dao.findAllByLikeName(name);
+    }
+
 	public  <%=data.moduleName%> findOneByName(String name){
     		return dao.findOneByName(name);
     	}

@@ -11,6 +11,10 @@ define(['model'],function(model){
         model.get( "/" + refer + "/queryAll",{},cb);
     };
 
+    var queryLikeName = function(params, cb){
+        model.get("/<%=data.moduleName%>/queryLikeName/",params,cb);
+    };
+
     var queryDictionaryListByParams= function(refer, params, cb){
         model.get( "/dictionary/queryByCategory/",params,cb);
     };

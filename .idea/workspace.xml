@@ -5,12 +5,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/h5/simple/server/Controller.java" afterPath="$PROJECT_DIR$/templates/h5/simple/server/Controller.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/h5/simple/server/Dao.java" afterPath="$PROJECT_DIR$/templates/h5/simple/server/Dao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/h5/simple/server/Service.java" afterPath="$PROJECT_DIR$/templates/h5/simple/server/Service.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/h5/simple/view/add.html" afterPath="$PROJECT_DIR$/templates/h5/simple/view/add.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/h5/simple/controller/add.js" afterPath="$PROJECT_DIR$/templates/h5/simple/controller/add.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/h5/simple/view/edit.html" afterPath="$PROJECT_DIR$/templates/h5/simple/view/edit.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/h5/simple/controller/edit.js" afterPath="$PROJECT_DIR$/templates/h5/simple/controller/edit.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/h5/simple/view/home.html" afterPath="$PROJECT_DIR$/templates/h5/simple/view/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/h5/simple/controller/home.js" afterPath="$PROJECT_DIR$/templates/h5/simple/controller/home.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/h5/simple/model/model.js" afterPath="$PROJECT_DIR$/templates/h5/simple/model/model.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
@@ -67,8 +61,8 @@
       <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/h5/simple/server/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.5">
-              <caret line="156" column="59" selection-start-line="156" selection-start-column="46" selection-end-line="156" selection-end-column="59" />
+            <state vertical-scroll-proportion="-10.766666">
+              <caret line="59" column="43" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -78,7 +72,7 @@
         <entry file="file://$PROJECT_DIR$/templates/h5/simple/server/Dao.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <caret line="8" column="56" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -108,7 +102,7 @@
         <entry file="file://$PROJECT_DIR$/templates/h5/simple/model/model.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="37" column="62" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
+              <caret line="14" column="68" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
               <folding />
             </state>
           </provider>
@@ -118,7 +112,7 @@
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.065972224">
-              <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -128,7 +122,7 @@
         <entry file="file://$PROJECT_DIR$/templates/h5/simple/server/Service.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
+              <caret line="22" column="40" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -187,11 +181,11 @@
         <option value="$PROJECT_DIR$/templates/h5/simple/view/edit.html" />
         <option value="$PROJECT_DIR$/templates/h5/simple/view/add.html" />
         <option value="$PROJECT_DIR$/templates/h5/simple/controller/add.js" />
-        <option value="$PROJECT_DIR$/templates/h5/simple/server/Controller.java" />
+        <option value="$PROJECT_DIR$/templates/h5/simple/controller/edit.js" />
         <option value="$PROJECT_DIR$/templates/h5/simple/server/Dao.java" />
         <option value="$PROJECT_DIR$/templates/h5/simple/server/Service.java" />
+        <option value="$PROJECT_DIR$/templates/h5/simple/server/Controller.java" />
         <option value="$PROJECT_DIR$/templates/h5/simple/model/model.js" />
-        <option value="$PROJECT_DIR$/templates/h5/simple/controller/edit.js" />
         <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
@@ -1184,46 +1178,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/h5/simple/server/Entity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="44" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/h5/simple/server/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5">
-          <caret line="156" column="59" selection-start-line="156" selection-start-column="46" selection-end-line="156" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/h5/simple/server/Dao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/h5/simple/server/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="43" selection-start-line="22" selection-start-column="43" selection-end-line="22" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/h5/simple/model/model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="62" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/h5/simple/view/add.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.107143">
@@ -1248,10 +1202,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/templates/h5/simple/server/Entity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="59" column="44" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/h5/simple/server/Dao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="56" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/h5/simple/server/Service.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="40" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/h5/simple/server/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.766666">
+          <caret line="59" column="43" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/h5/simple/model/model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="14" column="68" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.065972224">
-          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
+          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
           <folding />
         </state>
       </provider>
