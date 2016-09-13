@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 import <%=data.packageName%>.entity.*;
@@ -25,6 +26,18 @@ public class <%=data.moduleName%>Controller {
 	@Autowired
 	<%=data.moduleName%>Service service;
 
+  <% for (var field in data.moduleDefine){
+                var fieldDef  = data.moduleDefine[field];
+                var fieldName = fieldDef.dName;
+                var keyName = field;
+
+                var refer = fieldDef.refer;
+                if (refer) {
+                var clsName = data.firstUpper(refer.module);
+                %>
+   @Autowired
+   private  <%=clsName%>Service <%=refer.module%>Service;
+   <%}}%>
 
 
 	@RequestMapping(value= "/", method=RequestMethod.GET)
@@ -43,6 +56,7 @@ public class <%=data.moduleName%>Controller {
        	<%=data.moduleName%> result = service.findById(id);
     	return result;
     }
+
     @ResponseBody
 	@RequestMapping(value = "/", method = RequestMethod.POST)
 	public <%=data.moduleName%> save(@RequestBody <%=data.moduleName%> item) {
@@ -54,6 +68,25 @@ public class <%=data.moduleName%>Controller {
     @ResponseBody
 	@RequestMapping(value = "/save", method = RequestMethod.POST)
 	public <%=data.moduleName%> save2(@RequestBody <%=data.moduleName%> item) {
+		 <% for (var field in data.moduleDefine){
+                                   var fieldDef  = data.moduleDefine[field];
+                                   var fieldName = fieldDef.dName;
+                                   var keyName = field;
+
+                                   var refer = fieldDef.refer;
+                                   if (refer) {
+                                   var clsName = data.firstUpper(refer.module);
+                                   var fieldNameUpper = data.firstUpper(field);
+                                   var idType = data.moduleDefine['id'].type;
+         %>
+                   <%=idType%> <%=field%>Id =item.get<%=fieldNameUpper%>().getId();
+                   if (<%=field%>Id > 0){
+                   	  <%=clsName%> <%=field%>Obj = <%=refer.module%>Service.findById(<%=field%>Id);
+                      item.set<%=fieldNameUpper%>(<%=field%>Obj);
+                   }
+
+         <%}}%>
+
 		System.out.println("input device params:" + item.toString());
 		<%=data.moduleName%> result = service.save(item);
 		System.out.println("output device result data:" + result.toString());
@@ -73,6 +106,27 @@ public class <%=data.moduleName%>Controller {
  	@ResponseBody
      	@RequestMapping(value = "/update/{id}", method = RequestMethod.POST)
      	public <%=data.moduleName%> updateSave(@PathVariable Long id, @RequestBody <%=data.moduleName%> item) {
+     	   <% for (var field in data.moduleDefine){
+                           var fieldDef  = data.moduleDefine[field];
+                           var fieldName = fieldDef.dName;
+                           var keyName = field;
+
+                           var refer = fieldDef.refer;
+                           if (refer) {
+                           var clsName = data.firstUpper(refer.module);
+                           var fieldNameUpper = data.firstUpper(field);
+                           var idType = data.moduleDefine['id'].type;
+           %>
+           <%=idType%> <%=field%>Id =item.get<%=fieldNameUpper%>().getId();
+           if (<%=field%>Id > 0){
+           	  <%=clsName%> <%=field%>Obj = <%=refer.module%>Service.findById(<%=field%>Id);
+              item.set<%=fieldNameUpper%>(<%=field%>Obj);
+           }
+
+           <%}}%>
+
+
+
      		System.out.println("input device params:" + item.toString());
      		<%=data.moduleName%> result = service.save(item);
      		System.out.println("output device result data:" + result.toString());
@@ -93,5 +147,17 @@ public class <%=data.moduleName%>Controller {
     	service.remove(id);
     	return id;
     }
+
+
+    <%if (data.moduleName=='Dictionary'){%>
+    @ResponseBody
+    @RequestMapping(value = "/queryByCategory/", method = RequestMethod.GET)
+    public List<Dictionary> findByParams(@RequestParam("category") String category) {
+           	System.out.println("input param category:" + category);
+            Category citem  = categoryService.findOneByName(category);
+           	List<Dictionary> result = service.findByCategory(citem);
+        	return result;
+    }
+   <%}%>
 
 }

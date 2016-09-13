@@ -67,9 +67,9 @@ define(['simple','text!./templates/home.html','router','homeModel'], function (S
             homeModel.remove({id: removeId}, function (data) {
                 if (data){
                     console.log("successful to remove row");
-                    that.onShow().bind(that);
+                    that.onShow();
                 }else{
-                	that.onShow().bind(that);
+                	that.onShow();
                     console.log("failed to remove row");
                 }
 

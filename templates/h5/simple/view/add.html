@@ -12,24 +12,31 @@
                 for (var field in data.moduleDefine){
                     var fieldName = data.moduleDefine[field].dName;
                     var fieldShow = data.moduleDefine[field].show;
-                    var keyName = field;
+                    var fieldRefer =  data.moduleDefine[field].refer;
 
+                    var keyName = field;
                     columns.push(keyName);
                     if (fieldShow=="image"){
                 ?>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">图片</label>
-                        <input type="text" value ="test.png" class="form-control" id="add-<?=keyName?>" placeholder="Enter Image" />
-                        <img style='display:none' name="pic" id="pic" alt="No Image!" src="" />
+                        <label for="exampleInputEmail1"><?=fieldName?></label>
+                        <input type="text" value ="/images/test.png" class="form-control" id="add-<?=keyName?>" placeholder="Enter Image" />
+                        <img style='display:none' name="pic" id="img-<?=keyName?>" alt="No Image!" src="" />
                     </div>
-                    <form method="POST" onsubmit="return uploadCheck(<?=keyName?>)" enctype="multipart/form-data" action="/files/upload" target="hidden_frame">
+
+                    <form method="POST" onsubmit="return uploadCheck('<?=keyName?>')" enctype="multipart/form-data" action="/files/upload" target="hidden_frame">
 
                         <input id="file" type="file" name="file" onchange="changePicUrl()" />
                         <input type="submit" value="上传" />
 
                     </form>
 
-                    <?}else{?>
+                    <?}else if (fieldRefer){?>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1"><?=fieldName?></label>
+                        <select  class="form-control" id="add-<?=keyName?>"></select>
+                    </div>
+                    <?}else if ((field!='id') && (field!='_id')){?>
                     <div class="form-group">
                         <label for="exampleInputEmail1"><?=fieldName?></label>
                         <input type="text" value ="" class="form-control" id="add-<?=keyName?>" placeholder="Enter email">
@@ -38,23 +45,8 @@
 
 
 
-
-                    <div class="form-group">
-						 <label for="exampleInputEmail1">图片</label>
-                      	 <input type="text" value ="test.png" class="form-control" id="add-pic" placeholder="Enter Image" />
-	                     <img style='display:none' name="pic" id="pic" alt="No Image!" src="" />
-                    </div>
-                    <div class="form-group">
-                      	 <input type="hidden" value ="-1" class="form-control" id="add-pic-id" placeholder="Enter Image" />
-                    </div>
          <!-- /file upload begin -->        
 
-		<form method="POST" enctype="multipart/form-data" action="/files/upload" target="hidden_frame">
-
-			<input id="file" type="file" name="file" onchange="changePicUrl()" />
-    	    <input type="submit" value="上传" />
-		
-		</form>
  
          <iframe name='hidden_frame' id="hidden_frame" style='display:none'></iframe>
          <!-- /file upload end -->
@@ -70,20 +62,23 @@
 
 
 <script type="text/javascript">
+    var currentImageFieldId = "pic-id";
   	function changePicUrl(){
 		var dFile = document.getElementById('file');
 	}
     function uploadCheck(fieldName){
+        currentImageFieldId =fieldName;
        alert(fieldName);
        return true;
     }
 
   	function uploadSucced(msg,id,path){
-
-        document.getElementById('pic').src=path;
-        $("#pic").show();
-        document.getElementById("add-pic").value = path;
-        document.getElementById("add-pic-id").value = id;
+        var imageShow = "img-" + currentImageFieldId;
+        var imagePath = "add-" + currentImageFieldId;
+        document.getElementById(imageShow).src=path;
+        $("#"+imageShow).show();
+        document.getElementById(imagePath).value = path;
+        //document.getElementById("add-pic-id").value = id;
         alert("Successful to upload file:" + path);
 
 	}

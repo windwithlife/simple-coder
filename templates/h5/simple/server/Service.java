@@ -16,6 +16,13 @@ public class <%=data.moduleName%>Service {
 		return  dao.findAll();
 		//return items;
 	}
+	public  List<<%=data.moduleName%>> findByName(String name){
+		return dao.findByName(name);
+	}
+	public  <%=data.moduleName%> findOneByName(String name){
+    		return dao.findOneByName(name);
+    	}
+
 	public <%=data.moduleName%> findById(Long id){
 		return dao.findOne(id);
 	}
@@ -25,4 +32,9 @@ public class <%=data.moduleName%>Service {
 	public void remove(Long id){
 		this.dao.delete(id);
 	}
+	<%if(data.moduleName=='Dictionary'){%>
+	public  List<<%=data.moduleName%>> findByCategory(Category category){
+		return dao.findByCategory(category);
+	}
+	<%}%>
 }

@@ -12,41 +12,48 @@
                      <div class="form-group">
                          <input type="hidden" value ="<%=data.id%>" class="form-control" id="edit-id" placeholder="Enter email">
                     </div>
+
                     <?
                 var  columns = [];
                 for (var field in data.moduleDefine){
                     var fieldName = data.moduleDefine[field].dName;
+                    var fieldShow = data.moduleDefine[field].show;
+                    var fieldRefer = data.moduleDefine[field].refer;
                     var keyName = field;
 
                     columns.push(keyName);
-                    if (field=='id'){
-                        continue;
-                    }
+                    if (fieldShow=="image"){
                 ?>
-
                     <div class="form-group">
                         <label for="exampleInputEmail1"><?=fieldName?></label>
-                        <input type="text" value ="<%=data.<?=keyName?>%>" class="form-control" id="edit-<?=keyName?>" placeholder="Enter email">
+                        <input type="text" value ="<%=data.<?=keyName?>%>" class="form-control" id="edit-<?=keyName?>" placeholder="Enter Image" />
+                        <img style='display:none' name="pic" id="img-<?=keyName?>" alt="No Image!" src="" />
                     </div>
-                    <?}?>
 
+                    <form method="POST" onsubmit="return uploadCheck('<?=keyName?>')" enctype="multipart/form-data" action="/files/upload" target="hidden_frame">
+
+                        <input id="file" type="file" name="file" onchange="changePicUrl()" />
+                        <input type="submit" value="上传" />
+
+                    </form>
+                    <?}else if (fieldRefer){?>
                     <div class="form-group">
-						 <label for="exampleInputEmail1">图片</label>
-                      	 <input type="text" value ="<%=data.pic%>" class="form-control" id="add-pic" placeholder="Enter Image" />
-	                     <img style='display:none' name="pic" id="pic" alt="No Image!" src="" />
+                        <label for="exampleInputEmail1"><?=fieldName?></label>
+                        <select  class="form-control" id="edit-<?=keyName?>"></select>
                     </div>
+                    <?}else if ((field!='id') && (field!='_id')){?>
                     <div class="form-group">
-                      	 <input type="hidden" value ="-1" class="form-control" id="add-pic-id" placeholder="Enter Image" />
+                        <label for="exampleInputEmail1"><?=fieldName?></label>
+                        <input type="text" value ="<%=data.<?=keyName?>%>" class="form-control" id="edit-<?=keyName?>" placeholder="Enter email"/>
                     </div>
+                    <?}}?>
+
+
+
+
+
          <!-- /file upload begin -->        
 
-		<form method="POST" enctype="multipart/form-data" action="/files/upload" target="hidden_frame">
-
-			<input id="file" type="file" name="file" onchange="changePicUrl()" />
-    	    <input type="submit" value="上传" />
-		
-		</form>
- 
          <iframe name='hidden_frame' id="hidden_frame" style='display:none'></iframe>
          <!-- /file upload end -->
 
@@ -61,22 +68,28 @@
 
 
 <script type="text/javascript">
-  	function changePicUrl(){
-		var dFile = document.getElementById('file');
-	}
-  	function uploadSucced(msg,id,path){
+    var currentImageFieldId = "pic-id";
+    function changePicUrl(){
+        var dFile = document.getElementById('file');
+    }
+    function uploadCheck(fieldName){
+        currentImageFieldId =fieldName;
+        alert(fieldName);
+        return true;
+    }
 
-        document.getElementById('pic').src=path;
-        $("#pic").show();
-        document.getElementById("add-pic").value = path;
-        document.getElementById("add-pic-id").value = id;
+    function uploadSucced(msg,id,path){
+        var imageShow = "img-" + currentImageFieldId;
+        var imagePath = "edit-" + currentImageFieldId;
+        document.getElementById(imageShow).src=path;
+        $("#"+imageShow).show();
+        document.getElementById(imagePath).value = path;
         alert("Successful to upload file:" + path);
 
-	}
-	//表单提交修改失败后，传回提示信息
-	function uploadFailed(msg){
-		alert("Failed to upload file INFO:" + msg);
-	}
-  </script>
-
+    }
+    //表单提交修改失败后，传回提示信息
+    function uploadFailed(msg){
+        alert("Failed to upload file INFO:" + msg);
+    }
+</script>
 </script>

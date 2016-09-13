@@ -5,15 +5,20 @@ define(['model'],function(model){
     var rootPath = '/autoapi/';
 
     var query = function(cb){
-        model.get(rootPath + "<%=data.moduleName%>s/",{},function(data){
-            cb(data._embedded.<%=data.moduleName%>s);
-        });
+        model.get("/<%=data.moduleName%>/queryAll",{},cb);
+    };
+    var queryReferListByName= function(refer,cb){
+        model.get( "/" + refer + "/queryAll",{},cb);
+    };
+
+    var queryDictionaryListByParams= function(refer, params, cb){
+        model.get( "/dictionary/queryByCategory/",params,cb);
     };
     var queryByParams = function(params, cb){
         model.get(rootPath + "<%=data.moduleName%>s/query",params,cb);
     };
     var queryById  = function(params,cb){
-        model.get(rootPath +  "<%=data.moduleName%>s/"+params.id,params, cb);
+        model.get("/<%=data.moduleName%>/query/"+params.id, params, cb);
     };
     var update = function(params,cb){
         model.post("/<%=data.moduleName%>/update/"+params.id,params,cb);
@@ -22,12 +27,15 @@ define(['model'],function(model){
         model.post("/<%=data.moduleName%>/remove/"+params.id,params,cb);
     };
     var add = function(params,cb){
-        model.post(rootPath + "/<%=data.moduleName%>s/",params,cb);
+        model.post("/<%=data.moduleName%>/save",params,cb);
     };
     return{
         query:query,
         queryById:queryById,
         queryByParams:queryByParams,
+        queryReferListByName:queryReferListByName,
+        queryReferListByParams:queryDictionaryListByParams,
+        queryDictionaryByCategory:queryDictionaryListByParams,
         update:update,
         remove:remove,
         add:add,

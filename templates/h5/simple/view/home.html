@@ -79,13 +79,17 @@
 
                      <? if (fieldDefines[i].show=="image"){ ?>
                 <% if (v.<?-fieldDefines[i].name ?>){ %>
-                <td><img src="<%-v.<?=fieldDefines[i].name?>%>" style="heigth:50px;width:50px" /></td>
+                <td><img src="<%=v.<?=fieldDefines[i].name?>%>" style="heigth:50px;width:50px" /></td>
+                <%}else{%>
+                <td>No IMAGE</td>
                 <%}%>
                       <?}else if(!fieldDefines[i].show){
                         continue;
                       }else{?>
                 <% if (v.<?-fieldDefines[i].name ?>){ %>
                 <td><%=v.<?=columns[i]?>%></td>
+                <%}else{%>
+                <td>N/A</td>
                 <%}%>
                       <?}?>
 

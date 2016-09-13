@@ -23,6 +23,33 @@ define(['simple','text!./templates/add.html','router','homeModel'], function (Si
             this.template = _.template($("#MainTemplate").html());
             var that = this;
             that.$el.html(that.template({}));
+
+             <% for (var field in data.moduleDefine){
+                var fieldDef  = data.moduleDefine[field];
+                var fieldName = data.moduleDefine[field].dName;
+                var keyName = field;
+                var refer = fieldDef.refer;
+                if (!refer){continue;}
+                if (refer.module=='dictionary'){%>
+                params = {};
+                params.category = "<%=refer.category%>";
+                homeModel.queryReferListByParams("<%=refer.module%>",params,function(data){
+                    console.log(JSON.stringify(data));
+                    data.forEach(function(selectItem){
+                        var item = new Option(selectItem.name, selectItem.id);
+                         var obj=document.getElementById("add-<%=field%>").options.add(item);
+                    });
+                });
+                <%}else{%>
+                 homeModel.queryReferListByName("<%=refer.module%>",function(data){
+                    console.log(JSON.stringify(data));
+                    data.forEach(function(selectItem){
+                        var item = new Option(selectItem.name, selectItem.id);
+                         var obj=document.getElementById("add-<%=field%>").options.add(item);
+                    });
+                });
+               <%}}%>
+
         },
         onShow: function () {
 
@@ -33,20 +60,26 @@ define(['simple','text!./templates/add.html','router','homeModel'], function (Si
         saveUpdate: function(){
             //alert("saveUPdate!");
             var params = {};
-            
              <%
-            var  columns = [];
+        	  var  columns = [];
             for (var field in data.moduleDefine){
+                var fieldDef  = data.moduleDefine[field];
                 var fieldName = data.moduleDefine[field].dName;
                 var keyName = field;
-                if (field == "id"){
+                 if (field == "id"){
                     continue;
                 }
-            %>
-                params.<%=keyName%> = $("#add-<%=keyName%>").val();
+                if (fieldDef.refer){ %>
+                    params.<%=keyName%> = {};
+                    params.<%=keyName%>.id = $("#add-<%=keyName%>").val();
+                <%}else{%>
+                    params.<%=keyName%> = $("#add-<%=keyName%>").val();
+                <%}%>
+
             <%}%>
+
             
-            console.log("form data value:" +　JSON.stringify(params));
+             console.log("form data value:" +　JSON.stringify(params));
             homeModel.add(params,function(result){
                  console.log("AddNewSave result:" + JSON.stringify(result));
                 if(result){
