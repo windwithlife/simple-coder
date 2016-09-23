@@ -1,0 +1,52 @@
+<script id ='MainTemplate' type="text/simple-template">
+<div class="panel panel-default ">
+
+                <?
+                var  columns = [];
+                var  fieldDefines = [];
+                var  imageField;
+                var  nameField = "pic";
+                var  descField;
+                for (var field in data.moduleDefine){
+                    var fieldDef = data.moduleDefine[field];
+                    if (!fieldDef.show){continue;};
+                    var keyName     = field;
+                    var displayName = fieldDef.dName;
+                    var fieldName   = fieldDef.dName;
+                    var type        = fieldDef.type;
+                    var refer       = fieldDef.refer;
+                    if (fieldDef.show=="image"){
+                        imageField = field;
+                    }
+                    if (fieldDef.show=="desc"){
+                        descField = field;
+                    }
+                }?>
+
+<%_.each(data,function(v,k){
+
+            %>
+                   <div>
+                   <a  href="#edit?id=<%=v.id%>" class="btn  btn-xs btn-primary">
+                        <span class="glyphicon glyphicon-pencil"></span>编辑
+                    </a>
+                    <a  href="#" class="btn  btn-xs btn-warning btn-row-remove" data-id="<%=v.id%>" >
+                        <span class="glyphicon glyphicon-remove"></span>删除
+                    </a>
+                    <a  href="#add" class="btn  btn-xs btn-primary">
+                        <span class="glyphicon glyphicon-plus"></span>新增
+                    </a>
+                   </div>
+            <%});%>
+
+    <ul class="pager">
+
+        <li><a href="#">上一页</a></li>
+        <li><a href="#">下一页</a></li>
+
+    </ul>
+
+</div>
+
+</script>
+

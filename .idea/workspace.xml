@@ -2,12 +2,475 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9adebc7d-ca00-41eb-b023-9777ae19e972" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/h5/simple/server/Controller.java" afterPath="$PROJECT_DIR$/templates/h5/simple/server/Controller.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/h5/simple/server/Dao.java" afterPath="$PROJECT_DIR$/templates/h5/simple/server/Dao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/h5/simple/server/Service.java" afterPath="$PROJECT_DIR$/templates/h5/simple/server/Service.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/h5/simple/model/model.js" afterPath="$PROJECT_DIR$/templates/h5/simple/model/model.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/ckplayer.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/plugins/ckplayer/ckplayer.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/plugins/ckplayer/ckplayer.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/share/feixin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/plugins/ckplayer/share/feixin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/plugins/ckplayer/share/feixin.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/themes/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/themes/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/themes/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/themes/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/themes/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/themes/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/themes/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/themes/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/themes/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/share/google.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/plugins/ckplayer/share/google.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/plugins/ckplayer/share/google.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/share/kaixin001.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/plugins/ckplayer/share/kaixin001.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/plugins/ckplayer/share/kaixin001.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/share/msn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/plugins/ckplayer/share/msn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/plugins/ckplayer/share/msn.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/share/qq.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/plugins/ckplayer/share/qq.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/plugins/ckplayer/share/qq.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/share/qq2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/plugins/ckplayer/share/qq2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/plugins/ckplayer/share/qq2.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/share/qzone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/plugins/ckplayer/share/qzone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/plugins/ckplayer/share/qzone.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/share/rr.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/plugins/ckplayer/share/rr.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/plugins/ckplayer/share/rr.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/share/sina.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/plugins/ckplayer/share/sina.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/plugins/ckplayer/share/sina.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/share/sohu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/plugins/ckplayer/share/sohu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/plugins/ckplayer/share/sohu.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/style.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/plugins/ckplayer/style.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/plugins/ckplayer/style.swf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/share/tianya.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/plugins/ckplayer/share/tianya.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/plugins/ckplayer/share/tianya.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/server/java/module/Controller.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/server/java/module/Dao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/server/java/module/Entity.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/controller/admin/NotFound.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/controller/client/NotFound.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/controller/web/NotFound.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/controller/client/NotFound.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/server/java/module/Service.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/themes/bluesea/_theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/themes/default/_theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/themes/bluesea/_theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/themes/default/_theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/themes/bluesea/_theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/themes/default/_theme.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/view/admin/add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/view/client/add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/view/web/add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/view/admin/add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/view/client/add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/view/web/add.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/controller/client/add.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/controller/web/add.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/controller/admin/add.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/controller/client/add.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/controller/web/add.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/controller/client/add.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/controller/admin/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/controller/client/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/controller/web/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/controller/client/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/3rd/backbone-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/js/3rd/backbone-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/js/3rd/backbone-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/3rd/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/js/3rd/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/js/3rd/bootstrap.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/themes/default/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/themes/default/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/themes/default/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/category.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/ckplayer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/plugins/ckplayer/ckplayer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/plugins/ckplayer/ckplayer.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/ckplayer.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/plugins/ckplayer/ckplayer.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/plugins/ckplayer/ckplayer.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/modules/dictionary.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/view/admin/edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/view/client/edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/view/web/edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/view/admin/edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/view/client/edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/view/web/edit.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/controller/client/edit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/controller/web/edit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/controller/admin/edit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/controller/client/edit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/controller/web/edit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/controller/client/edit.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/simple/global_require_config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/js/simple/global_require_config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/js/simple/global_require_config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/themes/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/themes/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/themes/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/themes/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/themes/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/themes/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/view/client/home.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/view/web/home.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/view/admin/home.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/view/client/home.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/view/web/home.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/controller/web/home.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/controller/admin/home.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/controller/client/home.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/controller/web/home.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/controller/client/home.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/view/admin/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/view/client/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/view/web/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/view/admin/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/view/client/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/view/web/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/controller/admin/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/controller/client/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/controller/web/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/controller/admin/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/controller/client/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/controller/web/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/controller/client/index.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/view/client/info.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/view/web/info.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/view/admin/info.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/view/client/info.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/view/web/info.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/controller/client/info.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/controller/web/info.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/controller/admin/info.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/controller/client/info.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/controller/web/info.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/controller/client/info.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/3rd/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/js/3rd/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/js/3rd/jquery.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/generators/js_creator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/language.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/plugins/ckplayer/language.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/plugins/ckplayer/language.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/simple/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/js/simple/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/js/simple/main.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/simple/components/model.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/model/model.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/js/simple/components/model.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/model/model.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/js/simple/components/model.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/model/model.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/js/offlights.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/plugins/ckplayer/js/offlights.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/plugins/ckplayer/js/offlights.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/release/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/release/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/release/package.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/simple/components/page_navigator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/js/simple/components/page_navigator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/js/simple/components/page_navigator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/simple/components/params.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/js/simple/components/params.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/js/simple/components/params.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/3rd/react-bootstrap.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/js/3rd/react-bootstrap.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/js/3rd/react-bootstrap.min.js.map" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/3rd/react-bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/js/3rd/react-bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/js/3rd/react-bootstrap.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/3rd/react-dom-server.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/js/3rd/react-dom-server.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/js/3rd/react-dom-server.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/3rd/react-dom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/js/3rd/react-dom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/js/3rd/react-dom.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/3rd/react-with-addons.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/js/3rd/react-with-addons.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/js/3rd/react-with-addons.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/3rd/react.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/js/3rd/react.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/js/3rd/react.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/generators/react_js_creator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/generators/react_native_creator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/related.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/plugins/ckplayer/related.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/plugins/ckplayer/related.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/3rd/require.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/js/3rd/require.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/js/3rd/require.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/config/require_config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/config/require_config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/simple/components/router.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/js/simple/components/router.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/router/router.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/js/simple/components/router.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/router/router.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/generators/server_java_creator.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/share.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/plugins/ckplayer/share.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/plugins/ckplayer/share.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/simple/components/simple.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/js/simple/components/simple.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/js/simple/components/simple.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/3rd/text.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/js/3rd/text.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/js/3rd/text.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/3rd/underscore-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/js/3rd/underscore-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/js/3rd/underscore-min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/simple/components/url_parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/js/simple/components/url_parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/copyfiles/resources/framework/js/simple/components/url_parser.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/js/release/webpack.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/release/webpack.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/router/webpack.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/release/webpack.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactnative/router/webpack.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/server/nodejs/frameworkfiles/bin/www.js" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\lib\generators\react_creator.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\lib\generators\server_creator.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\lib\generators\web_creator.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\403.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\error.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\login.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\mobile\403.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\mobile\analyse.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\mobile\error.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\mobile\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\mobile\layout\footer-charisma.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\mobile\layout\footer.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\mobile\layout\header-charisma.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\mobile\layout\header.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\mobile\layout\layout-ch.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\mobile\layout\layout-simple.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\mobile\layout\layout.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\mobile\login.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\pad\403.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\pad\analyse.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\pad\error.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\pad\index.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\pad\layout\footer-charisma.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\pad\layout\footer.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\pad\layout\header-charisma.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\pad\layout\header.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\pad\layout\layout-ch.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\pad\layout\layout-simple.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\pad\layout\layout.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\pad\login.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\pc\layout\footer-charisma.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\pc\layout\footer.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\pc\layout\header-charisma.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\pc\layout\header.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\pc\layout\layout-ch.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\pc\layout\layout-simple.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\pc\layout\layout.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\java\templates\upload.html" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\layout\accordion-menu-outlook.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\model\model.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\router\router.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\server\Controller.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\server\Dao.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\server\Service.java" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\nodejs\router\web_router.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\Header.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\cart\CartIndex.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\cart\Detail.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\cart\List.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\category\Index.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\category\List.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\compoents\MenuButton.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\compoents\PageNavigator.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\compoents\WebView.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\home\HomeIndex.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\home\HomePage.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\banner\1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\banner\2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\banner\3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\banner\4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\banner\new.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\banner\reply.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\header\header_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\header\icon_qr.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\header\icon_search.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\header\icon_voice.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\home_icons\cz.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\home_icons\dyp.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\home_icons\gd.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\home_icons\ljd.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\home_icons\wdgz.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\home_icons\wlcx.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\home_icons\xjk.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\home_icons\yxcz.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\tabs\cart_focus.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\tabs\cart_normal.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\tabs\category_focus.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\tabs\category_normal.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\tabs\faxian_focus.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\tabs\faxian_normal.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\tabs\home_focus.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\tabs\home_normal.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\tabs\personal_focus.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\images\tabs\personal_normal.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\react\frameworkfiles\framework\index.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\config\require_config.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\controller\add.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\controller\edit.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\bin\app.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\bin\www.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\application\accordion-menu-outlook.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\application\accordion-menu.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\application\breadcrumb.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\application\navbar.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\components\accordion-menu-outlook.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\components\accordion-menu.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\components\breadcrumb.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\components\mainview.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\components\navbar.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\components\sidebar.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\components\slider.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\themes\bluesea\mobile\layout\footer-simple.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\themes\bluesea\mobile\layout\header-work.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\themes\bluesea\mobile\layout\header.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\themes\bluesea\mobile\layout\layout-iot.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\themes\bluesea\mobile\layout\layout.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\themes\bluesea\pc\layout\footer-simple.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\themes\bluesea\pc\layout\header-work.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\themes\bluesea\pc\layout\header.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\themes\bluesea\pc\layout\layout-iot.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\themes\bluesea\pc\layout\layout.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\themes\default\mobile\layout\footer-simple.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\themes\default\mobile\layout\header-auto.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\themes\default\mobile\layout\header-rn.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\themes\default\mobile\layout\header-work.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\themes\default\mobile\layout\header.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\themes\default\mobile\layout\layout-iot.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\themes\default\mobile\layout\layout.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\themes\default\pc\layout\footer-simple.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\themes\default\pc\layout\header-auto.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\themes\default\pc\layout\header-rn.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\themes\default\pc\layout\header-work.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\themes\default\pc\layout\header.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\themes\default\pc\layout\layout-iot.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\common\themes\default\pc\layout\layout.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\error.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\frameworkfiles\views\index.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\layout\accordion-menu-outlook.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\layout\accordion-menu.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\layout\breadcrumb.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\layout\navbar.ejs" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\model\model.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\router\web_router.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\view\add.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/common_creator.js" afterPath="$PROJECT_DIR$/lib/common_creator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/config.js" afterPath="$PROJECT_DIR$/modules/config.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/generators/h5_creator.js" afterPath="$PROJECT_DIR$/lib/generators/h5_creator.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/level.js" afterPath="$PROJECT_DIR$/modules/level.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\modules\Product.js" afterPath="$PROJECT_DIR$/modules/product.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\extjs\app.js" afterPath="$PROJECT_DIR$/templates/frontend/extjs/app.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\extjs\controller\AccordionMainMenu.js" afterPath="$PROJECT_DIR$/templates/frontend/extjs/controller/AccordionMainMenu.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\extjs\controller\Controller.js" afterPath="$PROJECT_DIR$/templates/frontend/extjs/controller/Controller.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\extjs\index.html" afterPath="$PROJECT_DIR$/templates/frontend/extjs/index.html" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\extjs\model\Model.js" afterPath="$PROJECT_DIR$/templates/frontend/extjs/model/Model.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\extjs\store\MenuStore.js" afterPath="$PROJECT_DIR$/templates/frontend/extjs/store/MenuStore.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\extjs\store\Store.js" afterPath="$PROJECT_DIR$/templates/frontend/extjs/store/Store.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\extjs\view\AccordionMainMenu.js" afterPath="$PROJECT_DIR$/templates/frontend/extjs/view/AccordionMainMenu.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\extjs\view\Form.js" afterPath="$PROJECT_DIR$/templates/frontend/extjs/view/Form.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\extjs\view\Header.js" afterPath="$PROJECT_DIR$/templates/frontend/extjs/view/Header.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\extjs\view\MainView.js" afterPath="$PROJECT_DIR$/templates/frontend/extjs/view/MainView.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\extjs\view\South.js" afterPath="$PROJECT_DIR$/templates/frontend/extjs/view/South.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\extjs\view\TabPanel.js" afterPath="$PROJECT_DIR$/templates/frontend/extjs/view/TabPanel.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\extjs\view\Viewport.js" afterPath="$PROJECT_DIR$/templates/frontend/extjs/view/Viewport.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\config\require_config.js" afterPath="$PROJECT_DIR$/templates/frontend/js/config/require_config.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\controller\add.js" afterPath="$PROJECT_DIR$/templates/frontend/js/controller/admin/add.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\controller\edit.js" afterPath="$PROJECT_DIR$/templates/frontend/js/controller/admin/edit.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\controller\home.js" afterPath="$PROJECT_DIR$/templates/frontend/js/controller/admin/home.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\controller\info.js" afterPath="$PROJECT_DIR$/templates/frontend/js/controller/admin/info.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\js\3rd\backbone-min.js" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/3rd/backbone-min.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\js\3rd\bootstrap.js" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/3rd/bootstrap.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\js\3rd\jquery.min.js" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/3rd/jquery.min.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\js\3rd\react-bootstrap.min.js" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/3rd/react-bootstrap.min.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\js\3rd\react-bootstrap.min.js.map" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/3rd/react-bootstrap.min.js.map" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\js\3rd\react-dom-server.min.js" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/3rd/react-dom-server.min.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\js\3rd\react-dom.min.js" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/3rd/react-dom.min.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\js\3rd\react-with-addons.min.js" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/3rd/react-with-addons.min.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\js\3rd\react.min.js" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/3rd/react.min.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\js\3rd\require.js" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/3rd/require.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\js\3rd\text.js" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/3rd/text.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\js\3rd\underscore-min.js" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/3rd/underscore-min.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\js\simple\components\model.js" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/simple/components/model.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\js\simple\components\page_navigator.js" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/simple/components/page_navigator.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\js\simple\components\params.js" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/simple/components/params.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\js\simple\components\router.js" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/simple/components/router.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\js\simple\components\simple.js" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/simple/components/simple.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\js\simple\components\url_parser.js" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/simple/components/url_parser.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\js\simple\global_require_config.js" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/simple/global_require_config.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\js\simple\main.js" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/simple/main.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\plugins\ckplayer\ckplayer.js" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/ckplayer.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\plugins\ckplayer\ckplayer.swf" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/ckplayer.swf" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\plugins\ckplayer\ckplayer.xml" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/ckplayer.xml" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\plugins\ckplayer\js\offlights.js" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/js/offlights.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\plugins\ckplayer\language.xml" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/language.xml" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\plugins\ckplayer\related.xml" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/related.xml" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\plugins\ckplayer\share.xml" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/share.xml" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\plugins\ckplayer\share\feixin.png" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/share/feixin.png" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\plugins\ckplayer\share\google.png" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/share/google.png" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\plugins\ckplayer\share\kaixin001.png" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/share/kaixin001.png" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\plugins\ckplayer\share\msn.png" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/share/msn.png" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\plugins\ckplayer\share\qq.png" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/share/qq.png" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\plugins\ckplayer\share\qq2.png" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/share/qq2.png" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\plugins\ckplayer\share\qzone.png" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/share/qzone.png" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\plugins\ckplayer\share\rr.png" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/share/rr.png" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\plugins\ckplayer\share\sina.png" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/share/sina.png" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\plugins\ckplayer\share\sohu.png" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/share/sohu.png" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\plugins\ckplayer\share\tianya.png" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/share/tianya.png" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\plugins\ckplayer\style.swf" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/plugins/ckplayer/style.swf" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\themes\bluesea\_theme.css" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/themes/bluesea/_theme.css" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\themes\default\_theme.css" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/themes/default/_theme.css" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\themes\default\bootstrap.min.css" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/themes/default/bootstrap.min.css" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\themes\fonts\glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/themes/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\themes\fonts\glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/themes/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\themes\fonts\glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/themes/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\themes\fonts\glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/themes/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources\framework\themes\fonts\glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/themes/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\nodejs\templates\error.ejs" afterPath="$PROJECT_DIR$/templates/website/nodejs/templates/error.ejs" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\nodejs\templates\index.ejs" afterPath="$PROJECT_DIR$/templates/website/nodejs/templates/index.ejs" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\nodejs\templates\layout\pc\footer-simple.ejs" afterPath="$PROJECT_DIR$/templates/website/nodejs/templates/layout/pc/footer-simple.ejs" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\nodejs\templates\layout\pc\header-auto.ejs" afterPath="$PROJECT_DIR$/templates/website/nodejs/templates/layout/pc/header-auto.ejs" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\nodejs\templates\layout\pc\header-rn.ejs" afterPath="$PROJECT_DIR$/templates/website/nodejs/templates/layout/pc/header-rn.ejs" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\nodejs\templates\layout\pc\header-work.ejs" afterPath="$PROJECT_DIR$/templates/website/nodejs/templates/layout/pc/header-work.ejs" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\nodejs\templates\layout\pc\header.ejs" afterPath="$PROJECT_DIR$/templates/website/nodejs/templates/layout/pc/header.ejs" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\nodejs\templates\layout\pc\layout-iot.ejs" afterPath="$PROJECT_DIR$/templates/website/nodejs/templates/layout/pc/layout-iot.ejs" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\nodejs\templates\layout\pc\layout.ejs" afterPath="$PROJECT_DIR$/templates/website/nodejs/templates/layout/pc/layout.ejs" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\nodejs\webserver\app.js" afterPath="$PROJECT_DIR$/templates/website/nodejs/webserver/app.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\nodejs\webserver\www.js" afterPath="$PROJECT_DIR$/templates/server/nodejs/frameworkfiles/bin/www.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\router\web_router.js" afterPath="$PROJECT_DIR$/templates/server/nodejs/router/web_router.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\server\Entity.java" afterPath="$PROJECT_DIR$/templates/server/java/module/Entity.java" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\view\add.html" afterPath="$PROJECT_DIR$/templates/frontend/js/view/admin/add.html" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\view\edit.html" afterPath="$PROJECT_DIR$/templates/frontend/js/view/admin/edit.html" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\view\home.html" afterPath="$PROJECT_DIR$/templates/frontend/js/view/admin/home.html" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\h5\simple\view\info.html" afterPath="$PROJECT_DIR$/templates/frontend/js/view/admin/info.html" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\nodejs\frameworkfiles\bin\app.js" afterPath="$PROJECT_DIR$/templates/server/nodejs/frameworkfiles/bin/app.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\nodejs\frameworkfiles\bin\www.js" afterPath="$PROJECT_DIR$/templates/website/nodejs/webserver/www.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\nodejs\mongodb\model.js" afterPath="$PROJECT_DIR$/templates/server/nodejs/mongodb/model.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\nodejs\mysql\dao.js" afterPath="$PROJECT_DIR$/templates/server/nodejs/mysql/dao.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\nodejs\router\api.js" afterPath="$PROJECT_DIR$/templates/server/nodejs/router/api.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\nodejs\router\soa_router.js" afterPath="$PROJECT_DIR$/templates/server/nodejs/router/soa_router.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\nodejs\router\soa_router_module.js" afterPath="$PROJECT_DIR$/templates/server/nodejs/router/soa_router_module.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\controller\main.js" afterPath="$PROJECT_DIR$/templates/frontend/js/controller/client/home.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\router\router.js" afterPath="$PROJECT_DIR$/templates/frontend/js/router/router.js" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\view\edit.html" afterPath="$PROJECT_DIR$/templates/frontend/js/view/admin/info.html" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\web\simple\view\mainview.html" afterPath="$PROJECT_DIR$/templates/frontend/js/view/admin/home.html" />
     </list>
     <ignored path="SimpleCoder.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,102 +491,104 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="add.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/h5/simple/view/add.html">
+      <file leaf-file-name="api.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/server/nodejs/router/api.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.107143">
-              <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/h5/simple/controller/add.js">
+      <file leaf-file-name="dao.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/server/nodejs/mysql/dao.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="50" column="21" selection-start-line="26" selection-start-column="12" selection-end-line="50" selection-end-column="21" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="js_creator.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/generators/js_creator.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="128" column="39" selection-start-line="127" selection-start-column="3" selection-end-line="128" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="model.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/h5/simple/frameworkfiles/resources/framework/js/simple/components/model.js">
+        <entry file="file://$PROJECT_DIR$/templates/server/nodejs/mongodb/model.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Controller.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/h5/simple/server/Controller.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.766666">
-              <caret line="59" column="43" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="43" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Dao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/h5/simple/server/Dao.java">
+      <file leaf-file-name="react_js_creator.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/generators/react_js_creator.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="8" column="56" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="56" />
+              <caret line="260" column="0" selection-start-line="260" selection-start-column="0" selection-end-line="260" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/h5/simple/controller/edit.js">
+      <file leaf-file-name="react_native_creator.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/generators/react_native_creator.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+              <caret line="153" column="56" selection-start-line="153" selection-start-column="56" selection-end-line="153" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Entity.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/h5/simple/server/Entity.java">
+      <file leaf-file-name="server_java_creator.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/generators/server_java_creator.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="59" column="44" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="44" />
+              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="model.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/h5/simple/model/model.js">
+      <file leaf-file-name="soa_router.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/server/nodejs/router/soa_router.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="14" column="68" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/package.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.065972224">
-              <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Service.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/h5/simple/server/Service.java">
+      <file leaf-file-name="soa_router_module.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/server/nodejs/router/soa_router_module.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="40" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="40" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web_router.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/templates/server/nodejs/router/web_router.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -136,22 +601,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/server/routes/soa_router.js" />
-        <option value="$PROJECT_DIR$/index.js" />
-        <option value="$PROJECT_DIR$/node_modules/simple-coder/modules/Product.js" />
-        <option value="$PROJECT_DIR$/node_modules/simple-coder/modules/faq.js" />
-        <option value="$PROJECT_DIR$/modules/faq.js" />
-        <option value="$PROJECT_DIR$/modules/User.js" />
-        <option value="$PROJECT_DIR$/testa/modules/db.json" />
-        <option value="$PROJECT_DIR$/lib/web_creator.js" />
-        <option value="$PROJECT_DIR$/testa/server/routes/soa_router.js" />
-        <option value="$PROJECT_DIR$/lib/server_creator.js" />
-        <option value="module.js" />
-        <option value="$PROJECT_DIR$/web/bin/www.js" />
-        <option value="$PROJECT_DIR$/web/bin/app.js" />
-        <option value="$PROJECT_DIR$/modules/db.json" />
-        <option value="$PROJECT_DIR$/lib/generators/server_creator.js" />
-        <option value="$PROJECT_DIR$/cli.js" />
         <option value="$PROJECT_DIR$/lib/code_tools.js" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/lib/generators/web_creator.js" />
@@ -160,19 +609,16 @@
         <option value="$PROJECT_DIR$/lib/generators/react_creator.js" />
         <option value="$PROJECT_DIR$/lib/xtools.js" />
         <option value="$PROJECT_DIR$/modules/Product.js" />
-        <option value="$PROJECT_DIR$/lib/common_creator.js" />
         <option value="$PROJECT_DIR$/templates/h5/simple/view/addNew.html" />
         <option value="$PROJECT_DIR$/templates/h5/simple/controller/addNew.js" />
         <option value="$PROJECT_DIR$/templates/h5/simple/view/editNew.html" />
         <option value="$PROJECT_DIR$/templates/h5/simple/controller/editNew.js" />
         <option value="$PROJECT_DIR$/templates/h5/simple/view/info.html" />
         <option value="$PROJECT_DIR$/templates/h5/simple/controller/info.js" />
-        <option value="$PROJECT_DIR$/templates/h5/simple/router/router.js" />
         <option value="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/resources/common/js/simple/components/url_parser.js" />
         <option value="$PROJECT_DIR$/templates/h5/simple/frameworkfiles/resources/common/js/simple/main.js" />
         <option value="$PROJECT_DIR$/templates/h5/simple/config/require_config.js" />
         <option value="$PROJECT_DIR$/modules/config.js" />
-        <option value="$PROJECT_DIR$/lib/generators/h5_creator.js" />
         <option value="$PROJECT_DIR$/modules/product.js" />
         <option value="$PROJECT_DIR$/modules/level.js" />
         <option value="$PROJECT_DIR$/templates/h5/simple/server/Entity.java" />
@@ -184,9 +630,28 @@
         <option value="$PROJECT_DIR$/templates/h5/simple/controller/edit.js" />
         <option value="$PROJECT_DIR$/templates/h5/simple/server/Dao.java" />
         <option value="$PROJECT_DIR$/templates/h5/simple/server/Service.java" />
-        <option value="$PROJECT_DIR$/templates/h5/simple/server/Controller.java" />
         <option value="$PROJECT_DIR$/templates/h5/simple/model/model.js" />
+        <option value="$PROJECT_DIR$/lib/common_creator.js" />
+        <option value="$PROJECT_DIR$/templates/h5/simple/server/Controller.java" />
+        <option value="$PROJECT_DIR$/templates/h5/simple/controller/index.js" />
+        <option value="$PROJECT_DIR$/templates/h5/simple/router/router.js" />
+        <option value="$PROJECT_DIR$/templates/h5/simple/views/mobile/client/view/index.html" />
+        <option value="$PROJECT_DIR$/templates/h5/simple/views/mobile/client/controller/home.js" />
+        <option value="$PROJECT_DIR$/templates/h5/simple/views/mobile/client/controller/add.js" />
+        <option value="$PROJECT_DIR$/templates/h5/simple/views/mobile/client/controller/edit.js" />
+        <option value="$PROJECT_DIR$/templates/h5/simple/views/mobile/client/controller/index.js" />
+        <option value="$PROJECT_DIR$/templates/h5/simple/views/mobile/client/controller/info.js" />
+        <option value="$PROJECT_DIR$/templates/h5/simple/frontend/mobile/client/router/router.js" />
+        <option value="$PROJECT_DIR$/templates/h5/simple/frontend/pc/web/router/webpack.config.js" />
+        <option value="$PROJECT_DIR$/templates/h5/simple/frontend/mobile/client/router/webpack.config.js" />
+        <option value="$PROJECT_DIR$/templates/h5/simple/frontend/release/webpack.config.js" />
+        <option value="$PROJECT_DIR$/lib/generators/h5_creator.js" />
+        <option value="$PROJECT_DIR$/lib/generators/reactjs_creator.js" />
+        <option value="$PROJECT_DIR$/lib/generators/js_creator.js" />
         <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/lib/generators/react_js_creator.js" />
+        <option value="$PROJECT_DIR$/lib/generators/react_native_creator.js" />
+        <option value="$PROJECT_DIR$/lib/generators/server_java_creator.js" />
       </list>
     </option>
   </component>
@@ -198,8 +663,10 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="width" value="1517" />
-    <option name="height" value="981" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1696" />
+    <option name="height" value="1026" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -208,7 +675,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -271,253 +738,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="h5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="view" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="h5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="server" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="h5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="h5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="h5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frameworkfiles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="h5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frameworkfiles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="h5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frameworkfiles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="framework" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="h5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controller" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="h5" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="simple" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
+              <option name="myItemId" value="frontend" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -532,24 +753,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generators" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -561,7 +764,7 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SimpleCoderCli" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../java/framework/JXSimple/simple/simple-base" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="recentsLimit" value="5" />
@@ -570,18 +773,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\program\framework\SimpleCoder\modules" />
-      <recent name="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website" />
-      <recent name="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\resources" />
-      <recent name="D:\program\framework\SimpleCoder\templates\h5\simple\controller" />
-      <recent name="D:\program\framework\SimpleCoder\templates\h5\simple\view" />
+      <recent name="D:\program\framework\SimpleCoder\templates\server\java\module" />
+      <recent name="D:\program\framework\SimpleCoder\lib\generators" />
+      <recent name="D:\program\framework\SimpleCoder\templates\frontend\reactnative" />
+      <recent name="D:\program\framework\SimpleCoder\templates\frontend\js\controller\admin" />
+      <recent name="D:\program\framework\SimpleCoder\templates\frontend\js\controller\client" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\nodejs\webserver" />
-      <recent name="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\nodejs\bin" />
-      <recent name="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\nodejs\templates" />
-      <recent name="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\website\nodejs" />
-      <recent name="D:\program\framework\SimpleCoder\templates\h5\simple\frameworkfiles\views\nodejs" />
+      <recent name="D:\program\framework\SimpleCoder\templates\website" />
+      <recent name="D:\program\framework\SimpleCoder\templates\server" />
+      <recent name="D:\program\framework\SimpleCoder\templates\website\nodejs" />
+      <recent name="D:\program\framework\SimpleCoder\templates\frontend" />
+      <recent name="D:\program\framework\SimpleCoder\templates\frontend\js\controller\web" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.coder generateLocalTest">
@@ -695,17 +898,17 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1517" height="981" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38742393" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287827" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19240049" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282353" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5832402" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43003413" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2552941" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21675977" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46643913" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -714,7 +917,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -737,11 +940,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/lib/generators/server_creator.js</url>
-          <line>152</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/lib/common_creator.js</url>
           <line>107</line>
           <option name="timeStamp" value="53" />
@@ -752,39 +950,9 @@
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/lib/generators/web_creator.js</url>
-          <line>233</line>
-          <option name="timeStamp" value="59" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/lib/generators/web_creator.js</url>
-          <line>220</line>
-          <option name="timeStamp" value="60" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/lib/common_creator.js</url>
           <line>112</line>
           <option name="timeStamp" value="61" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/lib/generators/web_creator.js</url>
-          <line>180</line>
-          <option name="timeStamp" value="63" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/lib/generators/web_creator.js</url>
-          <line>222</line>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/lib/generators/web_creator.js</url>
-          <line>98</line>
-          <option name="timeStamp" value="68" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/lib/generators/web_creator.js</url>
-          <line>99</line>
-          <option name="timeStamp" value="69" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/coder.js</url>
@@ -846,162 +1014,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/coder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="105" column="5" selection-start-line="105" selection-start-column="5" selection-end-line="105" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/code_tools.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/coder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="70" column="4" selection-start-line="70" selection-start-column="4" selection-end-line="70" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/common_creator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/server_creator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="68" column="2" selection-start-line="68" selection-start-column="2" selection-end-line="68" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/web_creator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/xtools.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="34" column="34" selection-start-line="34" selection-start-column="34" selection-end-line="34" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/coder.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="45" selection-start-line="6" selection-start-column="45" selection-end-line="6" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="27" selection-start-line="12" selection-start-column="27" selection-end-line="12" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/server_creator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="191" column="32" selection-start-line="191" selection-start-column="32" selection-end-line="191" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.142858">
-          <caret line="12" column="17" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/code_tools.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="9" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/nodejs/frameworkfiles/bin/www.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/nodejs/frameworkfiles/bin/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/json_db.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="80" column="19" selection-start-line="80" selection-start-column="8" selection-end-line="80" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider editor-type-id="MultiMarkdownFxHtmlEditor">
         <state />
@@ -1009,115 +1021,140 @@
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.0666666">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/js/model/model.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/js/controller/web/edit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/js/controller/web/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/js/controller/web/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/js/controller/web/info.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/js/router/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/reactjs/controller/client/add.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/reactjs/controller/client/edit.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/reactjs/controller/client/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/reactjs/controller/client/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/reactjs/router/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/reactjs/router/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/reactjs/release/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/h5_creator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="103" selection-start-line="29" selection-start-column="103" selection-end-line="29" selection-end-column="103" />
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/coder.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="2" selection-start-line="59" selection-start-column="2" selection-end-line="59" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/web_creator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="225" column="57" selection-start-line="225" selection-start-column="57" selection-end-line="225" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/nodejs/webserver/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/h5/simple/frameworkfiles/website/nodejs/webserver/www.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="22" selection-end-line="15" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/react_creator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="14" selection-start-line="7" selection-start-column="0" selection-end-line="8" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/xtools.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="61" column="38" selection-start-line="61" selection-start-column="38" selection-end-line="61" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/server_creator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/h5/simple/view/info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6785714">
-          <caret line="1" column="40" selection-start-line="1" selection-start-column="40" selection-end-line="1" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/h5/simple/router/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/h5/simple/config/require_config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/h5/simple/controller/info.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/level.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
+          <caret line="72" column="53" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
           <folding />
         </state>
       </provider>
@@ -1125,128 +1162,170 @@
     <entry file="file://$PROJECT_DIR$/lib/common_creator.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="83" selection-start-line="11" selection-start-column="83" selection-end-line="11" selection-end-column="83" />
+          <caret line="89" column="42" selection-start-line="89" selection-start-column="42" selection-end-line="89" selection-end-column="42" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/modules/product.js">
+    <entry file="file://$PROJECT_DIR$/templates/frontend/js/controller/web/add.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="12" column="56" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="56" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/generators/h5_creator.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4333334">
-          <caret line="136" column="59" selection-start-line="136" selection-start-column="59" selection-end-line="136" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/h5/simple/view/edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.928572">
-          <caret line="43" column="67" selection-start-line="38" selection-start-column="18" selection-end-line="43" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/h5/simple/controller/home.js">
+    <entry file="file://$PROJECT_DIR$/templates/frontend/js/controller/admin/add.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="71" column="34" selection-start-line="71" selection-start-column="34" selection-end-line="71" selection-end-column="34" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/h5/simple/view/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.75">
-          <caret line="49" column="72" selection-start-line="49" selection-start-column="72" selection-end-line="49" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/h5/simple/frameworkfiles/resources/framework/js/simple/components/model.js">
+    <entry file="file://$PROJECT_DIR$/templates/frontend/js/controller/admin/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="46" selection-start-line="28" selection-start-column="46" selection-end-line="28" selection-end-column="46" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/h5/simple/view/add.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.107143">
-          <caret line="33" column="46" selection-start-line="33" selection-start-column="46" selection-end-line="33" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/h5/simple/controller/add.js">
+    <entry file="file://$PROJECT_DIR$/templates/frontend/js/controller/admin/info.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="50" column="21" selection-start-line="26" selection-start-column="12" selection-end-line="50" selection-end-column="21" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/h5/simple/controller/edit.js">
+    <entry file="file://$PROJECT_DIR$/templates/frontend/js/controller/admin/home.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="26" selection-start-line="43" selection-start-column="26" selection-end-line="43" selection-end-column="26" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/h5/simple/server/Entity.java">
+    <entry file="file://$PROJECT_DIR$/templates/frontend/js/controller/admin/edit.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="59" column="44" selection-start-line="59" selection-start-column="29" selection-end-line="59" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/h5/simple/server/Dao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="8" column="56" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="56" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/h5/simple/server/Service.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="40" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/h5/simple/server/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.766666">
-          <caret line="59" column="43" selection-start-line="59" selection-start-column="30" selection-end-line="59" selection-end-column="43" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/h5/simple/model/model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="68" selection-start-line="14" selection-start-column="68" selection-end-line="14" selection-end-column="68" />
+          <caret line="12" column="51" selection-start-line="12" selection-start-column="51" selection-end-line="12" selection-end-column="51" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.065972224">
-          <caret line="2" column="21" selection-start-line="2" selection-start-column="21" selection-end-line="2" selection-end-column="21" />
+        <state vertical-scroll-proportion="-5.428571">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/reactjs/view/admin/edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/reactjs/view/admin/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/reactnative/release/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/react_native_creator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="153" column="56" selection-start-line="153" selection-start-column="56" selection-end-line="153" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/react_js_creator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="260" column="0" selection-start-line="260" selection-start-column="0" selection-end-line="260" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/js_creator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="128" column="39" selection-start-line="127" selection-start-column="3" selection-end-line="128" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/generators/server_java_creator.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/server/nodejs/mongodb/model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/server/nodejs/mysql/dao.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/server/nodejs/router/api.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/server/nodejs/router/soa_router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/server/nodejs/router/soa_router_module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/server/nodejs/router/web_router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

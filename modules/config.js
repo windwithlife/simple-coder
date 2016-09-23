@@ -1,5 +1,6 @@
 module.exports  ={
-    enables:["product"],
+    enables:["product","level","dictionary","category"],
+    
     basePackage:"com.simple.base.bz.auto",
 }
 

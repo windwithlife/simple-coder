@@ -9,6 +9,6 @@ module.exports  =
     fields: {
         id: {type: 'Long', dName: "编号"},
         name: {type: 'String', dName: "名称",show:true},
-        desc: {type: 'String', dName: "阶层描述"},
+        description: {type: 'String', dName: "阶层描述",show:"yes"},
     }
 }
