@@ -1,14 +1,19 @@
-var dirDist    ='../../../../src/main/resources/static/dist/',
-    dirSource    ='../resources/';
 
 var fs         = require('fs');
 var path       = require('path');
-//var xtools     = require('./xtools');
 var gulp       = require('gulp');
 var clean      = require('gulp-clean');
 var webpack    = require("webpack");
 var webpackConfig = require("./webpack.config.js");
 
+var argv       = require('yargs').argv;
+
+var dirDist   ='../../../../src/main/resources/static/dist/';
+var dirSource ='../resources/';
+
+var sideName = argv.side;
+if (!sideName){sideName = "client"}
+console.log("side name is:--" +  sideName);
 function sideChannelsBuild(basePath, sideName,destBasePath){
     var workPath = basePath + "/" + sideName + "/";
     var targetPath  = destBasePath + "/" + sideName + "/";
@@ -32,8 +37,8 @@ function sideChannelsBuild(basePath, sideName,destBasePath){
 }
 
 gulp.task('clean', function() {
-
-    return gulp.src(dirDist, {
+    var dirSideDist = dirDist + "/" + sideName +"/";
+    return gulp.src(dirSideDist, {
         read: false
     })
         .pipe(clean({force: true}));
@@ -43,9 +48,8 @@ gulp.task('clean', function() {
 gulp.task('default', ['clean'], function() {
 
     gulp.start(function() {
-        //taskProject.moveToDist();
-        //xtools.copyDirEx(dirSource,dirDist);
-        sideChannelsBuild(dirSource,"client",dirDist);
+
+        sideChannelsBuild(dirSource,sideName,dirDist);
     });
 
 });
