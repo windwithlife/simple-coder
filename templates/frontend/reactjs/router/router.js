@@ -79,11 +79,11 @@ const routes = (
     </Router>
 );
 
-//render(routes, document.getElementById('mycontainer'));
+render(routes, document.getElementById('mycontainer'));
 
-window.addEventListener('load', () => {
-    render(routes, document.getElementById('mycontainer'));
-},false);
+//window.addEventListener('load', () => {
+//    render(routes, document.getElementById('mycontainer'));
+//},false);
 
 //document.addEventListener('DOMContentLoaded', () => {
 //  render(routes, document.getElementById('mycontainer'));

@@ -8,12 +8,35 @@ var webpackConfig = require("./webpack.config.js");
 
 var argv       = require('yargs').argv;
 
-var dirDist   ='../../../../src/main/resources/static/dist/';
-var dirSource ='../resources/';
+
 
 var sideName = argv.side;
 if (!sideName){sideName = "client"}
 console.log("side name is:--" +  sideName);
+
+var dirDist    ='../../../../src/main/resources/static/dist/';
+var dirSource    ='../resources/';
+var release = argv.release;
+if (!release){
+    dirDist = "../dist/";
+}
+if (release == "javaserver"){
+    dirDist = '../../../server/java/simpleserver/src/main/resources/static/dist/';
+}else if(release =="localserver"){
+    dirDist    ='../../../../src/main/resources/static/dist/';
+}
+//xtools.mkdirX(dirDist);
+console.log("dest folder name is:--" +  dirDist);
+
+var apiServerAddress = argv.host;
+if (!apiServerAddress){apiServerAddress = "http://localhost:5389"};
+console.log("ApiServerAddress is:--" +  apiServerAddress);
+
+//provider currect api server address and port
+function replaceServerHost(basePath,targetHost){
+	
+}
+
 function sideChannelsBuild(basePath, sideName,destBasePath){
     var workPath = basePath + "/" + sideName + "/";
     var targetPath  = destBasePath + "/" + sideName + "/";
@@ -21,7 +44,10 @@ function sideChannelsBuild(basePath, sideName,destBasePath){
     files.forEach(function(file){
         var filePath =workPath +  file;
         var stats = fs.statSync(filePath);
+        var modelFile = filePath + "/models/model.js";
+        replaceServerHost(modelFile,apiServerAddress);
         if (stats.isDirectory()){
+        	
             var entryFile = filePath + "/router.js";
             var outPath   = targetPath + file;
             webpackConfig.entry.app = entryFile;

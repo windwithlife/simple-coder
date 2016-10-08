@@ -6,7 +6,7 @@ function  testOS(req) {
     var $ = {};
 
     var ua = req.headers['user-agent'];
-    console.log(ua);
+    //console.log(ua);
     if (/mobile/i.test(ua))
         $.Mobile = true;
 
@@ -32,47 +32,34 @@ function  testOS(req) {
 }
 module.exports.build = function(req, params,layoutName){
     var os = testOS(req);
-    var platform;
+    var platform = "mobile";
     var sideName = "client";
     var currentUrlPath = req.path;
 
+    if (currentUrlPath.indexOf('admin')>-1){
+        sideName = "admin";
+    }else if (currentUrlPath.indexOf('web')>-1){
+        sideName = "web";
+    }else{
+        sideName = "client";
+    }
     if (os.Mobile){
         platform = "mobile";
-        if (currentUrlPath.indexOf('admin')>-1){
-            sideName = "admin";
-        }else{
-            sideName = "client";
-        }
     }else{
         platform = "pc";
-        if (currentUrlPath.indexOf('admin')>-1){
-            sideName = "admin";
-        }else{
-            sideName = "web";
-        }
     }
     var themeName = global.currentThemeName;
-    if (typeof(themeName) =='undefined'){
+    if (!themeName){
         themeName = 'default';
     }
-    var themePath= "common/themes/" + themeName;
-    var layoutPath = themePath + "/"  + platform + "/layout/";
+
     var resourcePath = sideName + "/";
-    if ((typeof(layoutName) == 'undefined') || (layoutName == null)||(layoutName == '')){
-        layoutPath  = layoutPath + "layout.ejs";
-    }else{
-        layoutPath = layoutPath + layoutName;
-    }
-    console.log('layout path' + layoutPath);
-    //get basePath
-    var basePath = "/" +  req.path.split("/")[1];
 
     return {
-        commonResourcePath: resourcePath,
-        basePath:basePath,
-        layout: false,
-        params: params
-
+        resourcePath: resourcePath,
+        sideName:sideName,
+        platform:platform,
+        layout: false
     };
 }
 

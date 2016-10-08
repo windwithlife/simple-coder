@@ -10,7 +10,7 @@ var path = require('path');
  //-----------------------Section---------------------------//
  router.get('/*', function(req, res, next) {
      var env = envHelper.build(req);
-     var page =env.commonResourcePath +　"index";
+     var page =env.sideName +　"/index";
      console.log(page);
      res.render(page,env);
  });

@@ -1,6 +1,6 @@
 module.exports  ={
-    enables:["product","level","dictionary","category"],
-    basePackage:"com.simple.base.bz.auto",
+    enables:["product","dictionary","category"],
+    basePackage:"com.simple.server.bz.auto",
     apiServer:"http://api.zhangyongqiao.com",
 }
 

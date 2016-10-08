@@ -185,4 +185,3 @@ const TabsExample = React.createClass({
     }
 });
 
-export default TabsExample;

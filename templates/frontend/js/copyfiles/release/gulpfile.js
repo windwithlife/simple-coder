@@ -6,12 +6,22 @@ var clean      = require('gulp-clean');
 
 var argv       = require('yargs').argv;
 
+
+var sideName = argv.side;
+var release = argv.release;
+if (!sideName){sideName = "admin"}
+
 var dirDist    ='../../../../src/main/resources/static/dist/';
 var dirSource    ='../resources/';
-var sideName = argv.side;
-if (!sideName){sideName = "client"}
-
-
+if (!release){
+    dirDist = "../dist/";
+}
+if (release == "javaserver"){
+    dirDist = '../../../server/java/simpleserver/src/main/resources/static/dist/';
+}else if(release =="localserver"){
+    dirDist    ='../../../../src/main/resources/static/dist/';
+}
+xtools.mkdirX(dirDist);
 var printMsg = function() {
     console.log('\033[0;31m\n文件已经迁移到TFS环境中');
     console.log('当前迁移的TFS路径为：' + dirtfs.dir().toString());
@@ -32,7 +42,9 @@ gulp.task('default', ['clean'], function() {
 
     gulp.start(function() {
         var dirSideSource = dirSource  +"/" + sideName +"/";
-        xtools.copyDirEx(dirSideSource,dirDist);
+        var dirSideDist = dirDist  +"/" + sideName +"/";
+
+        xtools.copyDirEx(dirSideSource,dirSideDist);
     });
 
 });
