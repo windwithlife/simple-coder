@@ -3,19 +3,21 @@ var fs         = require('fs');
 var path       = require('path');
 var gulp       = require('gulp');
 var clean      = require('gulp-clean');
+var replace   = require('gulp-replace');
 var webpack    = require("webpack");
 var webpackConfig = require("./webpack.config.js");
 
 var argv       = require('yargs').argv;
 
+var dirDist    ='../../../../src/main/resources/static/dist/';
+var dirSource    ='../resources/';
 
 
 var sideName = argv.side;
 if (!sideName){sideName = "client"}
 console.log("side name is:--" +  sideName);
 
-var dirDist    ='../../../../src/main/resources/static/dist/';
-var dirSource    ='../resources/';
+/*
 var release = argv.release;
 if (!release){
     dirDist = "../dist/";
@@ -24,18 +26,15 @@ if (release == "javaserver"){
     dirDist = '../../../server/java/simpleserver/src/main/resources/static/dist/';
 }else if(release =="localserver"){
     dirDist    ='../../../../src/main/resources/static/dist/';
-}
+}*/
 //xtools.mkdirX(dirDist);
 console.log("dest folder name is:--" +  dirDist);
 
 var apiServerAddress = argv.host;
-if (!apiServerAddress){apiServerAddress = "http://localhost:5389"};
+if (!apiServerAddress){apiServerAddress = "localhost:5389"};
 console.log("ApiServerAddress is:--" +  apiServerAddress);
 
-//provider currect api server address and port
-function replaceServerHost(basePath,targetHost){
-	
-}
+
 
 function sideChannelsBuild(basePath, sideName,destBasePath){
     var workPath = basePath + "/" + sideName + "/";
@@ -45,7 +44,7 @@ function sideChannelsBuild(basePath, sideName,destBasePath){
         var filePath =workPath +  file;
         var stats = fs.statSync(filePath);
         var modelFile = filePath + "/models/model.js";
-        replaceServerHost(modelFile,apiServerAddress);
+
         if (stats.isDirectory()){
         	
             var entryFile = filePath + "/router.js";
@@ -66,13 +65,37 @@ gulp.task('clean', function() {
     var dirSideDist = dirDist + "/" + sideName +"/";
     return gulp.src(dirSideDist, {
         read: false
-    })
-        .pipe(clean({force: true}));
+    }).pipe(clean({force: true}));
 
 });
 
-gulp.task('default', ['clean'], function() {
+gulp.task('replace', function() {
+    var dirSideSource = dirSource + "/" + sideName +"/**/models/model.js";
+    var dirSideDest = dirSource + "/" + sideName +"/";
+    var strHost = "$1"+ apiServerAddress + "$2";
+    return gulp.src(dirSideSource).pipe(replace(/(serverPath\s*=\s*[",']http[s]{0,1}:\/\/).+([",'])/g,strHost)).pipe(gulp.dest(dirSideDest));
 
+})
+
+gulp.task('default', ['clean','replace'], function() {
+    dirDist = "../dist/";
+    gulp.start(function() {
+
+        sideChannelsBuild(dirSource,sideName,dirDist);
+    });
+
+});
+
+gulp.task('release', ['clean','replace'], function() {
+    dirDist = '../../../server/java/simpleserver/src/main/resources/static/dist/';
+    gulp.start(function() {
+
+        sideChannelsBuild(dirSource,sideName,dirDist);
+    });
+
+});
+gulp.task('java-release', ['clean','replace'], function() {
+    dirDist    ='../../../../src/main/resources/static/dist/';
     gulp.start(function() {
 
         sideChannelsBuild(dirSource,sideName,dirDist);

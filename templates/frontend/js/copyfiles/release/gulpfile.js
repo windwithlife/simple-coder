@@ -3,16 +3,17 @@ var path       = require('path');
 var xtools     = require('./xtools');
 var gulp       = require('gulp');
 var clean      = require('gulp-clean');
-
+var replace   = require('gulp-replace');
 var argv       = require('yargs').argv;
 
+var dirDist    ='../dist/';
+var dirSource    ='../resources/';
 
 var sideName = argv.side;
 var release = argv.release;
 if (!sideName){sideName = "admin"}
 
-var dirDist    ='../../../../src/main/resources/static/dist/';
-var dirSource    ='../resources/';
+/*
 if (!release){
     dirDist = "../dist/";
 }
@@ -20,8 +21,14 @@ if (release == "javaserver"){
     dirDist = '../../../server/java/simpleserver/src/main/resources/static/dist/';
 }else if(release =="localserver"){
     dirDist    ='../../../../src/main/resources/static/dist/';
-}
-xtools.mkdirX(dirDist);
+}*/
+
+
+
+var apiServerAddress = argv.host;
+if (!apiServerAddress){apiServerAddress = "localhost:5389"};
+console.log("ApiServerAddress is:--" +  apiServerAddress);
+
 var printMsg = function() {
     console.log('\033[0;31m\n文件已经迁移到TFS环境中');
     console.log('当前迁移的TFS路径为：' + dirtfs.dir().toString());
@@ -38,8 +45,27 @@ gulp.task('clean', function() {
 
 });
 
-gulp.task('default', ['clean'], function() {
+gulp.task('replace', function() {
+    var dirSideSource = dirSource + "/" + sideName +"/**/models/model.js";
+    var dirSideDest = dirSource + "/" + sideName +"/";
+    var strHost = "$1"+ apiServerAddress + "$2";
+    return gulp.src(dirSideSource).pipe(replace(/(serverPath\s*=\s*[",']http[s]{0,1}:\/\/).+([",'])/g,strHost)).pipe(gulp.dest(dirSideDest));
 
+})
+gulp.task('default', ['clean','replace'], function() {
+    dirDist = "../dist/";
+    xtools.mkdirX(dirDist);
+    gulp.start(function() {
+        var dirSideSource = dirSource  +"/" + sideName +"/";
+        var dirSideDist = dirDist  +"/" + sideName +"/";
+
+        xtools.copyDirEx(dirSideSource,dirSideDist);
+    });
+
+});
+gulp.task('release', ['clean','replace'], function() {
+    dirDist = '../../../server/java/simpleserver/src/main/resources/static/dist/';
+    xtools.mkdirX(dirDist);
     gulp.start(function() {
         var dirSideSource = dirSource  +"/" + sideName +"/";
         var dirSideDist = dirDist  +"/" + sideName +"/";
@@ -49,7 +75,17 @@ gulp.task('default', ['clean'], function() {
 
 });
 
+gulp.task('java-release', ['clean','replace'], function() {
+    dirDist    ='../../../../src/main/resources/static/dist/';
+    xtools.mkdirX(dirDist);
+    gulp.start(function() {
+        var dirSideSource = dirSource  +"/" + sideName +"/";
+        var dirSideDist = dirDist  +"/" + sideName +"/";
 
+        xtools.copyDirEx(dirSideSource,dirSideDist);
+    });
+
+});
 /*
  * 模板开发预览
  * gulp run
@@ -60,7 +96,6 @@ gulp.task('default', ['clean'], function() {
 gulp.task('run', ['clean'] ,function() {
 
     gulp.start(function() {
-        taskProject.build();
         taskProject._watch();
         taskProject.connect();
     });
