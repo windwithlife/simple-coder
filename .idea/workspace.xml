@@ -2,10 +2,54 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9adebc7d-ca00-41eb-b023-9777ae19e972" name="Default" comment="">
-      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\js\copyfiles\dev-server\views\admin\layout\header-rn.ejs" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/themes/default/css/bootstrap.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/release/xtools.js" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\js\copyfiles\resources\framework\themes\bluesea\_theme.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\plugins\ckplayer\ckplayer.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\plugins\ckplayer\ckplayer.swf" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\plugins\ckplayer\ckplayer.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\plugins\ckplayer\js\offlights.js" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\plugins\ckplayer\language.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\plugins\ckplayer\related.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\plugins\ckplayer\share.xml" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\plugins\ckplayer\share\feixin.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\plugins\ckplayer\share\google.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\plugins\ckplayer\share\kaixin001.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\plugins\ckplayer\share\msn.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\plugins\ckplayer\share\qq.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\plugins\ckplayer\share\qq2.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\plugins\ckplayer\share\qzone.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\plugins\ckplayer\share\rr.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\plugins\ckplayer\share\sina.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\plugins\ckplayer\share\sohu.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\plugins\ckplayer\share\tianya.png" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\plugins\ckplayer\style.swf" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\themes\bluesea\_theme.css" afterPath="" />
+      <change type="DELETED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\themes\default\_theme.css" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/app.js" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/dev-server/app.js" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/dev-server/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/server/java/copyfiles/server/simpleserver/src/main/resources/application-dev.properties" afterPath="$PROJECT_DIR$/templates/server/java/copyfiles/server/simpleserver/src/main/resources/application-dev.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/server/java/copyfiles/server/simpleserver/src/main/resources/application-docker.properties" afterPath="$PROJECT_DIR$/templates/server/java/copyfiles/server/simpleserver/src/main/resources/application-docker.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/server/java/copyfiles/server/simpleserver/src/main/resources/application-prod.properties" afterPath="$PROJECT_DIR$/templates/server/java/copyfiles/server/simpleserver/src/main/resources/application-prod.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/modules/config.js" afterPath="$PROJECT_DIR$/modules/config.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/frontend/js/copyfiles/release/gulpfile.js" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/release/gulpfile.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/release/gulpfile.js" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/release/gulpfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/admin/layout/header.ejs" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/admin/layout/header.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/client/layout/header.ejs" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/client/layout/header.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/web/layout/header.ejs" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/web/layout/header.ejs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\js\copyfiles\resources\framework\themes\fonts\glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/themes/default/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\js\copyfiles\resources\framework\themes\fonts\glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/themes/default/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\js\copyfiles\resources\framework\themes\fonts\glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/themes/default/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\js\copyfiles\resources\framework\themes\fonts\glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/themes/default/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\js\copyfiles\resources\framework\themes\fonts\glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/themes/default/fonts/glyphicons-halflings-regular.woff2" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\themes\default\bootstrap.min.css" afterPath="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/themes/default/css/bootstrap.min.css" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\themes\fonts\glyphicons-halflings-regular.eot" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/themes/default/fonts/glyphicons-halflings-regular.eot" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\themes\fonts\glyphicons-halflings-regular.svg" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/themes/default/fonts/glyphicons-halflings-regular.svg" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\themes\fonts\glyphicons-halflings-regular.ttf" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/themes/default/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\themes\fonts\glyphicons-halflings-regular.woff" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/themes/default/fonts/glyphicons-halflings-regular.woff" />
+      <change type="MOVED" beforePath="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\themes\fonts\glyphicons-halflings-regular.woff2" afterPath="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/themes/default/fonts/glyphicons-halflings-regular.woff2" />
     </list>
     <ignored path="SimpleCoder.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,8 +70,18 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="auto_web_router.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/auto_web_router.js">
+      <file leaf-file-name="application-dev.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/server/java/copyfiles/server/simpleserver/src/main/resources/application-dev.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application-docker.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/server/java/copyfiles/server/simpleserver/src/main/resources/application-docker.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -36,8 +90,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="env_helper.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/env_helper.js">
+      <file leaf-file-name="application-prod.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/server/java/copyfiles/server/simpleserver/src/main/resources/application-prod.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -46,42 +100,48 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="global_require_config.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/simple/global_require_config.js">
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/server/java/copyfiles/server/simpleserver/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/release/gulpfile.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5173267">
-              <caret line="77" column="59" selection-start-line="77" selection-start-column="59" selection-end-line="77" selection-end-column="59" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/web/index.ejs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="layout.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/admin/layout/layout.ejs">
+      <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/admin/layout/header.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="82" selection-start-line="12" selection-start-column="82" selection-end-line="12" selection-end-column="82" />
+              <folding>
+                <marker date="1476001505113" expanded="true" signature="644:809" placeholder="..." />
+                <marker date="1476001505113" expanded="true" signature="665:792" placeholder="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.ejs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/web/layout/header.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+              <folding>
+                <marker date="1476002101842" expanded="true" signature="644:809" placeholder="..." />
+                <marker date="1476002101842" expanded="true" signature="665:792" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,40 +156,30 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/release/gulpfile.js">
+      <file leaf-file-name="product.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/modules/product.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
+              <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
-          <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+          <provider editor-type-id="MultiMarkdownFxPreviewEditor">
             <state />
           </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.6333333">
-              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="50" />
-              <folding />
-            </state>
+          <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+            <state />
           </provider>
           <provider editor-type-id="MarkdownPreviewEditor">
             <state />
           </provider>
-          <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-            <state />
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="layout.ejs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/web/layout/layout.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.071429">
-              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.4064171">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="50" />
               <folding />
             </state>
           </provider>
@@ -143,10 +193,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/templates/h5/simple/controller/add.js" />
-        <option value="$PROJECT_DIR$/templates/h5/simple/controller/edit.js" />
-        <option value="$PROJECT_DIR$/templates/h5/simple/server/Dao.java" />
-        <option value="$PROJECT_DIR$/templates/h5/simple/server/Service.java" />
         <option value="$PROJECT_DIR$/templates/h5/simple/model/model.js" />
         <option value="$PROJECT_DIR$/templates/h5/simple/server/Controller.java" />
         <option value="$PROJECT_DIR$/templates/h5/simple/controller/index.js" />
@@ -165,7 +211,6 @@
         <option value="$PROJECT_DIR$/lib/generators/reactjs_creator.js" />
         <option value="$PROJECT_DIR$/lib/generators/react_native_creator.js" />
         <option value="$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/theme_helper.js" />
-        <option value="$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/app.js" />
         <option value="$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/www.js" />
         <option value="$PROJECT_DIR$/templates/server/java/module/Entity.java" />
         <option value="$PROJECT_DIR$/templates/server/java/copyfiles/server/simple-core/src/main/resources/public/resources/themes/charisma/bower_components/bootstrap-tour/package.json" />
@@ -180,20 +225,25 @@
         <option value="$PROJECT_DIR$/lib/generators/react_js_creator.js" />
         <option value="$PROJECT_DIR$/package/package.json" />
         <option value="$PROJECT_DIR$/lib/generators/server_java_creator.js" />
-        <option value="$PROJECT_DIR$/modules/config.js" />
-        <option value="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/dev-server/app.js" />
         <option value="$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/simple/global_require_config.js" />
         <option value="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/js/simple/global_require_config.js" />
         <option value="$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/client/index.ejs" />
         <option value="$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/admin/layout/footer.ejs" />
-        <option value="$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/admin/layout/header.ejs" />
         <option value="$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/admin/layout/layout.ejs" />
         <option value="$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/auto_web_router.js" />
         <option value="$PROJECT_DIR$/templates/frontend/reactjs/controller/web/info.js" />
         <option value="$PROJECT_DIR$/templates/frontend/reactjs/controller/admin/info.js" />
-        <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/templates/frontend/js/copyfiles/release/gulpfile.js" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/release/gulpfile.js" />
+        <option value="$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/app.js" />
+        <option value="$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/dev-server/app.js" />
+        <option value="$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/admin/layout/header.ejs" />
+        <option value="$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/client/layout/header.ejs" />
+        <option value="$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/web/layout/header.ejs" />
+        <option value="$PROJECT_DIR$/modules/config.js" />
+        <option value="$PROJECT_DIR$/templates/server/java/copyfiles/server/simpleserver/src/main/resources/application-dev.properties" />
+        <option value="$PROJECT_DIR$/package.json" />
       </list>
     </option>
   </component>
@@ -304,6 +354,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="module" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -466,6 +520,56 @@
               <option name="myItemId" value="main" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="static" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleCoder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="SimpleCoder" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="copyfiles" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="simpleserver" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -511,208 +615,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reactjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reactjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="copyfiles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reactjs" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="copyfiles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="release" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="copyfiles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="copyfiles" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="release" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="package" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SimpleCoder" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generators" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -720,28 +622,29 @@
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SimpleCoderCli" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../java/test/testab" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="recentsLimit" value="5" />
     <property name="JavaScriptLanguageLevel" value="JSX" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
+    <property name="FullScreen" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\program\framework\SimpleCoder\templates\frontend\js\copyfiles\release" />
       <recent name="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\release" />
-      <recent name="D:\program\framework\SimpleCoder\templates\frontend\js\copyfiles\dev-server" />
-      <recent name="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\dev-server" />
-      <recent name="D:\program\framework\SimpleCoder\templates\frontend\js\copyfiles\dev-server\views\client" />
+      <recent name="D:\program\framework\SimpleCoder\templates\frontend\js\copyfiles\release" />
+      <recent name="D:\program\framework\SimpleCoder\templates\frontend\js\copyfiles\resources" />
+      <recent name="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\themes\default\fonts" />
+      <recent name="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\themes\default\css" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\themes\default" />
+      <recent name="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework\themes" />
+      <recent name="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles\resources\framework" />
       <recent name="D:\program\framework\SimpleCoder\templates\website\nodejs\copyfiles\node-server\routes" />
       <recent name="D:\program\framework\SimpleCoder\templates\website\nodejs\copyfiles" />
-      <recent name="D:\program\framework\SimpleCoder\templates\server\java\copyfiles" />
-      <recent name="D:\program\framework\SimpleCoder\templates\frontend\reactjs\copyfiles" />
-      <recent name="D:\program\framework\SimpleCoder\templates\frontend\js\copyfiles\release" />
     </key>
   </component>
   <component name="RunManager" selected="Node.js.coder generateLocalTest">
@@ -858,24 +761,24 @@
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31001207" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31604344" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3282353" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5832402" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43003413" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.51620114" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.51620114" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46643913" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.43003413" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3287827" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.46643913" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -921,6 +824,45 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/admin/layout/layout.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="17" selection-start-line="11" selection-start-column="17" selection-end-line="11" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+        <state />
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/web/layout/layout.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/dev-server/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1046,7 +988,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="235" column="56" selection-start-line="235" selection-start-column="56" selection-end-line="235" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1054,23 +995,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="122" column="101" selection-start-line="122" selection-start-column="101" selection-end-line="122" selection-end-column="101" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/package/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1078,7 +1002,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="239" column="56" selection-start-line="239" selection-start-column="56" selection-end-line="239" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1086,7 +1009,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1094,7 +1016,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.071429">
           <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1102,15 +1023,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.071429">
           <caret line="6" column="21" selection-start-line="4" selection-start-column="2" selection-end-line="6" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/simple/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1118,7 +1030,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1126,7 +1037,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1134,7 +1044,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="187" column="0" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1142,14 +1051,145 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="187" column="0" selection-start-line="187" selection-start-column="0" selection-end-line="187" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/env_helper.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/auto_web_router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/web/index.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/web/layout/layout.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/package/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.7142856">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/dev-server/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="58" selection-start-line="20" selection-start-column="58" selection-end-line="20" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/resources/framework/js/simple/main-react.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/admin/layout/layout.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/client/layout/header.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.142858">
+          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/admin/layout/header.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="82" selection-start-line="12" selection-start-column="82" selection-end-line="12" selection-end-column="82" />
+          <folding>
+            <marker date="1476001505113" expanded="true" signature="644:809" placeholder="..." />
+            <marker date="1476001505113" expanded="true" signature="665:792" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/web/layout/header.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding>
+            <marker date="1476002101842" expanded="true" signature="644:809" placeholder="..." />
+            <marker date="1476002101842" expanded="true" signature="665:792" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/modules/product.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="8" selection-end-line="12" selection-end-column="8" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/resources/framework/js/simple/global_require_config.js">
+    <entry file="file://$PROJECT_DIR$/modules/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+          <caret line="2" column="44" selection-start-line="2" selection-start-column="44" selection-end-line="2" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/server/java/copyfiles/server/simpleserver/src/main/resources/application-docker.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/server/java/copyfiles/server/simpleserver/src/main/resources/application-prod.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/server/java/copyfiles/server/simpleserver/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/server/java/copyfiles/server/simpleserver/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="57" column="0" selection-start-line="57" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1163,74 +1203,18 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
-      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
         <state />
       </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.6333333">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="50" />
-          <folding />
-        </state>
+      <provider editor-type-id="MultiMarkdownFxHtmlEditor">
+        <state />
       </provider>
       <provider editor-type-id="MarkdownPreviewEditor">
         <state />
       </provider>
-      <provider editor-type-id="MultiMarkdownFxPreviewEditor">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/env_helper.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/auto_web_router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/admin/layout/layout.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/web/index.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/dev-server/views/web/layout/layout.ejs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.071429">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/frontend/reactjs/copyfiles/release/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/frontend/js/copyfiles/release/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5173267">
-          <caret line="77" column="59" selection-start-line="77" selection-start-column="59" selection-end-line="77" selection-end-column="59" />
+        <state vertical-scroll-proportion="0.4064171">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="50" />
           <folding />
         </state>
       </provider>

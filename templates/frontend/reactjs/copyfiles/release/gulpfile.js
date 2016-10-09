@@ -6,10 +6,11 @@ var clean      = require('gulp-clean');
 var replace   = require('gulp-replace');
 var webpack    = require("webpack");
 var webpackConfig = require("./webpack.config.js");
-
 var argv       = require('yargs').argv;
+var xtools     = require('./xtools');
 
-var dirDist    ='../../../../src/main/resources/static/dist/';
+var apiServerAddress ="localhost:5389";
+var dirDist    ='../dist/';
 var dirSource    ='../resources/';
 
 
@@ -30,10 +31,9 @@ if (release == "javaserver"){
 //xtools.mkdirX(dirDist);
 console.log("dest folder name is:--" +  dirDist);
 
-var apiServerAddress = argv.host;
-if (!apiServerAddress){apiServerAddress = "localhost:5389"};
+var host = argv.host;
+if (host){apiServerAddress = host};
 console.log("ApiServerAddress is:--" +  apiServerAddress);
-
 
 
 function sideChannelsBuild(basePath, sideName,destBasePath){
@@ -77,7 +77,7 @@ gulp.task('replace', function() {
 
 })
 
-gulp.task('default', ['clean','replace'], function() {
+gulp.task('default', ['clean','replace','framework'], function() {
     dirDist = "../dist/";
     gulp.start(function() {
 
@@ -104,6 +104,15 @@ gulp.task('java-release', ['clean','replace'], function() {
 });
 
 
+
+gulp.task('framework', [], function() {
+    dirDist = "../dist/";
+    xtools.mkdirX(dirDist);
+
+    var dirSideSource = dirSource  +"/framework/";
+    var dirSideDist = dirDist  +"/framework/";
+    xtools.copyDirEx(dirSideSource,dirSideDist);
+});
 /*
  * 模板开发预览
  * gulp run

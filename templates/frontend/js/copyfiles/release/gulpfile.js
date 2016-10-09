@@ -6,6 +6,10 @@ var clean      = require('gulp-clean');
 var replace   = require('gulp-replace');
 var argv       = require('yargs').argv;
 
+//
+var apiServerAddress = "localhost:5389";
+
+
 var dirDist    ='../dist/';
 var dirSource    ='../resources/';
 
@@ -13,20 +17,9 @@ var sideName = argv.side;
 var release = argv.release;
 if (!sideName){sideName = "admin"}
 
-/*
-if (!release){
-    dirDist = "../dist/";
-}
-if (release == "javaserver"){
-    dirDist = '../../../server/java/simpleserver/src/main/resources/static/dist/';
-}else if(release =="localserver"){
-    dirDist    ='../../../../src/main/resources/static/dist/';
-}*/
 
-
-
-var apiServerAddress = argv.host;
-if (!apiServerAddress){apiServerAddress = "localhost:5389"};
+var host = argv.host;
+if (host){apiServerAddress = host};
 console.log("ApiServerAddress is:--" +  apiServerAddress);
 
 var printMsg = function() {
@@ -52,7 +45,7 @@ gulp.task('replace', function() {
     return gulp.src(dirSideSource).pipe(replace(/(serverPath\s*=\s*[",']http[s]{0,1}:\/\/).+([",'])/g,strHost)).pipe(gulp.dest(dirSideDest));
 
 })
-gulp.task('default', ['clean','replace'], function() {
+gulp.task('default', ['clean','replace','framework'], function() {
     dirDist = "../dist/";
     xtools.mkdirX(dirDist);
     gulp.start(function() {
@@ -84,6 +77,17 @@ gulp.task('java-release', ['clean','replace'], function() {
 
         xtools.copyDirEx(dirSideSource,dirSideDist);
     });
+
+});
+
+gulp.task('framework', [], function() {
+    dirDist = "../dist/";
+    xtools.mkdirX(dirDist);
+
+    var dirSideSource = dirSource  +"/framework/";
+    var dirSideDist = dirDist  +"/framework/";
+    xtools.copyDirEx(dirSideSource,dirSideDist);
+    xtools.copyDirEx(dirSideSource,dirSideDist);
 
 });
 /*
