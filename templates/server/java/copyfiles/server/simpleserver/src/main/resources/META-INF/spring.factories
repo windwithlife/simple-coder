@@ -1,0 +1,3 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.simple.core.WebMvcConfiguration,com.simple.core.framework.cache.config.RedisCacheConfiguration\
+,com.simple.core.DocConfigSwagger,com.simple.core.SimpleCoreConfiguraton,com.simple.core.base.user.config.WebSecurityConfig

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN" xmlns:th="http://www.thymeleaf.org"
+	xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+<head th:include="layout/header-charisma::head">
+
+<meta charset="utf-8" />
+
+<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+
+
+</head>
+
+<body>
+	<div th:replace="layout/body-header-charisma::body"></div>
+	<div class="ch-container">
+		<div class="row">
+
+			<!-- left menu starts -->
+			<div class="col-sm-2 col-lg-2">
+				<div class="sidebar-nav">
+					<div class="nav-canvas">
+						<div class="nav-sm nav nav-stacked"></div>
+						<ul class="nav nav-pills nav-stacked main-menu">
+
+							<li><a class="ajax-link" href="/admin/iot/deviceType"><i
+									class="glyphicon glyphicon-picture"></i><span> 主页</span></a></li>
+							<li class="nav-header hidden-md">物联网运维</li>
+							<li class="accordion"><a href="#"><i
+									class="glyphicon glyphicon-plus"></i><span> 基本类型信息管理</span></a>
+								<ul class="nav nav-pills nav-stacked">
+									<li><a href="/admin/iot/deviceType">设备类型管理</a></li>
+									<li><a href="#">设备分析</a></li>
+								</ul></li>
+							<li class="accordion"><a href="#"><i
+									class="glyphicon glyphicon-plus"></i><span>用户角色管理</span></a>
+								<ul class="nav nav-pills nav-stacked">
+									<li><a href="/admin/user/role">角色管理</a></li>
+									<li><a href="/admin/user/user">用户管理</a></li>
+								</ul></li>
+							<li class="accordion"><a href="#"><i
+									class="glyphicon glyphicon-plus"></i><span>CMS内容管理</span></a>
+								<ul class="nav nav-pills nav-stacked">
+									<li><a href="/admin/cms/channel">频道管理</a></li>
+									<li><a href="/admin/cms/content">频道内容管理</a></li>
+								</ul></li>
+							<li class="accordion"><a href="#"><i
+									class="glyphicon glyphicon-plus"></i><span> 平台系统维护</span></a>
+								<ul class="nav nav-pills nav-stacked">
+									<li><a href="/admin/analyse/metrics">系统全方位状态</a></li>
+									<li><a href="/admin/analyse/health">系统健康分析</a></li>
+									<li><a href="/admin/analyse/dump">系统Dump</a></li>
+									<li><a href="/admin/analyse/trace">系统Trace</a></li>
+									<li><a href="/admin/analyse/info">系统日志</a></li>
+									<li><a href="/admin/analyse/actuator">系统Actuator统计</a></li>
+									<li class="divider"></li>
+									<li><a href="/admin/analyse/mappings">系统注册功能模块URL统计</a></li>
+									<li><a href="/admin/analyse/beans">系统注册功能对象统计</a></li>
+									<li class="divider"></li>
+									
+								</ul></li>
+							<li class="accordion"><a href="#"><i
+									class="glyphicon glyphicon-plus"></i><span>平台功能配置</span></a>
+								<ul class="nav nav-pills nav-stacked">
+									<li><a href="/server/start">打开物联网通讯平台</a></li>
+									<li><a href="/server/stop">关闭物联网通讯平台</a></li>
+								</ul></li>
+
+						</ul>
+						
+					</div>
+				</div>
+			</div>
+
+			<div id="content" class="col-lg-10 col-sm-10">
+				<div>
+					<ul class="breadcrumb">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Dashboard</a></li>
+					</ul>
+				</div>
+				<div class="row">
+					<div th:replace="this::body"></div>
+					
+				</div>
+
+
+			</div>
+		</div>
+
+
+
+	</div>
+	<hr />
+	<footer class="row">
+		<p class="col-md-9 col-sm-9 col-xs-12 copyright">
+			&copy; <a href="http://usman.it" target="_blank">Muhammad Usman</a>
+			2012 - 2015
+		</p>
+
+		<p class="col-md-3 col-sm-3 col-xs-12 powered-by">
+			Powered by: <a href="http://usman.it/free-responsive-admin-template">Charisma</a>
+		</p>
+	</footer>
+
+	<div th:replace="layout/footer-charisma::body"></div>
+</body>
+
+</html>

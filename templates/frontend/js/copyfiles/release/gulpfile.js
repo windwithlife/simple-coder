@@ -42,7 +42,7 @@ gulp.task('replace', function() {
     var dirSideSource = dirSource + "/" + sideName +"/**/models/model.js";
     var dirSideDest = dirSource + "/" + sideName +"/";
     var strHost = "$1"+ apiServerAddress + "$2";
-    return gulp.src(dirSideSource).pipe(replace(/(serverPath\s*=\s*[",']http[s]{0,1}:\/\/).+([",'])/g,strHost)).pipe(gulp.dest(dirSideDest));
+    return gulp.src(dirSideSource).pipe(replace(/(serverPath\s*=\s*[",']).+([",'])/g,strHost)).pipe(gulp.dest(dirSideDest));
 
 })
 gulp.task('default', ['clean','replace','framework'], function() {

@@ -57,7 +57,7 @@ import Home from './home';
 import Edit from './edit';
 import Add from './add';
 import DetailInfo from './info';
-import Index from './index';
+import List from './list';
 import NotFound from './NotFound';
 
 
@@ -67,12 +67,12 @@ const routes = (
     <Router history={hashHistory}>
     <Route path="/" component={App}>
 
-    <Route path="/index" component={Index} />
     <Route path="/home" component={Home} />
+    <Route path="/list" component={List} />
     <Route path="/add" component={Add} />
     <Route path="/edit" component={Edit} />
     <Route path="/info" component={DetailInfo} />
-    <IndexRoute component={Index} />
+    <IndexRoute component={Home} />
     <Route path=":page" component={NotFound} />
 
     </Route>

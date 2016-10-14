@@ -2,7 +2,7 @@ myserver:
   image: daocloud.io/windwithlife/simple-server
   container_name: mysimple-server
   ports:
-  - 9090:9090
+  - 8080:8080
   links:
   - mongodb:mongodb
   - mysql:mysql
