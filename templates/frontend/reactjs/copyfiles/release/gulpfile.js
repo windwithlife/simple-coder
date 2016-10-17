@@ -4,6 +4,7 @@ var path       = require('path');
 var gulp       = require('gulp');
 var clean      = require('gulp-clean');
 var replace   = require('gulp-replace');
+var connect   = require('gulp-connect');
 var webpack    = require("webpack");
 var webpackConfig = require("./webpack.config.js");
 var argv       = require('yargs').argv;
@@ -18,17 +19,10 @@ var sideName = argv.side;
 if (!sideName){sideName = "client"}
 console.log("side name is:--" +  sideName);
 
-/*
-var release = argv.release;
-if (!release){
-    dirDist = "../dist/";
-}
-if (release == "javaserver"){
-    dirDist = '../../../server/java/simpleserver/src/main/resources/static/dist/';
-}else if(release =="localserver"){
-    dirDist    ='../../../../src/main/resources/static/dist/';
-}*/
-//xtools.mkdirX(dirDist);
+var channelName = argv.channel;
+if (!channelName){channelName = "product"}
+
+
 console.log("dest folder name is:--" +  dirDist);
 
 var host = argv.host;
@@ -45,12 +39,14 @@ function sideChannelsBuild(basePath, sideName,destBasePath){
         var stats = fs.statSync(filePath);
         var modelFile = filePath + "/models/model.js";
 
+
         if (stats.isDirectory()){
-        	
+            var publicPath = "/" + sideName + "/" + file +"/";
             var entryFile = filePath + "/router.js";
             var outPath   = targetPath + file;
             webpackConfig.entry.app = entryFile;
             webpackConfig.output.path = outPath;
+            webpackConfig.output.publicPath = publicPath;
             webpack(webpackConfig,function(err, stats){
                 if(err){console.log(err);}else{
                     console.log("successful to build channel entry point file:" + entryFile);
@@ -73,11 +69,10 @@ gulp.task('replace', function() {
     var dirSideSource = dirSource + "/" + sideName +"/**/models/model.js";
     var dirSideDest = dirSource + "/" + sideName +"/";
     var strHost = "$1"+ apiServerAddress + "$2";
-    //return gulp.src(dirSideSource).pipe(replace(/(serverPath\s*=\s*[",']http[s]{0,1}:\/\/).+([",'])/g,strHost)).pipe(gulp.dest(dirSideDest));
     return gulp.src(dirSideSource).pipe(replace(/(serverPath\s*=\s*[",']).+([",'])/g,strHost)).pipe(gulp.dest(dirSideDest));
 })
 
-gulp.task('default', ['clean','replace','framework'], function() {
+gulp.task('build', function() {
     dirDist = "../dist/";
     gulp.start(function() {
 
@@ -85,6 +80,18 @@ gulp.task('default', ['clean','replace','framework'], function() {
     });
 
 });
+
+gulp.task('framework', [], function() {
+    dirDist = "../dist/";
+    xtools.mkdirX(dirDist);
+
+    var dirSideSource = dirSource  +"/framework/";
+    var dirSideDist = dirDist  +"/framework/";
+    xtools.copyDirEx(dirSideSource,dirSideDist);
+});
+gulp.task('default', ['clean','replace','build','framework']);
+
+
 
 gulp.task('release', ['clean','replace'], function() {
     dirDist = '../../../server/java/simpleserver/src/main/resources/static/dist/';
@@ -105,24 +112,25 @@ gulp.task('java-release', ['clean','replace'], function() {
 
 
 
-gulp.task('framework', [], function() {
-    dirDist = "../dist/";
-    xtools.mkdirX(dirDist);
-
-    var dirSideSource = dirSource  +"/framework/";
-    var dirSideDist = dirDist  +"/framework/";
-    xtools.copyDirEx(dirSideSource,dirSideDist);
-});
 /*
  * 模板开发预览
  * gulp run
  * gulp run --port {自定义运行端口，默认1234}
  */
 
-
-gulp.task('run', ['clean'] ,function() {
-
-    gulp.start(function() {
-
+gulp.task('start-dev' ,function() {
+    connect.server({
+        port: 5389,
+        root: '../dist/',
+        livereload: true
     });
 });
+gulp.task('watch', function () {
+    gulp.watch(['../resources/**/*.js'], ['rebuild']);
+});
+
+gulp.task('rebuild', ['build'],function () {
+    gulp.src("../dist/**/**/*.html").pipe(connect.reload());
+
+});
+gulp.task('run', ['clean','framework','build','start-dev', 'watch']);

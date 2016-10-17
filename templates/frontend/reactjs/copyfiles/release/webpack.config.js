@@ -4,17 +4,26 @@
 var path = require('path');
 var webpack = require('webpack');
 var node_modules_dir = path.join(__dirname, 'node_modules');
+
 //var commonsPlugin = new webpack.optimize.CommonsChunkPlugin('vendors', 'libs.js');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
 var config = {
 
     //插件项
-    //plugins: [commonsPlugin],
+   // plugins: [],
     plugins:[
         new webpack.DefinePlugin({
             'process.env':{
                 'NODE_ENV': JSON.stringify('production')
             }
-        })],
+        }),
+        new HtmlWebpackPlugin({
+            template:'./index.html',    //html模板路径
+            inject:true,    //允许插件修改哪些内容，包括head与body
+            hash:true,    //为静态资源生成hash值
+        })
+    ],
     //页面入口文件配置
     entry: {
         app :['../resources/client/product/router.js'],
@@ -23,7 +32,7 @@ var config = {
     //入口文件输出配置
     output: {
         path: '../dist/product/',
-        publicPath: "/dist/product/",//html引用路径
+        publicPath: "/client/product/",//html引用路径
         filename: '[name].js' // 注意我们使用了变量
     },
     externals: {

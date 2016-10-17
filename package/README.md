@@ -22,10 +22,10 @@ npm install
 - server目录下为服务端代码（含网站框架）其下有java/nodejs等子目录，分别为各种语言实现的soa 服务器及网站框架。目前仅支持java spring-boot框架。
 
 - modules目录为业务定义位置，内部对各业务实体进行了定义。用simple-coder npm 插件可以根据这里的实体定义，进行自动生成服务器soa接口代码，数据库代码，及前端js代码，reactjs代码。
-
+- package.json为整个工程编译打包，发布所需要的npm插件。
 ### 项目使用：
 - 首先在项目目录处安装npm 插件：npm install (因为reactjs es6 插件有bug,所有工程所需插件都在此处安装）
-- 全局安装simple-coder： npm install -g simple-coder-cli 
+- 全局安装simple-coder： npm install -g simple-coder
 - 在modules 里定义所需的实体类.
 - 进行代码自动生成：
   1.自动生成js代码：simple-coder -g js
@@ -46,10 +46,17 @@ npm install
   7.浏览器中打开 http://localhost:5389/admin/product/ 即可测试。
   
  注：如果测试空白页，或者不熟悉java 的SOA服务器代码，可以在打包时加入参数gulp --host=http://api.zhangyongqiao.com:8080
- 使用远端公网上的服务器接口进行测试。 
+ 使用远端公网上的服务器接口进行测试。
+- 打发布包及自动化发布集成：
+   1.在release 目录执行：gulp release 
+   2.在工程根目录执行git tag -a "vX.X.X" -m "release to server"
+   3.git push -f release --tags.
+   4. 远端持续集成CI服务器会自动打包，发布运行到docker服务器上。
  
 ### 项目打包
-- 
+- js打包：
+- react js打包：
+
 ## 样例：
 
 
