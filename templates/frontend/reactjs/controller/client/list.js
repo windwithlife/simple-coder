@@ -81,20 +81,6 @@ const HomeList = React.createClass({
                             title="List Item 3"
                             after={mySwitch}
                             />
-                        <List.Item
-                            title="List Item 4"
-                            />
-                        <List.Item role="header">B</List.Item>
-                        {this.state.list.map((dItem, i) => {
-                            return (
-                                <List.Item
-                                    {...dItem}
-                                    media={null}
-                                    target="_blank"
-                                    key={i}
-                                    />
-                            );
-                        })}
                     </List>
                 </Group>
 
@@ -105,24 +91,20 @@ const HomeList = React.createClass({
                     noPadded
                     >
                     <List>
-                        <List.Item
-                            media={img}
-                            after={badge1}
-                            title="List Item 1"
-                            />
-                        <List.Item
-                            media={img}
-                            after="2015.08"
-                            title="List Item 2"
-                            href="#"
-                            />
-                        <List.Item
-                            media={img}
-                            after={badge1}
-                            title="List Item 3"
-                            href="#"
-                            />
+                        {this.state.list.map((album, i) => {
+                            return (
+                                <List.Item
+                                    {...album}
+                                    after={badge1}
+                                    media={img}
+                                    target="_blank"
+                                    href="#"
+                                    key={i}
+                                    />
+                            );
+                        })}
                     </List>
+
                 </Group>
 
 
