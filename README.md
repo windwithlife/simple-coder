@@ -1,12 +1,11 @@
 
 
 ### 环境配置
-1. 安装node，npm版本3以上。
-2. 
-2.1设置npm组件库
+- 1. 安装node，npm版本3以上。
+- 2. 设置npm组件库
 npm config set registry http://registry.npmjs.org/
 ```
-3.全局安装simple-coder
+- 3.全局安装simple-coder
 
 npm install -g simple-coder
 
@@ -48,17 +47,24 @@ npm install
   
   本项目本身已根据modules中的缺省几个实体定义，自动生成过一次代码，已有4个模块。
 - 打包测试（以js代码为例）：
-  1.生成前端js代码及对应后端服务器代码 
-    $:simple-coder -g js
-    $:simple-coder -g server-java
-    
-  2.进入frontend\js\release\目录
-  3.打包：gulp
-  4.进入frontend\js\dev-server\目录
-  5 运行静态资源服务器 node www.js
-  6.进入java IDE(例入Eclipse/MyEclipse)打开导入（maven) server\java\simpleserver  项目,然后运行soa服务端代码
-  7.浏览器中打开 http://localhost:5389/admin/product/ 即可测试。
+  1.进入frontend\js\release\目录
+  2.打包：
+     gulp --host=yourServerIP(你的服务器地址与端口，假设你的服务器不是在本地的5389端口运行）
+     gulp run 
+     即可进行打开浏览器进行测试，此时任何源码目录中的代码更新，都会被自动编译，并自动刷新浏览器页面。
+  4.全量测试：
+     进入frontend\js\dev-server\目录
+     运行静态资源服务器 node www.js
+     注意要运行你的服务端代码，请见“服务端代码运行”
+- 服务端代码运行：     
+  1.进入java IDE(例入Eclipse/MyEclipse)打开导入（maven) server\java\simpleserver  项目,然后运行soa服务端代码
 
+### 项目发布：
+    1.进入frontend\js\release\目录
+    2.打包：
+       gulp release --host=yourServerIP(你的服务器地址与端口)。
+    3.此项目支持DaoCloud的Docker云服务集群的生产线上自动化发布，布署。如果使用此功能。请在Daocloud上对此项目进行自动集成配置。
+     
 ## 样例：
 - 在examples目录下有例子程序，有写好的基本框架，可以参考。
 

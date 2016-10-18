@@ -21,7 +21,9 @@
     "react-router": "^2.4.1",
     "simple-coder": "^0.9.86",
     "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.16.2",
     "html-webpack-plugin": "^2.22.0",
-    "yargs": "^6.0.0"
+    "yargs": "^6.0.0",
+    "open": "0.0.5"
   }
 }

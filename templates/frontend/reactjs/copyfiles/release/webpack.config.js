@@ -40,6 +40,7 @@ var config = {
         'react-dom': 'ReactDOM',
         'react-router':'ReactRouter',
         'amazeui-touch': 'AMUITouch',
+        'axios': 'axios',
         'react-addons-css-transition-group':
             ['React', 'addons', 'CSSTransitionGroup']
 
@@ -63,7 +64,7 @@ var config = {
     },
     //其它解决方案配置
     resolve: {
-        alias: {},
+
         extensions: ['', '.js', '.json', '.scss','jsx'],
         alias: {
             AppStore : 'js/stores/AppStores.js',

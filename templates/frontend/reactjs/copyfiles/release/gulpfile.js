@@ -8,6 +8,7 @@ var connect   = require('gulp-connect');
 var webpack    = require("webpack");
 var webpackConfig = require("./webpack.config.js");
 var argv       = require('yargs').argv;
+var open       = require('open');
 var xtools     = require('./xtools');
 
 var apiServerAddress ="localhost:5389";
@@ -26,7 +27,9 @@ if (!channelName){channelName = "product"}
 console.log("dest folder name is:--" +  dirDist);
 
 var host = argv.host;
+var port = argv.port;
 if (host){apiServerAddress = host};
+if (!port){port = 5389};
 console.log("ApiServerAddress is:--" +  apiServerAddress);
 
 
@@ -120,7 +123,7 @@ gulp.task('java-release', ['clean','replace'], function() {
 
 gulp.task('start-dev' ,function() {
     connect.server({
-        port: 5389,
+        port: port,
         root: '../dist/',
         livereload: true
     });
@@ -133,4 +136,6 @@ gulp.task('rebuild', ['build'],function () {
     gulp.src("../dist/**/**/*.html").pipe(connect.reload());
 
 });
-gulp.task('run', ['clean','framework','build','start-dev', 'watch']);
+gulp.task('run', ['clean','framework','build','start-dev', 'watch'],function(){
+    open('http://localhost:' + port + "/" + sideName + "/product/");
+});
