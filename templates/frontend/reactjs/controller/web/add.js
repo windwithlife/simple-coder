@@ -50,56 +50,41 @@ const AddForm = React.createClass({
     render() {
         return (
             <Container {...this.props} scrollable >
-                <Group
-                    header="基本样式"
-                    >
-                    <Field
-                        label="Your Name"
-                        containerClassName="my-label"
-                        placeholder="What's your name."
-                        />
+    <Group
+    header="基本样式"
+    >
 
-                    <Field
-                        label="Password"
-                        placeholder="Yout password."
-                        type="password"
-                        />
+    <%
+    var  columns = [];
+    for (var field in data.moduleDefine){
+        var fieldName = data.moduleDefine[field].dName;
+        var fieldShow = data.moduleDefine[field].show;
+        var fieldRefer =  data.moduleDefine[field].refer;
 
-                    <Field
-                        label="Age"
-                        placeholder="Your age."
-                        type="number"
-                        />
+        var keyName = field;
+        columns.push(keyName);
+        if (fieldShow=="image"){
+            %>
+        <input id="file" type="file" name="file" onchange="changePicUrl()" />
 
-                    <Field
-                        type="select"
-                        label="Select"
-                        ref="select"
-                        defaultValue="m"
-                        >
-                        <option value="m">Male</option>
-                        <option value="f">Female</option>
-                    </Field>
-
-                    <Field
-                        label="Range"
-                        type="range"
-                        defaultValue="10"
-                        />
-
-                    <Field
-                        label="Commnet"
-                        placeholder="Say something you whant."
-                        type="textarea"
-                        />
-
-                    <Field
-                        value="提交"
-                        type="submit"
-                        amStyle="secondary"
-                        block
-                        onClick={this.handleSubmit}
-                        />
+            <%}else if (fieldRefer){%>
+        <Field
+            type="select"
+            label="<%=fieldName%>"
+            ref="add-<%=keyName%>"
+            name="add-<%=keyName%>"
+            defaultValue="m"
+                >
+                <option value="m">Male</option>
+                <option value="f">Female</option>
+            </Field>
+            <%}else if ((field!='id') && (field!='_id')){%>
+        <Field
+            name ="add-<%=keyName%>"
+            label="<%=fieldName%>"
+            placeholder="<%=fieldName%>."
+            />
+            <%}}%>
                 </Group>
 
 

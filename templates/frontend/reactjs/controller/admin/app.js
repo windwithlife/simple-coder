@@ -2,7 +2,14 @@ import React from 'react';
 import {
     render,
 } from 'react-dom';
-
+import {
+    Router,
+    Route,
+    Link,
+    IndexRoute,
+    hashHistory,
+    withRouter,
+} from 'react-router';
 import {
     Container,
     TabBar,

@@ -34,108 +34,32 @@ function handleSwitch(e) {
 
 const mySwitch = <Switch onValueChange={handleSwitch} />;
 
+
+
+
 const HomeList = React.createClass({
-    getInitialState() {
+    getDefaultProps () {
         return {
-            list: []
+            name : '列表页33'
         };
     },
     componentWillMount(){
-        var that = this;
-        model.query(function(response){
-            if(response){
-                console.log(JSON.stringify(response.data));
-                response.data.map(function(item, i){
-                    var itemData ={};
-                    itemData.title = item.name;
-                    itemData.subTitle = item.name;
-                    itemData.desc = item.description;
-                    itemData.desc = "这是测试描术内容，请注意文本的长度有多少个字符，如果超过屏幕宽度的显示效果是什么情况";
-                   // itemData.media=img40;
-                    var picPath = "http://121.196.221.190:8080/" +　item.pic;
-                    itemData.media= <img width="80" src={picPath} />;
-                    itemData.after= '2016-09-28';
-
-                    displayItemsData.push(itemData);
-                });
-                that.setState({list:displayItemsData});
-            }
-        });
+        this.props.actions.queryList();
     },
     render() {
         return (
             <Container {...this.props} scrollable >
 
                 <Group
-                    header="组件与静态列表"
+                    header="图文列表4"
                     noPadded
                     >
                     <List>
-                        <List.Item role="header">A</List.Item>
-                        <List.Item
-                            after={<Badge rounded amStyle="success">5</Badge>}
-                            title="List Item 1"
-                            />
-
-                        <List.Item
-                            title="List Item 3"
-                            after={mySwitch}
-                            />
-                    </List>
-                </Group>
-
-
-
-                <Group
-                    header="包含图标的列表"
-                    noPadded
-                    >
-                    <List>
-                        {this.state.list.map((album, i) => {
+                        {this.props.listData.map((album, i) => {
                             return (
                                 <List.Item
                                     {...album}
-                                    after={badge1}
-                                    media={img}
-                                    target="_blank"
-                                    href="#"
-                                    key={i}
-                                    />
-                            );
-                        })}
-                    </List>
-
-                </Group>
-
-
-                <Group
-                    header="含描述的文字列表"
-                    noPadded
-                    >
-                    <List>
-                        {this.state.list.map((album, i) => {
-                            return (
-                                <List.Item
-                                    {...album}
-                                    media={null}
-                                    target="_blank"
-                                    key={i}
-                                    />
-                            );
-                        })}
-                    </List>
-                </Group>
-
-
-                <Group
-                    header="图文列表"
-                    noPadded
-                    >
-                    <List>
-                        {this.state.list.map((album, i) => {
-                            return (
-                                <List.Item
-                                    {...album}
+                                    title = {album.name}
                                     target="_blank"
                                     desc={null}
                                     href={i === 0 ? null : album.href}
@@ -149,13 +73,14 @@ const HomeList = React.createClass({
                 <h3>Inset</h3>
 
                 <List inset>
-                    {this.state.list.map((album, i) => {
+                    {this.props.listData.map((album, i) => {
                         return (
                             <List.Item
                                 {...album}
                                 target="_blank"
                                 desc={null}
                                 href={i === 0 ? null : album.href}
+                                after={mySwitch}
                                 key={i}
                                 />
                         );
@@ -164,11 +89,11 @@ const HomeList = React.createClass({
 
 
 
-                <h3>Card卡片 嵌套</h3>
+                <h3>just 嵌套</h3>
 
                 <Card>
                     <List>
-                        {this.state.list.map((album, i) => {
+                        {this.props.listData.map((album, i) => {
                             return (
                                 <List.Item
                                     {...album}
