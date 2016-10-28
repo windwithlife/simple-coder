@@ -80,11 +80,11 @@ module.exports = {
           loader: 'babel-loader',
           //loader: 'react-hot-loader/webpack!babel-loader',
           // loader:['babel'],
-          //  query: {
-          //      presets: ['es2015', 'react', 'stage-1']//先后顺序不能错,否则有些语法转换会报错
-          //  },
+          query: {
+                presets: ['es2015', 'react', 'stage-1']//先后顺序不能错,否则有些语法转换会报错
+          },
          exclude: /node_modules/,
-          include:[path.join(__dirname,"/../resources/")]
+          //include:[path.join(__dirname,"/../resources/")]
       }
     ]
   },
