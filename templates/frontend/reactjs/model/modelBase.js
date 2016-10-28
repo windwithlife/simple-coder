@@ -4,7 +4,7 @@ var get = function(path, params, cb){
     axios.get(path, params).then(function (response) {
             cb(response);
     }).catch(function (error) {
-        console.log(err);
+        console.log(error);
             cb();
     });
 }
