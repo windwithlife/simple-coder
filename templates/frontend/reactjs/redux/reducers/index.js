@@ -4,7 +4,7 @@ import listReducer from './listReducer.js'
 import addReducer from './addReducer.js'
 import updateReducer from './updateReducer.js'
 import deleteReducer from './deleteReducer.js'
-import filter from './filter'
+
 
 const rootReducer = combineReducers({
     "homeData":homeReducer,
