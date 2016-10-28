@@ -6,7 +6,7 @@ var clean      = require('gulp-clean');
 var replace   = require('gulp-replace');
 var connect   = require('gulp-connect');
 var webpack    = require("webpack");
-var webpackConfig = require("./webpack.config.js");
+var webpackConfig = require("./webpack.config.release.js");
 var argv       = require('yargs').argv;
 var open       = require('open');
 var xtools     = require('./xtools');
@@ -45,7 +45,7 @@ function sideChannelsBuild(basePath, sideName,destBasePath){
 
         if (stats.isDirectory()){
             var publicPath = "/" + sideName + "/" + file +"/";
-            var entryFile = filePath + "/router.js";
+            var entryFile = filePath + "/redux/redux-router.js";
             var outPath   = targetPath + file;
             webpackConfig.entry.app = entryFile;
             webpackConfig.output.path = outPath;
@@ -120,7 +120,7 @@ gulp.task('java-release', ['clean','replace'], function() {
  * gulp run
  * gulp run --port {自定义运行端口，默认1234}
  */
-
+/*
 gulp.task('start-dev' ,function() {
     connect.server({
         port: port,
@@ -128,14 +128,18 @@ gulp.task('start-dev' ,function() {
         livereload: true
     });
 });
-gulp.task('watch', function () {
-    gulp.watch(['../resources/**/*.js'], ['rebuild']);
-});
+*/
+//gulp.task('watch', function () {
+//    gulp.watch(['../resources/**/*.js'], ['rebuild']);
+//});
 
-gulp.task('rebuild', ['build'],function () {
-    gulp.src("../dist/**/**/*.html").pipe(connect.reload());
+//gulp.task('rebuild', ['build'],function () {
+//    gulp.src("../dist/**/**/*.html").pipe(connect.reload());
 
-});
-gulp.task('run', ['clean','framework','build','start-dev', 'watch'],function(){
-    open('http://localhost:' + port + "/" + sideName + "/product/");
-});
+//});
+//gulp.task('run', ['clean','framework','build','start-dev', 'watch'],function(){
+//    open('http://localhost:' + port + "/" + sideName + "/product/");
+//});
+//gulp.task('run', ['start-dev', 'watch'],function(){
+//    open('http://localhost:' + port + "/" + sideName + "/product/");
+//});

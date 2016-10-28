@@ -61,7 +61,8 @@ npm install
    1.在完成业务实体代码的编写后，并用simple-coder自动生成代码。
    2.进入项目的打包发布目录。frontent-->js-->release.
    3.进行打包 gulp
-   4.进入froentend-->reactjs-->dev-server
+   4 如果进行开发测试（加载热布署）可以用gulp run即可
+     如果想测试完整界面逻辑，进入froentend-->js-->dev-server
      执行node www
    5.如果要进行生成发布，打发布包gulp release.
    

@@ -37,7 +37,7 @@ var config = {
     plugins:[
         new webpack.DefinePlugin({
             'process.env':{
-                'NODE_ENV': JSON.stringify('product')
+                'NODE_ENV': JSON.stringify('development')
             }
         }),
         new HtmlWebpackPlugin({
@@ -49,11 +49,7 @@ var config = {
             name:['vendors'],
             minChunks:Infinity
         }),
-        new webpack.optimize.UglifyJsPlugin({
-             compress: {
-                 warnings: false
-             }
-        })
+        //new webpack.HotModuleReplacementPlugin()
     ],
     module:webpackBaseConfig.module,
     //其它解决方案配置
