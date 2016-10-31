@@ -15,9 +15,6 @@ function init(name, verbose) {
 function generator(cmdOptions,config, verbose) {
     //生成代码
     verboseCommand = verbose ? ' --verbose' : '';
-    if ((!config)||(config.indexOf('--verbose')>-1)){
-        config = "all";
-    }
     mainGenerator.generateCode(cmdOptions, config, verboseCommand);
 }
 
