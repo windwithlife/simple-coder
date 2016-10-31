@@ -10,8 +10,8 @@ var webpackConfig = require("./webpack.config.release.js");
 var argv       = require('yargs').argv;
 var open       = require('open');
 var xtools     = require('./xtools');
-
-var apiServerAddress ="localhost:5389";
+var config     = require('./config.js');
+var apiServerAddress = config.apiServerAddress;
 var dirDist    ='../dist/';
 var dirSource    ='../resources/';
 
@@ -47,10 +47,13 @@ function sideChannelsBuild(basePath, sideName,destBasePath){
             var publicPath = "/" + sideName + "/" + file +"/";
             var entryFile = filePath + "/redux/redux-router.js";
             var outPath   = targetPath + file;
-            webpackConfig.entry.app = entryFile;
-            webpackConfig.output.path = outPath;
-            webpackConfig.output.publicPath = publicPath;
-            webpack(webpackConfig,function(err, stats){
+            var cfg = Object.assign({},webpackConfig);
+            cfg.entry = {};cfg.output={};
+            cfg.entry.app = entryFile;
+            cfg.output.path = outPath;
+            cfg.output.publicPath = publicPath;
+
+            webpack(cfg,function(err, stats){
                 if(err){console.log(err);}else{
                     console.log("successful to build channel entry point file:" + entryFile);
                 };
