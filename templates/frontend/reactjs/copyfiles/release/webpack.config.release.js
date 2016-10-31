@@ -20,8 +20,8 @@ var config = {
 
     //页面入口文件配置
     entry: {
-        app :[path.join(__dirname,'../resources/client/product/redux/redux-router.js')],
-        vendors:['react','react-dom','react-router','redux','react-redux','redux-thunk', 'axios','amazeui-touch','react-addons-css-transition-group']
+        app :[path.join(__dirname,'../resources/client/product/router.js')],
+        vendors:['react','react-dom','react-router', 'axios','amazeui-touch','react-addons-css-transition-group']
     },
     //入口文件输出配置
     output: {

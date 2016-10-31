@@ -45,7 +45,7 @@ function sideChannelsBuild(basePath, sideName,destBasePath){
 
         if (stats.isDirectory()){
             var publicPath = "/" + sideName + "/" + file +"/";
-            var entryFile = filePath + "/redux/redux-router.js";
+            var entryFile = filePath + "/router.js";
             var outPath   = targetPath + file;
             var cfg = Object.assign({},webpackConfig);
             cfg.entry = {};cfg.output={};
