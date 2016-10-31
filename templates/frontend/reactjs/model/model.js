@@ -2,34 +2,32 @@ var model = require('./modelBase');
 
 
 var serverPath = '<%=data.apiServer%>';
+var moduleName = "<%=data.moduleName%>";
+var apiServerPath = serverPath + "/" + moduleName ;
 var query = function (cb) {
-    model.get(serverPath + "/<%=data.moduleName%>/queryAll", {}, cb);
+    model.get(apiServerPath + "/queryAll", {}, cb);
+};
+
+var queryByNameLike = function (params, cb) {
+    model.get(apiServerPath + "/queryByNameLike/", params, cb);
+};
+var queryById = function (params, cb) {
+    model.get(apiServerPath + "/query/" + params.id, params, cb);
+};
+var update = function (params, cb) {
+    model.post(apiServerPath + "/update/" + params.id, params, cb);
+};
+var remove = function (params, cb) {
+    model.post(apiServerPath + "/remove/" + params.id, params, cb);
+};
+var add = function (params, cb) {
+    model.post(apiServerPath + "/save", params, cb);
 };
 var queryReferListByName = function (refer, cb) {
     model.get(serverPath + "/" + refer + "/queryAll", {}, cb);
 };
-
-var queryByNameLike = function (params, cb) {
-    model.get(serverPath + "/<%=data.moduleName%>/queryByNameLike/", params, cb);
-};
-
 var queryDictionaryListByParams = function (refer, params, cb) {
     model.get(serverPath + "/dictionary/queryByCategory/", params, cb);
-};
-var queryByParams = function (params, cb) {
-    model.get(serverPath + "<%=data.moduleName%>s/query", params, cb);
-};
-var queryById = function (params, cb) {
-    model.get(serverPath + "/<%=data.moduleName%>/query/" + params.id, params, cb);
-};
-var update = function (params, cb) {
-    model.post(serverPath + "/<%=data.moduleName%>/update/" + params.id, params, cb);
-};
-var remove = function (params, cb) {
-    model.post(serverPath + "/<%=data.moduleName%>/remove/" + params.id, params, cb);
-};
-var add = function (params, cb) {
-    model.post(serverPath + "/<%=data.moduleName%>/save", params, cb);
 };
 module.exports = {
     add: add,
@@ -37,7 +35,6 @@ module.exports = {
     update: update,
     query: query,
     queryById: queryById,
-    queryByParams: queryByParams,
     queryByNameLike: queryByNameLike,
     queryReferListByName: queryReferListByName,
     queryReferListByParams: queryDictionaryListByParams,
