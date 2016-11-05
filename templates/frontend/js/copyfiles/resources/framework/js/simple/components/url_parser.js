@@ -1,4 +1,4 @@
-define(['jquery'], function ($) {
+define([], function () {
 
     var reURL = /^([^:\s]+):\/{2,3}([^\/\s:]+)(?::(\d{1,5}))?(\/[^\?\s#]+)?(\?[^#\s]+)?(#[^\s]+)?/;
 
@@ -15,12 +15,14 @@ define(['jquery'], function ($) {
             var arr = url.match(reURL),
                 temp = {};
 
-            $.each(URLLi.split(" "), function (i, item) {
-                console.log(arr[i+1]);
-                console.log(temp[item]);
+            //$.each(URLLi.split(" "), function (i, item) {
+            //    console.log(arr[i+1]);
+            //    console.log(temp[item]);
+            //    temp[item] = arr[i+1];
+            //});
+            URLLi.split(" ").map(function (item, i) {
                 temp[item] = arr[i+1];
             });
-
             console.log(temp);
             return temp;
         },
@@ -32,10 +34,12 @@ define(['jquery'], function ($) {
             var arr = url.match(reURL),
                 temp = {};
 
-            $.each(URLLi.split(" "), function (i, item) {
+            //$.each(URLLi.split(" "), function (i, item) {
+            //    temp[item] = arr[i+1];
+            //});
+            URLLi.split(" ").map(function (item, i) {
                 temp[item] = arr[i+1];
             });
-
             //var path =  "/" + temp.path.split("/")[1];
             console.log(JSON.stringify(temp));
             var path;

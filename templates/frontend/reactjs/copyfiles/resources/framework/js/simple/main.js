@@ -1,43 +1,76 @@
-/**
- * Created by zhangyq on 2015/7/21.
- */
-// 取得当前require_config.js的路径。
+function getPath (url) {
+	var reURL = /^([^:\s]+):\/{2,3}([^\/\s:]+)(?::(\d{1,5}))?(\/[^\?\s#]+)?(\?[^#\s]+)?(#[^\s]+)?/;
+	var URLLi = "protocol host port path search hash";
+	if (!url) {
+		url = location.href;
+	}
 
+	var arr = url.match(reURL),
+		temp = {};
 
-require(['global_require_config'], function (g) {
+	URLLi.split(" ").map(function (item, i) {
+		temp[item] = arr[i+1];
+	});
 
-   require(['urlparser','params','simple','jquery'], function (urlparser,params,simple,$) {
-      
-	   var resPath = $("#entryport-js").data("res-path");
-	   if (resPath[resPath.length-1] == '/'){
-		   resPath = resPath.substr(0,resPath.length-1);
-	   }
-       resFullPath = resPath + urlparser.getPath();
-       
-       console.log("resource path is" + resFullPath);
-	   var local_config = resFullPath + 'require_config.js';
-       var local_router = resFullPath + 'router.js';
-       console.log("local config path" + local_config);
-       Simple.P = params;
-       Simple.resourceRootPath = resPath;
-       require([local_config,local_router],function(config,router){
-           //router.main();
-    	   console.log("begin to config" + JSON.stringify(config));
-    	   for (var item in config){
-    		   path = config[item];
-    		   if (path[0] == '.'){
-    			   path = path.substr(1,path.length-1);
-    		   }
-    		   path = resFullPath + config[item];
-    		   config[item] = path;
-    	   }
-    	   console.log("begin to config");
-    	   console.log("begin to config" + JSON.stringify(config));
-    	   require.config({paths:config});
-    	   router.setResourceRootPath(resPath);
-           router.startup();
-       });
+	//console.log(JSON.stringify(temp));
+	var path;
 
+	if (temp.path[temp.path.length-1] != '/'){
+		path = temp.path + '/';
+	}else{
+		path = temp.path;
+	}
+	console.log('current path is：' + path);
+	return path;
+};
+
+//
+function addScript(url,callback){
+	var doc=document;
+	var script=document.createElement("script");
+	script.async = true;
+	script.setAttribute("type", "text/javascript");
+	script.setAttribute("src", url);
+	script.onload = script.onreadystatechange = function() {
+		if (!this.readyState || this.readyState === "loaded" || this.readyState === "complete" ) {
+			callback();
+			// Handle memory leak in IE
+			script.onload = script.onreadystatechange = null;
+		}
+	};
+	var heads = document.getElementsByTagName("head");
+	doc.documentElement.appendChild(script);
+
+}
+function __entry_point() {
+
+   require(['common'], function (common) {
+	   var resFullPath = getPath();
+	   var channel_entrypoint_file = resFullPath + 'app.js';
+	   addScript(channel_entrypoint_file,function(){
+		   require(['approuter'],function(router){
+			   console.log("finished to load router module");
+			   if (router.startup){router.startup();}
+		   });
+	   });
    });
 
-});
+};
+
+
+(function ready(fn){
+	if(document.addEventListener) {
+		document.addEventListener('DOMContentLoaded', function() {
+			//注销事件, 避免反复触发
+			document.removeEventListener('DOMContentLoaded',arguments.callee, false);
+			fn();            //执行函数
+		}, false);
+	}else if(document.attachEvent) {        //IE
+		document.attachEvent('onreadystatechange', function() {
+			if(document.readyState == 'complete') {
+				document.detachEvent('onreadystatechange', arguments.callee);
+				fn();        //函数执行
+			}
+		});
+	}
+})(__entry_point);

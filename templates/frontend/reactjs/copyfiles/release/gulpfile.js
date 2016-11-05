@@ -93,15 +93,7 @@ gulp.task('build', function() {
 
 });
 
-gulp.task('framework', [], function() {
-    dirDist = "../dist/";
-    xtools.mkdirX(dirDist);
-
-    var dirSideSource = dirSource  +"/framework/";
-    var dirSideDist = dirDist  +"/framework/";
-    xtools.copyDirEx(dirSideSource,dirSideDist);
-});
-gulp.task('default', ['clean','build','framework']);
+gulp.task('default', ['clean','build']);
 
 
 
@@ -113,6 +105,8 @@ gulp.task('release', ['clean'], function() {
     });
 
 });
+
+/*
 gulp.task('java-release', ['clean'], function() {
     dirDist    ='../../../../src/main/resources/static/dist/';
     gulp.start(function() {
@@ -121,7 +115,7 @@ gulp.task('java-release', ['clean'], function() {
     });
 
 });
-
+*/
 
 
 /*
@@ -146,9 +140,6 @@ gulp.task('rebuild', ['build'],function () {
     gulp.src("../dist/**/**/*.html").pipe(connect.reload());
 
 });
-gulp.task('run', ['clean','framework','build','start-dev', 'watch'],function(){
-    open('http://localhost:' + port + "/" + sideName + "/product/");
-});
-gulp.task('run', ['start-dev', 'watch'],function(){
+gulp.task('run', ['build','start-dev', 'watch'],function(){
     open('http://localhost:' + port + "/" + sideName + "/product/");
 });

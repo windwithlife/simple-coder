@@ -135,19 +135,12 @@ gulp.task('copy-index',function() {
 });
 
 
-gulp.task('default', ['clean','replace','framework'], function() {
-    dirDist = "../dist/";
-    xtools.mkdirX(dirDist);
-    gulp.start(function() {
-        var dirSideSource = dirSource  +"/" + sideName +"/";
-        var dirSideDist = dirDist  +"/" + sideName +"/";
-
-        xtools.copyDirEx(dirSideSource,dirSideDist);
-    });
-
+gulp.task('default', ['clean','build-all-rjs','copy-index'], function() {
+    console.log("finished to package all channels");
 });
-gulp.task('release', ['clean','replace'], function() {
+gulp.task('release', ['build-all-rjs'], function() {
     dirDist = '../../../server/java/simpleserver/src/main/resources/static/dist/';
+    var dirSource = '../dist/'
     xtools.mkdirX(dirDist);
     gulp.start(function() {
         var dirSideSource = dirSource  +"/" + sideName +"/";
@@ -158,6 +151,7 @@ gulp.task('release', ['clean','replace'], function() {
 
 });
 
+/*
 gulp.task('java-release', ['clean','replace'], function() {
     dirDist    ='../../../../src/main/resources/static/dist/';
     xtools.mkdirX(dirDist);
@@ -169,7 +163,7 @@ gulp.task('java-release', ['clean','replace'], function() {
     });
 
 });
-
+*/
 /*
  * 模板开发预览
  * gulp run
@@ -190,7 +184,7 @@ gulp.task('start-dev' ,function() {
 });
 
 
-gulp.task('rebuild', ['build-all-rjs'],function () {
+gulp.task('rebuild', ['build-all-rjs','copy-index'],function () {
     gulp.src("../dist/**/**/*.html").pipe(connect.reload());
 
 });
@@ -198,5 +192,7 @@ gulp.task('watch', function () {
     gulp.watch(['../resources/**/*.js','../resources/**/templates/*.html'], ['rebuild']);
 });
 
-gulp.task('run', ['framework','build-all-rjs','copy-index','start-dev', 'watch']);
+gulp.task('run', ['build-all-rjs','copy-index','start-dev', 'watch'],function(){
+
+});
 
