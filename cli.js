@@ -6,8 +6,6 @@ var spawn = require('child_process').spawn;
 var prompt = require('prompt');
 var xtools = require('./lib/xtools');
 
-
-
 var NPM = (process.platform === 'win32') ? 'npm.cmd' : 'npm';
 
 //程序启动代码
