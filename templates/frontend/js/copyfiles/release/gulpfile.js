@@ -7,6 +7,12 @@ var clean      = require('gulp-clean');
 var replace   = require('gulp-replace');
 var argv       = require('yargs').argv;
 var connect   = require('gulp-connect');
+var requirejsOptimize = require('gulp-requirejs-optimize');
+var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
+var less = require('gulp-less');
+var autoprefixer = require('gulp-autoprefixer');
+var minifycss = require('gulp-minify-css'); // CSS压缩
 
 
 //
@@ -25,30 +31,6 @@ var host = argv.host;
 if (host){apiServerAddress = host}
 console.log("ApiServerAddress is:--" +  apiServerAddress);
 
-var printMsg = function() {
-    console.log('\033[0;31m\n文件已经迁移到TFS环境中');
-    console.log('如果TFS路径不正确，请自行在lib目录中增加 .tfsdir 文件，文件的内容为TFS路径\033[0m\n');
-}
-
-
-function sideChannelsBuild(basePath, sideName,destBasePath){
-
-
-    var workPath = basePath + "/" + sideName + "/";
-    var targetPath  = destBasePath + "/" + sideName + "/";
-
-    xtools.copyDirEx(workPath,targetPath);
-    var files = fs.readdirSync(workPath);
-    files.forEach(function(file){
-        var filePath =workPath +  file;
-        var stats = fs.statSync(filePath);
-        if (stats.isDirectory()) {
-            var indexFile = targetPath + file + "/index.html";
-            var indexFileSrc = "./index.html";
-            fs.writeFileSync(indexFile, fs.readFileSync(indexFileSrc));
-        }
-    });
-}
 
 gulp.task('clean', function() {
     var dirSideDest = dirDist +"/" + sideName +"/";
@@ -66,14 +48,93 @@ gulp.task('replace', function() {
     return gulp.src(dirSideSource).pipe(replace(/(serverPath\s*=\s*[",']).+([",'])/g,strHost)).pipe(gulp.dest(dirSideDest));
 
 });
-gulp.task('build', function() {
-    dirDist = "../dist/";
-    xtools.mkdirX(dirDist);
-    gulp.start(function() {
-      sideChannelsBuild(dirSource,sideName,dirDist);
-    });
 
+
+
+gulp.task('build-rjs', function () {
+    var basePath ="../../framework/js/";
+
+    return gulp.src('../resources/admin/product/*.js')
+        .pipe(requirejsOptimize({
+            //mainConfigFile: '../resources/framework/js/simple/global_require_config.js',
+            paths: {
+                jquery:basePath +  "3rd/jquery.min",
+                underscore:basePath + "3rd/underscore-min",
+                backbone: basePath + "3rd/backbone-min",
+                text:basePath +  "3rd/text",
+                urlparser: basePath + "simple/components/url_parser",
+                pagenavigator: basePath + "simple/components/page_navigator",
+                router:  basePath + "simple/components/router",
+                model:basePath +  "simple/components/model",
+                params: basePath + "simple/components/params",
+                simple: basePath + "simple/components/simple",
+                homeModel:"./models/model"
+            },
+            //optimize: "none",
+            exclude: [
+                'jquery','underscore','backbone','router','text','model','params','pagenavigator'
+            ]
+        })).pipe(concat("app.js"))
+        .pipe(gulp.dest('../dist/admin/product/'));
 });
+
+gulp.task('build-all-rjs', [],function () {
+    var workPath = "../resources/" +  sideName + "/";
+    var targetPath ="../dist/" + sideName + "/";
+    var basePath ="../../framework/js/";
+    var files = fs.readdirSync(workPath);
+    files.forEach(function(file){
+        var filePath =workPath +  file;
+        var stats = fs.statSync(filePath);
+        if (stats.isDirectory()) {
+            gulp.src(path.join(workPath,file) + '/*.js')
+                .pipe(requirejsOptimize({
+                    //mainConfigFile: '../resources/framework/js/simple/global_require_config.js',
+                    paths: {
+                        jquery:basePath +  "3rd/jquery.min",
+                        underscore:basePath + "3rd/underscore-min",
+                        backbone: basePath + "3rd/backbone-min",
+                        text:basePath +  "3rd/text",
+                        urlparser: basePath + "simple/components/url_parser",
+                        pagenavigator: basePath + "simple/components/page_navigator",
+                        router:  basePath + "simple/components/router",
+                        model:basePath +  "simple/components/model",
+                        params: basePath + "simple/components/params",
+                        simple: basePath + "simple/components/simple",
+                        homeModel:"./models/model"
+                    },
+                    //optimize: "none",
+                    exclude: [
+                        'jquery','underscore','backbone','router','text','model','params','pagenavigator'
+                    ]
+                })).pipe(concat("app.js"))
+                .pipe(gulp.dest(path.join(targetPath,file)));
+        }
+    });
+});
+
+
+
+
+gulp.task('copy-index',function() {
+
+    return gulp.start(function(){
+    var baseSourcePath = "../resources/"+ sideName + "/";
+    var baseDestPath = "../dist/"+ sideName + "/";
+
+        var files = fs.readdirSync(baseSourcePath);
+        files.forEach(function(file){
+            if (file=='common'){ return;}
+            var filePath =baseSourcePath +  file;
+            var targetFilePath =baseDestPath +  file;
+            var stats = fs.statSync(filePath);
+            gulp.src("./index.html").pipe(gulp.dest(targetFilePath));
+
+        });
+    });
+});
+
+
 gulp.task('default', ['clean','replace','framework'], function() {
     dirDist = "../dist/";
     xtools.mkdirX(dirDist);
@@ -109,16 +170,6 @@ gulp.task('java-release', ['clean','replace'], function() {
 
 });
 
-gulp.task('framework', [], function() {
-    dirDist = "../dist/";
-    xtools.mkdirX(dirDist);
-
-    var dirSideSource = dirSource  +"/framework/";
-    var dirSideDist = dirDist  +"/framework/";
-    xtools.copyDirEx(dirSideSource,dirSideDist);
-    //xtools.copyDirEx(dirSideSource,dirSideDist);
-
-});
 /*
  * 模板开发预览
  * gulp run
@@ -139,14 +190,13 @@ gulp.task('start-dev' ,function() {
 });
 
 
-gulp.task('rebuild', ['build'],function () {
+gulp.task('rebuild', ['build-all-rjs'],function () {
     gulp.src("../dist/**/**/*.html").pipe(connect.reload());
 
 });
-
 gulp.task('watch', function () {
     gulp.watch(['../resources/**/*.js','../resources/**/templates/*.html'], ['rebuild']);
 });
 
-gulp.task('run', ['clean','framework','build','start-dev', 'watch']);
+gulp.task('run', ['framework','build-all-rjs','copy-index','start-dev', 'watch']);
 

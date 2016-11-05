@@ -20,13 +20,13 @@ var config = {
 
     //页面入口文件配置
     entry: {
-        app :[path.join(__dirname,'../resources/client/product/router.js')],
-        vendors:['react','react-dom','react-router', 'axios','amazeui-touch','react-addons-css-transition-group']
+        "main-react" :[path.join(__dirname,'../resources/framework/js/simple/main-react.js')],
+         vendors:['react','react-dom','react-router', 'axios','amazeui-touch','react-addons-css-transition-group']
     },
     //入口文件输出配置
     output: {
-        path: path.join(__dirname, '../dist/client/product/'),
-        publicPath: "/client/product/",//html引用路径
+        path: path.join(__dirname,'../dist/framework/js/'),
+        publicPath: "../dist/framework/js/",//html引用路径
         filename: '[name].js' // 注意我们使用了变量
     },
     externals: {

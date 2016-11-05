@@ -6,12 +6,13 @@ var clean      = require('gulp-clean');
 var replace   = require('gulp-replace');
 var connect   = require('gulp-connect');
 var webpack    = require("webpack");
-var webpackConfig = require("./webpack.config.release.js");
+var webpackConfig = require("./webpack.config.js");
 var argv       = require('yargs').argv;
 var open       = require('open');
 var xtools     = require('./xtools');
-var config     = require('./config.js');
-var apiServerAddress = config.apiServerAddress;
+//var config     = require('./config.js');
+//var apiServerAddress = config.apiServerAddress;
+var apiServerAddress = "http://localhost:8080/";
 var dirDist    ='../dist/';
 var dirSource    ='../resources/';
 
@@ -50,17 +51,22 @@ function sideChannelsBuild(basePath, sideName,destBasePath){
             var cfg = Object.assign({},webpackConfig);
             cfg.entry = {};cfg.output={};
             cfg.entry.app = entryFile;
+            cfg.entry.vendors = webpackConfig.entry.vendors;
             cfg.output.path = outPath;
             cfg.output.publicPath = publicPath;
+            cfg.output.filename = '[name].js';
 
             webpack(cfg,function(err, stats){
                 if(err){console.log(err);}else{
+                    console.log("ENV:" + process.env.NODE_ENV);
                     console.log("successful to build channel entry point file:" + entryFile);
                 };
 
             });
         }
     });
+
+    //console.log(process.env.NODE_ENV);
 }
 
 gulp.task('clean', function() {
@@ -95,11 +101,11 @@ gulp.task('framework', [], function() {
     var dirSideDist = dirDist  +"/framework/";
     xtools.copyDirEx(dirSideSource,dirSideDist);
 });
-gulp.task('default', ['clean','replace','build','framework']);
+gulp.task('default', ['clean','build','framework']);
 
 
 
-gulp.task('release', ['clean','replace'], function() {
+gulp.task('release', ['clean'], function() {
     dirDist = '../../../server/java/simpleserver/src/main/resources/static/dist/';
     gulp.start(function() {
 
@@ -107,7 +113,7 @@ gulp.task('release', ['clean','replace'], function() {
     });
 
 });
-gulp.task('java-release', ['clean','replace'], function() {
+gulp.task('java-release', ['clean'], function() {
     dirDist    ='../../../../src/main/resources/static/dist/';
     gulp.start(function() {
 
@@ -123,7 +129,7 @@ gulp.task('java-release', ['clean','replace'], function() {
  * gulp run
  * gulp run --port {自定义运行端口，默认1234}
  */
-/*
+
 gulp.task('start-dev' ,function() {
     connect.server({
         port: port,
@@ -131,18 +137,18 @@ gulp.task('start-dev' ,function() {
         livereload: true
     });
 });
-*/
-//gulp.task('watch', function () {
-//    gulp.watch(['../resources/**/*.js'], ['rebuild']);
-//});
 
-//gulp.task('rebuild', ['build'],function () {
-//    gulp.src("../dist/**/**/*.html").pipe(connect.reload());
+gulp.task('watch', function () {
+    gulp.watch(['../resources/**/*.js'], ['rebuild']);
+});
 
-//});
-//gulp.task('run', ['clean','framework','build','start-dev', 'watch'],function(){
-//    open('http://localhost:' + port + "/" + sideName + "/product/");
-//});
-//gulp.task('run', ['start-dev', 'watch'],function(){
-//    open('http://localhost:' + port + "/" + sideName + "/product/");
-//});
+gulp.task('rebuild', ['build'],function () {
+    gulp.src("../dist/**/**/*.html").pipe(connect.reload());
+
+});
+gulp.task('run', ['clean','framework','build','start-dev', 'watch'],function(){
+    open('http://localhost:' + port + "/" + sideName + "/product/");
+});
+gulp.task('run', ['start-dev', 'watch'],function(){
+    open('http://localhost:' + port + "/" + sideName + "/product/");
+});

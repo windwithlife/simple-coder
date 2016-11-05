@@ -9,8 +9,7 @@ let srcPath = path.join(__dirname, '/../resources/');
 module.exports = {
 
   //port: 5389,
-  debug: true,
-  devtool: 'eval',
+  //debug: true,
   entry: {
     app :['../resources/admin/product/router.js'],
   },
@@ -32,7 +31,8 @@ module.exports = {
       alias: {
          AppStore : 'js/stores/AppStores.js',
          ActionType : 'js/actions/ActionType.js',
-         AppAction : 'js/actions/AppAction.js'
+         AppAction : 'js/actions/AppAction.js',
+          xxx:'./xxx.js'
       }
   },
   externals: {
@@ -84,7 +84,7 @@ module.exports = {
                 presets: ['es2015', 'react', 'stage-1']//先后顺序不能错,否则有些语法转换会报错
           },
          exclude: /node_modules/,
-          //include:[path.join(__dirname,"/../resources/")]
+          include:[path.join(__dirname,"/../resources/")]
       }
     ]
   },

@@ -12,7 +12,7 @@ module.exports = {
   debug: true,
   devtool: 'eval',
   entry: {
-    app :['../resources/admin/product/router.js'],
+    app :['../resources/framework/js/router.js'],
   },
   output: {
       path: path.join(__dirname, '/../dist/'),
@@ -21,12 +21,7 @@ module.exports = {
   },
 
   plugins:[
-      new webpack.DefinePlugin({
-          'process.env':{
-          'NODE_ENV': JSON.stringify('production')
-      }
-      }),
-      new HtmlWebpackPlugin({
+     new HtmlWebpackPlugin({
            template:'./index.html',    //html模板路径
            inject:true,    //允许插件修改哪些内容，包括head与body
            hash:true,      //为静态资源生成hash值
@@ -82,12 +77,14 @@ module.exports = {
       },
       {
          test: /\.jsx?$/,
-        // exclude:/node_modules/,
-         loader: 'babel',
-         query: {
-            presets: ['es2015', 'react', 'stage-1']//先后顺序不能错,否则有些语法转换会报错
-         },
-         exclude: /node_modules/
+          loader: 'babel-loader',
+          //loader: 'react-hot-loader/webpack!babel-loader',
+          // loader:['babel'],
+          query: {
+                presets: ['es2015', 'react', 'stage-1']//先后顺序不能错,否则有些语法转换会报错
+          },
+         exclude: /node_modules/,
+          //include:[path.join(__dirname,"/../resources/")]
       }
     ]
   },

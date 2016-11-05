@@ -13,60 +13,66 @@ npm install
 
 
 ### 项目结构
+
 - frontend 目录下是前端业务代码，其中js，reactjs子目录下是分别用js，reactjs实现的代码.
   其中js/reactjs 目录下有4个子目录：
-  1.dev-server 开发测试用
-  2.release 打包发布用。
+  1.dev-server 开发测试用(整个前端所有频道包含布局的整合测试）
+  2.release 打包发布用（含频道测试功能）。
   3.resources自动生成的前端代码
-  4.dist 打包后代码位置，在此位置代码可以用dev-server的nodejs服务进行测试展示。
+  4.dist 打包后代码位置，在此位置代码可以用dev-server/release的的测试工具进行测试展示。
 - server目录下为服务端代码（含网站框架）其下有java/nodejs等子目录，分别为各种语言实现的soa 服务器及网站框架。目前仅支持java spring-boot框架。
 
 - modules目录为业务定义位置，内部对各业务实体进行了定义。用simple-coder npm 插件可以根据这里的实体定义，进行自动生成服务器soa接口代码，数据库代码，及前端js代码，reactjs代码。
-- package.json为整个工程编译打包，发布所需要的npm插件。
 
+### 项目试用（以js为例）
+- 1. 项目根目录下安装环境所需插件：npm install 
+- 2.进入frontend\js\release\目录
+  3.打包并进行测试：gulp run
+  注：.(如果想替换SOA服务器地址请执行gulp --host=http://xx.xx.xx.xx:yourPort/)
+- 全网站进行测试请执行如下步聚：
+  4.进入frontend\js\dev-server\目录
+  5 运行静态资源服务器 node www.js
+  
 ### 项目使用：
 - 首先在项目目录处安装npm 插件：npm install (因为reactjs es6 插件有bug,所有工程所需插件都在此处安装）
-- 如果你的项目不是用simple-coder生成的，还没有安装simple-coder插件，请全局安装simple-coder： npm install -g simple-coder
+-- 准备插件：
+    全局安装simple-coder： npm install -g simple-coder 
 - 在modules 里定义所需的实体类.
+
 - 进行代码自动生成：
   1.自动生成js代码：simple-coder -g js
   2.自动生成reactjs代码simple-coder -g rj
+  2.1自动生成reactjs代码（带有redux支持）simple-coder -g rj-with-redux
   3.自动生成soa 的java代码 simple-coder -g server-java
   
-  注意：本项目本身已根据modules中的缺省几个实体定义，自动生成过一次代码，已有4个模块。
-- 打包测试（以js代码为例）：
-  1.进入frontend\js\release\目录
-  2.打包：gulp
-  3.进入frontend\js\dev-server\目录
-  4 运行静态资源服务器 node www.js
-  5.生成前端js代码及对应后端服务器代码 （如果使用已存在的SOA服务，可以跳过此步骤）
-      $:simple-coder -g server-java
-  6.进入java IDE(例入Eclipse/MyEclipse)打开导入（maven) server\java\simpleserver  项目,然后运行soa服务端代码
-  7.浏览器中打开 http://localhost:5389/admin/product/ 即可测试。
+  本项目本身已根据modules中的缺省几个实体定义，自动生成过一次代码，已有4个模块。
   
- 注：如果测试空白页，或者不熟悉java 的SOA服务器代码，可以在打包时加入SOA接口服务器的参数，例如：gulp --host=http://api.zhangyongqiao.com:8080
- 使用远端公网上的服务器接口进行测试。
-
+- 打包测试（以reactjs代码为例）：
+  1.生成前端reactjs代码及对应后端服务器代码 
+    $:simple-coder -g rj
+    $:simple-coder -g server-java
+    
+  2.测试：
+    进入frontend\reactjs\release\目录
+    替换SOA服务器地址gulp replace --host=http://xx.yy.zz.yy:yourPORT/（如果SOA服务器地址正确，则无需此步聚）
+    启动webpack-dev-server(支持js/react热更新): node devServer.js
+    
+  3 发布：
+    进入frontend\reactjs\release\目录
+    发布代码到发布站点上：gulp release
+  
+  
+ 注：如果测试空白页，或者不熟悉java 的SOA服务器代码，可以在打包时加入参数gulp --host=http://api.zhangyongqiao.com:8080
+ 使用远端公网上的服务器接口进行测试。 
  
-### 项目打包测试
-- react js打包：
-  1.在完成业务实体代码的编写后，并用simple-coder自动生成代码。
-  2.进入项目的打包发布目录。frontent-->reactjs-->release
-  3.进行打包 gulp
-  4.如果进行开发测试（加载热布署）可以用gulp run即可
-    如果想测试完整界面逻辑，进入froentend-->reactjs-->dev-server
-    执行node www
-  5.如果要进行生成发布，打发布包gulp release.
-- js打包：
-   1.在完成业务实体代码的编写后，并用simple-coder自动生成代码。
-   2.进入项目的打包发布目录。frontent-->js-->release.
-   3.进行打包 gulp
-   4 如果进行开发测试（加载热布署）可以用gulp run即可
-     如果想测试完整界面逻辑，进入froentend-->js-->dev-server
-     执行node www
-   5.如果要进行生成发布，打发布包gulp release.
-   
+### 项目发布：
+    1.进入frontend\js\release\目录
+    2.打包：
+       gulp release --host=yourServerIP(你的服务器地址与端口)。
+    3.此项目支持DaoCloud的Docker云服务集群的生产线上自动化发布，布署。如果使用此功能。请在Daocloud上对此项目进行自动集成配置。
+     
 ## 样例：
+- 在examples目录下有例子程序，有写好的基本框架，可以参考。
 
 
 ### FAQ
