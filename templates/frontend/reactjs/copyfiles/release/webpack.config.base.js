@@ -11,10 +11,10 @@ module.exports = {
   //port: 5389,
   //debug: true,
   entry: {
-    app :['../resources/admin/product/router.js'],
+    app :[path.join(__dirname,'../resources/client/product/router.js')],
   },
   output: {
-      path: path.join(__dirname, '/../dist/'),
+      path: path.join(__dirname, '../dist/'),
       publicPath: '/',
       filename: '[name].js' // 注意我们使用了变量
   },
@@ -32,8 +32,7 @@ module.exports = {
          AppStore : 'js/stores/AppStores.js',
          ActionType : 'js/actions/ActionType.js',
          AppAction : 'js/actions/AppAction.js',
-          xxx:'./xxx.js'
-      }
+        }
   },
   externals: {
       'react': 'React',

@@ -42,7 +42,7 @@ var config = {
         new HtmlWebpackPlugin({
             template:'./index.html',    //html模板路径
             inject:true,    //允许插件修改哪些内容，包括head与body
-            hash:true,    //为静态资源生成hash值
+            hash:false,    //为静态资源生成hash值
         }),
         //new  webpack.optimize.CommonsChunkPlugin({
         //    name:['vendors'],

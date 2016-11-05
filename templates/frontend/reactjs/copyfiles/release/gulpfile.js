@@ -51,7 +51,7 @@ function sideChannelsBuild(basePath, sideName,destBasePath){
             var cfg = Object.assign({},webpackConfig);
             cfg.entry = {};cfg.output={};
             cfg.entry.app = entryFile;
-            cfg.entry.vendors = webpackConfig.entry.vendors;
+            //cfg.entry.vendors = webpackConfig.entry.vendors;
             cfg.output.path = outPath;
             cfg.output.publicPath = publicPath;
             cfg.output.filename = '[name].js';
