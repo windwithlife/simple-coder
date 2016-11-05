@@ -1,6 +1,6 @@
 {
   "name": "simple-coder",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "tool to generate code and framework",
   "directories": {
     "lib": "lib"
@@ -12,10 +12,7 @@
   "scripts": {
     "test": "test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://git.oschina.net/windwithlife/SimpleCoder.git"
-  },
+
   "keywords": [
     "code generator",
     "code tools"
