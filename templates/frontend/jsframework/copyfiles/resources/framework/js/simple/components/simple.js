@@ -12,10 +12,11 @@
 
     // Set up Backbone appropriately for the environment. Start with AMD.
     if (typeof define === 'function' && define.amd) {
-        define(['underscore', 'jquery', 'exports','backbone'], function(_, $, exports,backbone) {
+        define(['underscore', 'jquery', 'exports','backbone','params'], function(_, $, exports,backbone,params) {
             // Export global even in AMD case in case this script is loaded with
             // others that may still expect a global Backbone.
             root.Simple = factory(root, exports, _, $,backbone);
+            Simple.P =params;
             return Simple;
         });
 
