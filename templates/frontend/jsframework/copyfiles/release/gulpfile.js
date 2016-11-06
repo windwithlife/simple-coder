@@ -13,7 +13,7 @@ var uglify = require('gulp-uglify');
 var less = require('gulp-less');
 var autoprefixer = require('gulp-autoprefixer');
 var minifycss = require('gulp-minify-css'); // CSS压缩
-var rename = require("gulp-rename");
+//var rename = require("gulp-rename");
 
 //
 var apiServerAddress = "localhost:5389";
