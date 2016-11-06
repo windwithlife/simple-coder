@@ -8,6 +8,8 @@ var xtools = require('./lib/xtools');
 
 var NPM = (process.platform === 'win32') ? 'npm.cmd' : 'npm';
 
+
+
 //程序启动代码
 var argv = process.argv;
 var commands = argv.slice(2);
