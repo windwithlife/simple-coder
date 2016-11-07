@@ -138,15 +138,54 @@ gulp.task('copy-index',function() {
 gulp.task('default', ['clean','build-all-rjs','copy-index'], function() {
     console.log("finished to package all channels");
 });
-gulp.task('release', ['build-all-rjs'], function() {
-    dirDist = '../../../server/java/simpleserver/src/main/resources/static/dist/';
-    var dirSource = '../dist/'
-    xtools.mkdirX(dirDist);
+
+gulp.task('release', [],function () {
+    var workPath = "../resources/" +  sideName + "/";
+    var releaseDist = '../../../server/java/simpleserver/src/main/resources/static/dist/';
+    var targetPath = releaseDist + sideName + "/";
+    var basePath ="../../framework/js/";
+    var files = fs.readdirSync(workPath);
+    files.forEach(function(file){
+        var filePath =workPath +  file;
+        var stats = fs.statSync(filePath);
+        if (stats.isDirectory()) {
+            gulp.src(path.join(workPath,file) + '/*.js')
+                .pipe(requirejsOptimize({
+                    //mainConfigFile: '../resources/framework/js/simple/global_require_config.js',
+                    paths: {
+                        jquery:basePath +  "3rd/jquery.min",
+                        underscore:basePath + "3rd/underscore-min",
+                        backbone: basePath + "3rd/backbone-min",
+                        text:basePath +  "3rd/text",
+                        urlparser: basePath + "simple/components/url_parser",
+                        pagenavigator: basePath + "simple/components/page_navigator",
+                        router:  basePath + "simple/components/router",
+                        model:basePath +  "simple/components/model",
+                        params: basePath + "simple/components/params",
+                        simple: basePath + "simple/components/simple",
+                        homeModel:"./models/model"
+                    },
+                    //optimize: "none",
+                    exclude: [
+                        'jquery','underscore','backbone','router','text','model','params','pagenavigator'
+                    ]
+                })).pipe(concat("app.js"))
+                .pipe(gulp.dest(path.join(targetPath,file)));
+        }
+    });
+});
+
+gulp.task('release-test', ['build-all-rjs'], function() {
+
     gulp.start(function() {
+        dirDist = '../../../server/java/simpleserver/src/main/resources/static/dist/';
+        var dirSource = '../dist/';
+        //xtools.mkdirX(dirDist);
         var dirSideSource = dirSource  +"/" + sideName +"/";
         var dirSideDist = dirDist  +"/" + sideName +"/";
+        gulp.src(dirSideSource+ "**/*.js",{base:dirSideSource}).pipe(gulp.dest(dirSideDist));
 
-        xtools.copyDirEx(dirSideSource,dirSideDist);
+        //xtools.copyDirEx(dirSideSource,dirSideDist);
     });
 
 });

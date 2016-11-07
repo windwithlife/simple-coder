@@ -5,6 +5,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.resource.GzipResourceResolver;
 
 @Configuration
 public class WebMvcConfiguration extends WebMvcConfigurerAdapter {
@@ -17,7 +18,8 @@ public class WebMvcConfiguration extends WebMvcConfigurerAdapter {
 	@Override
 	public void addResourceHandlers(ResourceHandlerRegistry registry) {
 	      registry.addResourceHandler("/images/**").addResourceLocations("file:" + uploadPath);
-	      registry.addResourceHandler("/**").addResourceLocations("classpath:/public/").addResourceLocations("classpath:/static/").addResourceLocations("classpath:/META-INF/resources/").addResourceLocations("classpath:/public/dist/themes/charisma/").addResourceLocations("file:" + webroot).addResourceLocations("classpath:/auto/");
+	      registry.addResourceHandler("/**").addResourceLocations("classpath:/public/").addResourceLocations("classpath:/static/").addResourceLocations("classpath:/META-INF/resources/").addResourceLocations("classpath:/public/dist/framework/themes/charisma/").addResourceLocations("file:" + webroot).addResourceLocations("classpath:/auto/").resourceChain(false)
+          .addResolver(new GzipResourceResolver());
 	      
 	      super.addResourceHandlers(registry);
 	}

@@ -29,7 +29,7 @@ function getPath (url) {
 function addScript(url,callback){
 	var doc=document;
 	var script=document.createElement("script");
-	script.async = true;
+	//script.async = true;
 	script.setAttribute("type", "text/javascript");
 	script.setAttribute("src", url);
 	script.onload = script.onreadystatechange = function() {
@@ -40,12 +40,14 @@ function addScript(url,callback){
 		}
 	};
 	var heads = document.getElementsByTagName("head");
-	doc.documentElement.appendChild(script);
+	doc.body.appendChild(script);
+	//doc.documentElement.appendChild(script);
 
 }
 function __entry_point() {
-    //require('./common-react.js');
-	var resFullPath =  getPath();
+	var resRootPath = document.getElementById("entryport-js").getAttribute('data-res-path');
+	if (!resRootPath){resRootPath=''};
+	var resFullPath =  resRootPath +　getPath();
 	var channel_entrypoint_file = resFullPath + 'app.js';
 	addScript(channel_entrypoint_file,function(){
 		console.log("finished to load app file");

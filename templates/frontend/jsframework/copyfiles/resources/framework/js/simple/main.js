@@ -39,17 +39,21 @@ function addScript(url,callback){
 		}
 	};
 	var heads = document.getElementsByTagName("head");
-	doc.documentElement.appendChild(script);
+	doc.body.appendChild(script);
+	//doc.documentElement.appendChild(script);
 
 }
 function __entry_point() {
 
    require(['common'], function (common) {
-	   var resFullPath = getPath();
+
+	   var resRootPath = document.getElementById("entryport-js").getAttribute('data-res-path');
+	   if (!resRootPath){resRootPath=''};
+	   console.log("the resources file directory is set to:["+ resRootPath +"]");
+	   var resFullPath =  resRootPath +　getPath();
 	   var channel_entrypoint_file = resFullPath + 'app.js';
 	   addScript(channel_entrypoint_file,function(){
 		   require(['approuter'],function(router){
-			   console.log("begin to config router");
 			   if (router.startup){router.startup();}
 		   });
 	   });

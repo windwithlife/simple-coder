@@ -41,7 +41,7 @@ function sideChannelsBuild(basePath, sideName,destBasePath){
     files.forEach(function(file){
         var filePath =workPath +  file;
         var stats = fs.statSync(filePath);
-        var modelFile = filePath + "/models/model.js";
+        //var modelFile = filePath + "/models/model.js";
 
 
         if (stats.isDirectory()){
