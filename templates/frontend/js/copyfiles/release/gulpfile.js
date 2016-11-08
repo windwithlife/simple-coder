@@ -113,7 +113,40 @@ gulp.task('build-all-rjs', [],function () {
     });
 });
 
-
+gulp.task('build-all-rjs-debug', [],function () {
+    var workPath = "../resources/" +  sideName + "/";
+    var targetPath ="../dist/" + sideName + "/";
+    var basePath ="../../framework/js/";
+    var files = fs.readdirSync(workPath);
+    files.forEach(function(file){
+        var filePath =workPath +  file;
+        var stats = fs.statSync(filePath);
+        if (stats.isDirectory()) {
+            gulp.src(path.join(workPath,file) + '/*.js')
+                .pipe(requirejsOptimize({
+                    //mainConfigFile: '../resources/framework/js/simple/global_require_config.js',
+                    paths: {
+                        jquery:basePath +  "3rd/jquery.min",
+                        underscore:basePath + "3rd/underscore-min",
+                        backbone: basePath + "3rd/backbone-min",
+                        text:basePath +  "3rd/text",
+                        urlparser: basePath + "simple/components/url_parser",
+                        pagenavigator: basePath + "simple/components/page_navigator",
+                        router:  basePath + "simple/components/router",
+                        model:basePath +  "simple/components/model",
+                        params: basePath + "simple/components/params",
+                        simple: basePath + "simple/components/simple",
+                        homeModel:"./models/model"
+                    },
+                    //optimize: "none",
+                    exclude: [
+                        'jquery','underscore','backbone','router','text','model','params','pagenavigator'
+                    ]
+                })).pipe(concat("app.js"))
+                .pipe(gulp.dest(path.join(targetPath,file)));
+        }
+    });
+});
 
 
 gulp.task('copy-index',function() {
@@ -135,7 +168,7 @@ gulp.task('copy-index',function() {
 });
 
 
-gulp.task('default', ['clean','build-all-rjs','copy-index'], function() {
+gulp.task('default', ['clean','build-all-rjs-debug','copy-index'], function() {
     console.log("finished to package all channels");
 });
 

@@ -112,6 +112,40 @@ gulp.task('pre-entry',[],function () {
         })).pipe(concat("main_pre.js"))
         .pipe(gulp.dest('../dist/framework/js/'));
 });
+gulp.task('pre-entry-debug',[],function () {
+    var basePath ="../";
+    return gulp.src('../resources/framework/js/simple/main.js')
+        .pipe(requirejsOptimize({
+            //mainConfigFile: '../resources/framework/js/simple/global_require_config.js',
+            paths: {
+                jquery:basePath +  "3rd/jquery.min",
+                underscore:basePath + "3rd/underscore-min",
+                backbone: basePath + "3rd/backbone-min",
+                text:basePath +  "3rd/text",
+                urlparser: basePath + "simple/components/url_parser",
+                pagenavigator: basePath + "simple/components/page_navigator",
+                router:  basePath + "simple/components/router",
+                model:basePath +  "simple/components/model",
+                params: basePath + "simple/components/params",
+                simple: basePath + "simple/components/simple"
+            },
+            shim: {
+                underscore: {exports: "_"},
+                jquery: {exports: "$"},
+                backbone: {
+                    deps: ["underscore","jquery"],
+                    exports: "Backbone"
+                },
+                text: {
+                    deps: [],
+                    exports: "text"
+                }
+            },
+            wrapShim: true,
+            optimize: "none"
+        })).pipe(concat("main_pre.js"))
+        .pipe(gulp.dest('../dist/framework/js/'));
+});
 
 
 gulp.task('build-entry-js', ["pre-entry"],function () {
@@ -120,7 +154,12 @@ gulp.task('build-entry-js', ["pre-entry"],function () {
         .pipe(uglify())
         .pipe(gulp.dest('../dist/framework/js/'));
 });
-
+gulp.task('build-entry-js-debug', ["pre-entry-debug"],function () {
+    return gulp.src(['../resources/framework/js/3rd/require.js','../dist/framework/js/main_pre.js'])
+        .pipe(concat("main.js"))
+       // .pipe(uglify())
+        .pipe(gulp.dest('../dist/framework/js/'));
+});
 
 gulp.task('framework', ['build-entry-js','build-entry-css'], function() {
     console.log("finished to build framework entrypoint css and js");
@@ -140,10 +179,18 @@ gulp.task('build-react-js',[],function () {
         .pipe(gulp.dest('../dist/framework/js/'));
 });
 
-gulp.task('framework-react', ['build-react-js'], function() {
-    console.log("finished to build react framework entrypoint css and js");
+gulp.task('build-react-js-debug',[],function () {
+    var basePath ="../";
+    return gulp.src(['../resources/framework/js/3rd/react-with-addons.min.js'
+        ,'../resources/framework/js/3rd/react-dom.min.js'
+        ,'../resources/framework/js/3rd/ReactRouter.min.js'
+        ,'../resources/framework/js/3rd/amazeui.touch.min.js'
+        ,'../resources/framework/js/3rd/axios.min.js'
+        ,"../resources/framework/js/simple/main-react.js"
+    ]).pipe(concat("main-react.js"))
+        //.pipe(uglify())
+        .pipe(gulp.dest('../dist/framework/js/'));
 });
-
 
 gulp.task('clean-release-framework', function() {
     dirDist = '../../../server/java/simpleserver/src/main/resources/static/dist/framework/';
@@ -162,7 +209,7 @@ gulp.task('clean', function() {
         .pipe(clean({force:true}));
 
 });
-gulp.task('default', ['framework','framework-react'], function() {
+gulp.task('default', ['build-entry-js-debug','build-entry-css','build-react-js-debug'], function() {
     var dirDist = '../../';
     var destJSDist =path.join(dirDist,'js/dist/framework/');
     var destReactDist =path.join(dirDist,'reactjs/dist/framework/');
@@ -173,7 +220,7 @@ gulp.task('default', ['framework','framework-react'], function() {
 
     //console.log('finished to build framework to ../dist/');
 });
-gulp.task('release', ['framework-react','framework'], function() {
+gulp.task('release', ['build-react-js','framework'], function() {
     var dirDist = '../../../server/java/simpleserver/src/main/resources/static/dist/';
     var destJSDir =path.join(dirDist,'/framework/js/');
     var destThemesDir =path.join(dirDist,'/framework/themes/');

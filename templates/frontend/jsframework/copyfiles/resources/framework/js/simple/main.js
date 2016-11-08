@@ -46,11 +46,17 @@ function addScript(url,callback){
 function __entry_point() {
 
    require(['common'], function (common) {
-
-	   var resRootPath = document.getElementById("entryport-js").getAttribute('data-res-path');
-	   if (!resRootPath){resRootPath=''};
-	   console.log("the resources file directory is set to:["+ resRootPath +"]");
+	   var resRootPath="/";
+	   var elementSelf = document.getElementById("entryport-js");
+	   if (elementSelf){
+		   var pathValue = elementSelf.getAttribute('data-res-path');
+		   if (pathValue){resRootPath = pathValue};
+	   };
 	   var resFullPath =  resRootPath +　getPath();
+	   if (resFullPath.substr(0,2)=="//") {
+		   resFullPath = resFullPath.substr(1,resFullPath.length-1);
+	   }
+	   console.log("the resources file directory is set to:["+ resFullPath +"]");
 	   var channel_entrypoint_file = resFullPath + 'app.js';
 	   addScript(channel_entrypoint_file,function(){
 		   require(['approuter'],function(router){
