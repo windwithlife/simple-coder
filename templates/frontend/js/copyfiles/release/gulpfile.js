@@ -251,7 +251,8 @@ gulp.task('start-dev' ,function() {
     connect.server({
         port: 5389,
         root: '../dist/',
-        livereload: true
+        livereload: true,
+        fallback: './index.html'
     });
 });
 

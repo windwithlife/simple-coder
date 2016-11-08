@@ -1,4 +1,4 @@
-function getPath (url) {
+function getChannelPath (url) {
 	var reURL = /^([^:\s]+):\/{2,3}([^\/\s:]+)(?::(\d{1,5}))?(\/[^\?\s#]+)?(\?[^#\s]+)?(#[^\s]+)?/;
 	var URLLi = "protocol host port path search hash";
 	if (!url) {
@@ -13,14 +13,13 @@ function getPath (url) {
 	});
 
 	//console.log(JSON.stringify(temp));
-	var path;
+	var path =  temp.path;
 
-	if (temp.path[temp.path.length-1] != '/'){
-		path = temp.path + '/';
-	}else{
-		path = temp.path;
+	if (temp.path[temp.path.length-1] != '/') {
+		var lastItem = temp.path.split('/').pop();
+		path = temp.path.substr(0,temp.path.indexOf(lastItem));
 	}
-	console.log('current path is：' + path);
+	console.log('current channel path is：' + path);
 	return path;
 };
 
@@ -51,7 +50,7 @@ function __entry_point() {
 		var pathValue = elementSelf.getAttribute('data-res-path');
 		if (pathValue){resRootPath = pathValue};
 	};
-	var resFullPath =  resRootPath +　getPath();
+	var resFullPath =  resRootPath +　getChannelPath();
 	if (resFullPath.substr(0,2)=="//") {
 		resFullPath = resFullPath.substr(1,resFullPath.length-1);
 	}

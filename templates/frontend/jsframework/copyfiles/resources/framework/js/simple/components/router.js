@@ -7,8 +7,8 @@ define(['backbone', 'jquery','pagenavigator'], function (Backbone, $,navigator) 
     		this.resRootPath = resPath;
     		//navigator.setResourceRootPath(resPath);
     	},
-        startup:function(){
-            Backbone.history.start();
+        startup:function(rootPath){
+            Backbone.history.start({pushState: true,root:rootPath });
         },
         addRouter: function (path, pageController) {
             console.log("---------register path----[" + path + "] Controller:[" + pageController +"]");

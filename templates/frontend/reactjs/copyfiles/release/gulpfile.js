@@ -128,7 +128,8 @@ gulp.task('start-dev' ,function() {
     connect.server({
         port: port,
         root: '../dist/',
-        livereload: true
+        livereload: true,
+        fallback: './index.html'
     });
 });
 
