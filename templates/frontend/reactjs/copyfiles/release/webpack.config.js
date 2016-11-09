@@ -36,14 +36,14 @@ var config = {
     plugins:[
         new webpack.DefinePlugin({
             'process.env':{
-                'NODE_ENV': JSON.stringify('production')
+                'NODE_ENV':'production'
             }
         }),
-        new HtmlWebpackPlugin({
-            template:'./index.html',    //html模板路径
-            inject:true,    //允许插件修改哪些内容，包括head与body
-            hash:false,    //为静态资源生成hash值
-        }),
+        //new HtmlWebpackPlugin({
+        //    template:'./index.html',    //html模板路径
+        //    inject:true,    //允许插件修改哪些内容，包括head与body
+        //    hash:false,    //为静态资源生成hash值
+        //}),
         //new  webpack.optimize.CommonsChunkPlugin({
         //    name:['vendors'],
         //    minChunks:Infinity
